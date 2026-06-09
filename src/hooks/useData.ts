@@ -21,6 +21,10 @@ export function useSyncStatus() {
   return useFirebaseContext().syncStatus
 }
 
+export function useSyncError() {
+  return useFirebaseContext().syncError
+}
+
 export function useOrderStats() {
   const orders = useOrders()
   const technicians = useTechnicians()

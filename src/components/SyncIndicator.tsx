@@ -1,5 +1,5 @@
 import { Cloud, CloudOff, Loader2, AlertTriangle } from 'lucide-react'
-import { useSyncStatus } from '../hooks/useData'
+import { useSyncStatus, useSyncError } from '../hooks/useData'
 import type { SyncStatus } from '../types'
 
 const config: Record<
@@ -34,14 +34,16 @@ interface SyncIndicatorProps {
 
 export function SyncIndicator({ inverted }: SyncIndicatorProps) {
   const status = useSyncStatus()
+  const syncError = useSyncError()
   const { icon: Icon, label, className } = config[status]
   const tone = inverted ? 'text-icm-red-200' : className
+  const tooltip = syncError ?? label
 
   return (
     <div
       className={`flex items-center gap-1.5 text-[10px] ${tone}`}
-      title={label}
-      aria-label={label}
+      title={tooltip}
+      aria-label={tooltip}
     >
       <Icon size={12} className={status === 'loading' ? 'animate-spin' : ''} />
       <span className="hidden sm:inline">{label}</span>
