@@ -1,16 +1,24 @@
-import { useLiveQuery } from 'dexie-react-hooks'
-import { db } from '../db'
+import { useFirebaseContext } from '../firebase/FirebaseProvider'
+import {
+  createTechnician,
+  patchTechnician,
+  removeTechnician,
+  createOrder,
+  patchOrder,
+  removeOrder,
+} from '../firebase/repository'
 import type { Technician, Order, ServiceArea } from '../types'
 
 export function useTechnicians() {
-  return useLiveQuery(() => db.technicians.orderBy('name').toArray(), [])
+  return useFirebaseContext().technicians
 }
 
 export function useOrders() {
-  return useLiveQuery(
-    () => db.orders.orderBy('createdAt').reverse().toArray(),
-    []
-  )
+  return useFirebaseContext().orders
+}
+
+export function useSyncStatus() {
+  return useFirebaseContext().syncStatus
 }
 
 export function useOrderStats() {
@@ -36,40 +44,25 @@ export async function addTechnician(data: {
   email?: string
   areas: Omit<ServiceArea, 'id'>[]
 }) {
-  const technician: Technician = {
-    id: crypto.randomUUID(),
-    name: data.name,
-    phone: data.phone,
-    email: data.email,
-    areas: data.areas.map((a) => ({ ...a, id: crypto.randomUUID() })),
-    createdAt: new Date().toISOString(),
-  }
-  await db.technicians.add(technician)
-  return technician
+  return createTechnician(data)
 }
 
 export async function updateTechnician(id: string, data: Partial<Technician>) {
-  await db.technicians.update(id, data)
+  await patchTechnician(id, data)
 }
 
 export async function deleteTechnician(id: string) {
-  await db.technicians.delete(id)
+  await removeTechnician(id)
 }
 
-export async function addOrder(data: Omit<Order, 'id' | 'createdAt'>) {
-  const order: Order = {
-    ...data,
-    id: crypto.randomUUID(),
-    createdAt: new Date().toISOString(),
-  }
-  await db.orders.add(order)
-  return order
+export async function addOrder(data: Omit<Order, 'id' | 'createdAt' | 'updatedAt' | 'v'>) {
+  return createOrder(data)
 }
 
 export async function updateOrder(id: string, data: Partial<Order>) {
-  await db.orders.update(id, data)
+  await patchOrder(id, data)
 }
 
 export async function deleteOrder(id: string) {
-  await db.orders.delete(id)
+  await removeOrder(id)
 }

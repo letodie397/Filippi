@@ -7,6 +7,7 @@ import { getLocationStats, getCoordinatesCount, getBairroCoordinates } from '../
 import { APP_VERSION } from '../config/version'
 import { PROXIMITY_RADIUS_KM } from '../data/geo-utils'
 import { detectConflicts } from '../data/conflict-detector'
+import { DuplicateOrderError, WriteConflictError } from '../firebase/repository'
 import { Button } from '../components/ui/Button'
 import { Input } from '../components/ui/Input'
 import { Select } from '../components/ui/Select'
@@ -28,6 +29,7 @@ export function NewOrder() {
   const [showConfirm, setShowConfirm] = useState(false)
   const [confirmedAlerts, setConfirmedAlerts] = useState(false)
   const [selectedLocation, setSelectedLocation] = useState<ChurchIdentification | null>(null)
+  const [saveError, setSaveError] = useState<string | null>(null)
   const locationStats = getLocationStats()
 
   const searchResult = useMemo(() => {
@@ -112,6 +114,7 @@ export function NewOrder() {
 
   async function saveOrder() {
     setSaving(true)
+    setSaveError(null)
     try {
       const tech = technicians?.find((t) => t.id === technicianId)
       const coords =
@@ -132,6 +135,15 @@ export function NewOrder() {
         observacoes: observacoes.trim() || undefined,
       })
       navigate('/pedidos')
+    } catch (error) {
+      if (error instanceof DuplicateOrderError) {
+        setSaveError(error.message)
+      } else if (error instanceof WriteConflictError) {
+        setSaveError(error.message)
+      } else {
+        setSaveError('Não foi possível salvar o pedido. Verifique a conexão e tente novamente.')
+        console.error(error)
+      }
     } finally {
       setSaving(false)
     }
@@ -286,6 +298,12 @@ export function NewOrder() {
             />
           </div>
         </div>
+
+        {saveError && (
+          <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-sm text-red-800">
+            {saveError}
+          </div>
+        )}
 
         <div className="flex gap-3 sticky bottom-20 lg:static lg:bottom-auto z-20 bg-gray-50 py-3 -mx-4 px-4 lg:mx-0 lg:px-0 lg:py-0 lg:bg-transparent safe-bottom">
           <Button

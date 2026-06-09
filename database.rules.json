@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "icm": {
+      ".read": true,
+      ".write": true,
+      "technicians": {
+        "$id": {
+          ".validate": "newData.hasChildren(['name', 'phone', 'createdAt'])"
+        }
+      },
+      "orders": {
+        "$id": {
+          ".validate": "newData.hasChildren(['numeroPedido', 'nomeIgreja', 'status', 'createdAt'])"
+        }
+      },
+      "indexes": {
+        "pedidos": {
+          "$numero": {
+            ".validate": "newData.isString()"
+          }
+        }
+      }
+    }
+  }
+}

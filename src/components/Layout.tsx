@@ -10,6 +10,7 @@ import {
   Church,
 } from 'lucide-react'
 import { APP_VERSION, APP_BUILD } from '../config/version'
+import { SyncIndicator } from './SyncIndicator'
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
@@ -80,9 +81,12 @@ export function Layout() {
             <p className="text-icm-red-300 text-xs text-center">
               Igreja Cristã Maranata
             </p>
-            <p className="text-icm-red-400/60 text-[10px] text-center mt-1.5 tracking-wide">
-              v{APP_VERSION} · {APP_BUILD}
-            </p>
+            <div className="flex items-center justify-center gap-2 mt-1.5">
+              <SyncIndicator inverted />
+              <p className="text-icm-red-400/60 text-[10px] tracking-wide">
+                v{APP_VERSION} · {APP_BUILD}
+              </p>
+            </div>
           </div>
         </div>
       </aside>
@@ -112,9 +116,10 @@ export function Layout() {
                   )?.label ?? 'ICM Pedidos'}
             </p>
           </div>
-          <span className="text-[10px] text-gray-300 tracking-wide lg:hidden">
-            v{APP_VERSION}
-          </span>
+          <div className="flex items-center gap-3 lg:hidden">
+            <SyncIndicator />
+            <span className="text-[10px] text-gray-300 tracking-wide">v{APP_VERSION}</span>
+          </div>
         </header>
 
         <main className="flex-1 p-4 lg:p-8 overflow-auto pb-24 lg:pb-8">

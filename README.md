@@ -25,6 +25,31 @@ npm run build          # build local (base /)
 npm run build:pages    # build para GitHub Pages (base /Filippi/)
 ```
 
+## Firebase (Realtime Database)
+
+Dados sincronizados em tempo real entre dispositivos via Firebase RTD.
+
+### Configuração no console Firebase
+
+1. [Console Firebase](https://console.firebase.google.com/) → projeto **filippi-82725**
+2. **Build → Realtime Database → Criar banco** (região `us-central1` ou mais próxima)
+3. **Regras** → colar o conteúdo de `database.rules.json` → Publicar
+4. Plano **Spark (grátis)** suporta uso simultâneo da equipe
+
+### Estrutura otimizada
+
+```
+icm/
+  technicians/{id}   → prestadores
+  orders/{id}        → pedidos
+  indexes/pedidos/   → evita número duplicado entre dispositivos
+  meta/              → versão do schema
+```
+
+- **1 listener** por coleção (mínimo de leituras)
+- **Transações** em edições simultâneas (campo `v` = versão)
+- **Cache offline** automático do Firebase no PWA
+
 ## Deploy
 
 O deploy é automático via GitHub Actions ao fazer push na branch `main`.

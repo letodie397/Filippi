@@ -14,6 +14,8 @@ export interface Technician {
   email?: string
   areas: ServiceArea[]
   createdAt: string
+  updatedAt?: number
+  v?: number
 }
 
 export type OrderStatus = 'pendente' | 'confirmado' | 'em_andamento' | 'concluido' | 'cancelado'
@@ -31,7 +33,11 @@ export interface Order {
   status: OrderStatus
   observacoes?: string
   createdAt: string
+  updatedAt?: number
+  v?: number
 }
+
+export type SyncStatus = 'loading' | 'connected' | 'offline' | 'error'
 
 export type AlertType =
   | 'area_outro_tecnico'
