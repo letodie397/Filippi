@@ -225,6 +225,23 @@ try {
     fail(`Mesmo campo: valor inesperado "${obsFinal}"`)
   }
 
+  // 6c. Prestador - campos diferentes ao mesmo tempo
+  console.log('\n6c. Prestador - campos diferentes preservados')
+  const techId = testTechIds[0]
+  const [techA, techB] = await Promise.allSettled([
+    patchTechnician(techId, { phone: '(27) 91111-1111' }),
+    patchTechnician(techId, { email: 'concorrente@teste.local' }),
+  ])
+  const techOk = [techA, techB].filter((r) => r.status === 'fulfilled').length
+  if (techOk !== 2) fail(`Merge prestador: apenas ${techOk}/2 patches ok`)
+
+  const techAfter = await get(ref(database, `${paths.technicians}/${techId}`))
+  const techFinal = techAfter.val()
+  if (techFinal?.phone === '(27) 91111-1111') pass('Telefone do prestador preservado')
+  else fail(`Telefone prestador perdido: "${techFinal?.phone}"`)
+  if (techFinal?.email === 'concorrente@teste.local') pass('E-mail do prestador preservado')
+  else fail(`E-mail prestador perdido: "${techFinal?.email}"`)
+
   // 7. Leitura em tempo real (snapshot)
   console.log('\n7. Integridade dos dados gravados')
   const finalTech = await get(ref(database, paths.technicians))

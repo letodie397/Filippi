@@ -12,6 +12,7 @@ import { Select } from '../components/ui/Select'
 import { SearchableSelect } from '../components/ui/SearchableSelect'
 import { Modal } from '../components/ui/Modal'
 import { getCidadesUnicas, getCidadesComBairros, getBairrosByCidade, ESTADO_ES } from '../data/es-locations'
+import { buildPatch, hasPatchChanges } from '../utils/patch-diff'
 import type { Technician, ServiceArea, AreaType } from '../types'
 
 const CUSTOM_BAIRRO = '__custom__'
@@ -137,22 +138,30 @@ export function Technicians() {
     setSaving(true)
     try {
       if (editing) {
-        const trimmedName = name.trim()
-        const trimmedPhone = phone.trim()
-        const trimmedEmail = email.trim() || undefined
-        const patch: Partial<Technician> = {}
+        const nextAreas = validAreas.map((a) => ({
+          ...a,
+          id: crypto.randomUUID(),
+        })) as ServiceArea[]
 
-        if (trimmedName !== editing.name) patch.name = trimmedName
-        if (trimmedPhone !== editing.phone) patch.phone = trimmedPhone
-        if (trimmedEmail !== (editing.email || undefined)) patch.email = trimmedEmail
+        const patch = buildPatch(
+          editing,
+          {
+            ...editing,
+            name: name.trim(),
+            phone: phone.trim(),
+            email: email.trim() || undefined,
+            areas: nextAreas,
+          },
+          ['name', 'phone', 'email', 'areas']
+        )
+
         if (!areasEqual(editing.areas, validAreas)) {
-          patch.areas = validAreas.map((a) => ({
-            ...a,
-            id: crypto.randomUUID(),
-          })) as ServiceArea[]
+          patch.areas = nextAreas
+        } else {
+          delete patch.areas
         }
 
-        if (Object.keys(patch).length > 0) {
+        if (hasPatchChanges(patch)) {
           await updateTechnician(editing.id, patch)
         }
       } else {

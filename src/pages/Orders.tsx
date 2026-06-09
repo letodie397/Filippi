@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Plus, Search, MapPin, Trash2, Filter } from 'lucide-react'
+import { Plus, Search, MapPin, Trash2, Filter, Pencil } from 'lucide-react'
 import { useOrders, deleteOrder, updateOrder } from '../hooks/useData'
 import { Button } from '../components/ui/Button'
 import { StatusBadge } from '../components/ui/Badge'
@@ -174,12 +174,22 @@ export function Orders() {
                       {new Date(order.createdAt).toLocaleDateString('pt-BR')}
                     </td>
                     <td className="px-4 lg:px-5 py-3.5">
-                      <button
-                        onClick={() => handleDelete(order.id)}
-                        className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg"
-                      >
-                        <Trash2 size={16} />
-                      </button>
+                      <div className="flex items-center gap-1">
+                        <Link
+                          to={`/pedidos/${order.id}/editar`}
+                          className="p-2 text-gray-400 hover:text-icm-red-700 hover:bg-red-50 rounded-lg"
+                          title="Editar pedido"
+                        >
+                          <Pencil size={16} />
+                        </Link>
+                        <button
+                          onClick={() => handleDelete(order.id)}
+                          className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg"
+                          title="Excluir pedido"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 ))}
