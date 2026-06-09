@@ -62,4 +62,7 @@ Para habilitar o Pages pela primeira vez: **Settings → Pages → Source: GitHu
 npm run build:locations   # regenera base de bairros/cidades
 npm run audit:locations   # audita cobertura GPS
 npm run geocode:all       # geocodifica bairros faltantes
+npm run test              # testes de mapa + Firebase
+npm run test:locations    # só localização/GPS
+npm run test:firebase     # só leitura/escrita/concorrência Firebase
 ```

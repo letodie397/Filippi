@@ -43,33 +43,6 @@ function orderIndexRef(numero: string) {
   return ref(database, paths.orderIndex(numero))
 }
 
-async function transactionalPatch<T extends { v?: number }>(
-  recordRef: ReturnType<typeof ref>,
-  patch: Partial<T>,
-  expectedVersion?: number
-): Promise<void> {
-  const result = await runTransaction(recordRef, (current) => {
-    if (!current) return undefined
-
-    const currentVersion = (current as T).v ?? 0
-    if (expectedVersion !== undefined && currentVersion !== expectedVersion) {
-      return undefined
-    }
-
-    return stripUndefined({
-      ...current,
-      ...patch,
-      updatedAt: now(),
-      v: currentVersion + 1,
-      _clientId: getClientId(),
-    })
-  })
-
-  if (!result.committed) {
-    throw new WriteConflictError()
-  }
-}
-
 export async function createTechnician(data: {
   name: string
   phone: string
@@ -103,7 +76,15 @@ export async function patchTechnician(id: string, data: Partial<Technician>): Pr
   const snap = await get(technicianRef(id))
   if (!snap.exists()) throw new Error('Prestador não encontrado')
   const current = snap.val() as Technician
-  await transactionalPatch(technicianRef(id), data, current.v)
+  await update(
+    technicianRef(id),
+    stripUndefined({
+      ...data,
+      updatedAt: now(),
+      v: (current.v ?? 0) + 1,
+      _clientId: getClientId(),
+    })
+  )
 }
 
 export async function removeTechnician(id: string): Promise<void> {
@@ -173,7 +154,15 @@ export async function patchOrder(id: string, data: Partial<Order>): Promise<void
     await remove(orderIndexRef(current.numeroPedido))
   }
 
-  await transactionalPatch(orderRef(id), data, current.v)
+  await update(
+    orderRef(id),
+    stripUndefined({
+      ...data,
+      updatedAt: now(),
+      v: (current.v ?? 0) + 1,
+      _clientId: getClientId(),
+    })
+  )
 }
 
 export async function removeOrder(id: string): Promise<void> {

@@ -11,6 +11,9 @@
     "geocode:all": "node scripts/geocode-all-remaining.mjs && npm run build:locations",
     "geocode:centroids": "node scripts/generate-city-centroids.mjs && npm run build:locations",
     "audit:locations": "node scripts/audit-locations.mjs",
+    "test": "npm run test:locations && npm run test:firebase",
+    "test:locations": "tsx scripts/tests/location-tests.mts",
+    "test:firebase": "tsx scripts/tests/firebase-tests.mts",
     "dev": "vite",
     "build": "npm run build:locations && tsc && vite build",
     "build:pages": "node scripts/build-pages.mjs",
@@ -22,6 +25,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.4",
     "typescript": "~6.0.2",
     "vite": "^8.0.12",
     "vite-plugin-pwa": "^1.3.0"
