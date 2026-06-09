@@ -3005,5 +3005,195 @@
   "Vitória|São Pedro": {
     "lat": -20.2820175,
     "lng": -40.3368799
+  },
+  "Alegre|Conceição (N.Sª Conceição)": {
+    "lat": -20.780724338888884,
+    "lng": -41.52549845,
+    "source": "centroide_cidade"
+  },
+  "Alegre|Três Vilas (Machado, Reis e Viana)": {
+    "lat": -20.780724338888884,
+    "lng": -41.52549845,
+    "source": "centroide_cidade"
+  },
+  "Aracruz|Santa Marta": {
+    "lat": -19.828274506818186,
+    "lng": -40.222378459090905,
+    "source": "centroide_cidade"
+  },
+  "Aracruz|Parque Tropical": {
+    "lat": -19.828274506818186,
+    "lng": -40.222378459090905,
+    "source": "centroide_cidade"
+  },
+  "Cariacica|Área Não Identificada 2/2": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Cariacica|Área Não Identificada 1/2": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Colatina|Olívio Zanotelli": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "centroide_cidade"
+  },
+  "Colatina|Parque Residencial Jardins": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "centroide_cidade"
+  },
+  "Colatina|Cidade Jardim": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "centroide_cidade"
+  },
+  "Colatina|Vila Verde": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Village da Praia": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Jardim Santa Rosa": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Jaboticaba": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Campo Grande": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Iguape": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Fazenda Boa Vista": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Barro Branco": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Palmeiras": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Lagoa Dourada": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Samambaia": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Reta Grande": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Taquara do Reino": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Andana": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Rio Grande": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Maxinda": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Jaboti": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Comunidade Urbana de Amarelos": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Irupi|Wilson Fernandes Pereira": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "centroide_cidade"
+  },
+  "Irupi|João Tomaz": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "centroide_cidade"
+  },
+  "Irupi|Carolino Barrosa": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "centroide_cidade"
+  },
+  "São Gabriel da Palha|Jardim da Infância": {
+    "lat": -19.0148349,
+    "lng": -40.539464,
+    "source": "centroide_cidade"
+  },
+  "São Gabriel da Palha|Jovelino de Souza Valentim": {
+    "lat": -19.0148349,
+    "lng": -40.539464,
+    "source": "centroide_cidade"
+  },
+  "Serra|Barro Branco": {
+    "lat": -23.7115142,
+    "lng": -46.3773737,
+    "source": "nominatim"
+  },
+  "Serra|Residencial Centro da Serra": {
+    "lat": -22.6156853,
+    "lng": -46.7075403,
+    "source": "nominatim"
+  },
+  "Serra|Santa Rita de Cassia": {
+    "lat": -23.7041615,
+    "lng": -46.8700674,
+    "source": "nominatim"
+  },
+  "Serra|Polo Industrial Tubarão": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Serra|Conjunto Carapina I": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Vitória|Carapina I": {
+    "lat": -19.8535432,
+    "lng": -43.8838711,
+    "source": "nominatim"
   }
 }

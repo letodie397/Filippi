@@ -9,6 +9,7 @@
     "geocode:locations:batch": "node scripts/geocode-locations.mjs",
     "geocode:vila-velha": "node scripts/geocode-city.mjs \"Vila Velha\" && npm run build:locations",
     "geocode:all": "node scripts/geocode-all-remaining.mjs && npm run build:locations",
+    "geocode:missing": "node scripts/geocode-missing.mjs && npm run build:locations",
     "geocode:centroids": "node scripts/generate-city-centroids.mjs && npm run build:locations",
     "audit:locations": "node scripts/audit-locations.mjs",
     "test": "npm run test:locations && npm run test:firebase",

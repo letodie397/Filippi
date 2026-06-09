@@ -9,7 +9,6 @@ import {
   removeTechnician,
   removeOrder,
   DuplicateOrderError,
-  WriteConflictError,
 } from '../../src/firebase/repository.ts'
 
 const TEST_PREFIX = `__TESTE_${Date.now()}__`
@@ -168,44 +167,62 @@ try {
     }
   }
 
-  // 6. Concorrência - edição simultânea (versão)
-  console.log('\n6. Concorrência - edição simultânea (anti-sobrescrita)')
+  // 6. Concorrência - campos diferentes ao mesmo tempo (merge)
+  console.log('\n6. Concorrência - campos diferentes preservados')
   const orderId = testOrderIds[0]
   const snapBefore = await get(ref(database, `${paths.orders}/${orderId}`))
   const vBefore = snapBefore.val()?.v ?? 1
 
   const [patchA, patchB] = await Promise.allSettled([
-    patchOrder(orderId, { observacoes: 'dispositivo A' }),
-    patchOrder(orderId, { observacoes: 'dispositivo B' }),
+    patchOrder(orderId, { observacoes: 'observacao dispositivo A' }),
+    patchOrder(orderId, { status: 'confirmado' }),
   ])
 
   const patchOk = [patchA, patchB].filter((r) => r.status === 'fulfilled').length
-  const patchConflict = [patchA, patchB].filter(
-    (r) => r.status === 'rejected' && r.reason instanceof WriteConflictError
-  ).length
+  if (patchOk !== 2) {
+    fail(`Merge de campos diferentes: apenas ${patchOk}/2 patches ok`)
+    for (const r of [patchA, patchB]) {
+      if (r.status === 'rejected') console.log('     erro:', r.reason)
+    }
+  }
 
   const snapAfter = await get(ref(database, `${paths.orders}/${orderId}`))
-  const vAfter = snapAfter.val()?.v ?? 0
-  const obs = snapAfter.val()?.observacoes
+  const final = snapAfter.val()
+  const vAfter = final?.v ?? 0
 
-  if (patchOk === 2) {
-    pass('Edições simultâneas concluídas (última alteração prevalece)')
-  } else if (patchOk === 1 && patchConflict === 1) {
-    pass('Uma edição aceita, outra rejeitada por conflito')
+  if (final?.observacoes === 'observacao dispositivo A') {
+    pass('Campo observacoes do dispositivo A preservado')
   } else {
-    fail(`Edição concorrente: ${patchOk} ok, ${patchConflict} conflito, v ${vBefore}→${vAfter}`)
+    fail(`observacoes perdida: "${final?.observacoes}"`)
   }
 
-  if (obs === 'dispositivo A' || obs === 'dispositivo B') {
-    pass(`Observação final: "${obs}" (v${vAfter})`)
+  if (final?.status === 'confirmado') {
+    pass('Campo status do dispositivo B preservado')
   } else {
-    fail(`Observação inesperada: "${obs}"`)
+    fail(`status perdido: "${final?.status}"`)
   }
 
-  if (vAfter > vBefore) {
+  if (vAfter >= vBefore + 2) {
+    pass(`Versão incrementou 2x: v${vBefore} → v${vAfter}`)
+  } else if (vAfter > vBefore) {
     pass(`Versão incrementada: v${vBefore} → v${vAfter}`)
   } else {
     fail(`Versão não incrementou: v${vBefore} → v${vAfter}`)
+  }
+
+  // 6b. Mesmo campo - última alteração prevalece
+  console.log('\n6b. Mesmo campo editado ao mesmo tempo')
+  await patchOrder(orderId, { observacoes: 'reset' })
+  await Promise.allSettled([
+    patchOrder(orderId, { observacoes: 'ultimo A' }),
+    patchOrder(orderId, { observacoes: 'ultimo B' }),
+  ])
+  const snapSame = await get(ref(database, `${paths.orders}/${orderId}`))
+  const obsFinal = snapSame.val()?.observacoes
+  if (obsFinal === 'ultimo A' || obsFinal === 'ultimo B') {
+    pass(`Mesmo campo: valor final "${obsFinal}" (esperado último gravado)`)
+  } else {
+    fail(`Mesmo campo: valor inesperado "${obsFinal}"`)
   }
 
   // 7. Leitura em tempo real (snapshot)

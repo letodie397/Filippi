@@ -97,7 +97,8 @@ if (citiesWithoutCentroid === 0) pass('Todas as cidades principais têm centroid
 else fail(`${citiesWithoutCentroid} cidades principais sem centroide`)
 
 const totalGps = generated.totalComGps ?? 0
-if (totalGps >= 700) pass(`Cobertura global GPS: ${totalGps}/772`)
+if (totalGps === 772) pass(`Cobertura global GPS: ${totalGps}/772 (100%)`)
+else if (totalGps >= 700) fail(`Cobertura GPS incompleta: ${totalGps}/772 — meta é 100%`)
 else fail(`Cobertura GPS baixa: ${totalGps}/772`)
 
 // 2. Parser de igrejas

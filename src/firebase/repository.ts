@@ -1,4 +1,4 @@
-import { ref, set, update, remove, runTransaction, get } from 'firebase/database'
+import { ref, set, update, remove, runTransaction, get, increment } from 'firebase/database'
 import { database } from './config'
 import { paths, normalizePedidoKey } from './paths'
 import { getClientId } from './client'
@@ -43,6 +43,24 @@ function orderIndexRef(numero: string) {
   return ref(database, paths.orderIndex(numero))
 }
 
+async function mergePatchRecord(
+  recordRef: ReturnType<typeof ref>,
+  patch: Record<string, unknown>
+): Promise<void> {
+  const cleanPatch = stripUndefined(patch) as Record<string, unknown>
+  if (Object.keys(cleanPatch).length === 0) return
+
+  await update(
+    recordRef,
+    stripUndefined({
+      ...cleanPatch,
+      updatedAt: now(),
+      v: increment(1),
+      _clientId: getClientId(),
+    })
+  )
+}
+
 export async function createTechnician(data: {
   name: string
   phone: string
@@ -75,16 +93,7 @@ export async function upsertTechnician(technician: Technician): Promise<void> {
 export async function patchTechnician(id: string, data: Partial<Technician>): Promise<void> {
   const snap = await get(technicianRef(id))
   if (!snap.exists()) throw new Error('Prestador não encontrado')
-  const current = snap.val() as Technician
-  await update(
-    technicianRef(id),
-    stripUndefined({
-      ...data,
-      updatedAt: now(),
-      v: (current.v ?? 0) + 1,
-      _clientId: getClientId(),
-    })
-  )
+  await mergePatchRecord(technicianRef(id), data as Record<string, unknown>)
 }
 
 export async function removeTechnician(id: string): Promise<void> {
@@ -154,15 +163,7 @@ export async function patchOrder(id: string, data: Partial<Order>): Promise<void
     await remove(orderIndexRef(current.numeroPedido))
   }
 
-  await update(
-    orderRef(id),
-    stripUndefined({
-      ...data,
-      updatedAt: now(),
-      v: (current.v ?? 0) + 1,
-      _clientId: getClientId(),
-    })
-  )
+  await mergePatchRecord(orderRef(id), data as Record<string, unknown>)
 }
 
 export async function removeOrder(id: string): Promise<void> {

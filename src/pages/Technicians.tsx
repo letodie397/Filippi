@@ -25,6 +25,26 @@ interface AreaForm {
 
 const emptyArea: AreaForm = { type: 'bairro', cidade: '', bairro: '', bairroCustom: '' }
 
+function normalizeArea(area: { type: AreaType; cidade?: string; bairro?: string }) {
+  return {
+    type: area.type,
+    cidade: area.cidade ?? '',
+    bairro: area.bairro ?? '',
+  }
+}
+
+function areasEqual(
+  current: ServiceArea[],
+  next: { type: AreaType; cidade?: string; bairro?: string }[]
+): boolean {
+  if (current.length !== next.length) return false
+  return current.every((area, index) => {
+    const a = normalizeArea(area)
+    const b = normalizeArea(next[index])
+    return a.type === b.type && a.cidade === b.cidade && a.bairro === b.bairro
+  })
+}
+
 export function Technicians() {
   const technicians = useTechnicians()
   const [modalOpen, setModalOpen] = useState(false)
@@ -117,15 +137,24 @@ export function Technicians() {
     setSaving(true)
     try {
       if (editing) {
-        await updateTechnician(editing.id, {
-          name: name.trim(),
-          phone: phone.trim(),
-          email: email.trim() || undefined,
-          areas: validAreas.map((a) => ({
+        const trimmedName = name.trim()
+        const trimmedPhone = phone.trim()
+        const trimmedEmail = email.trim() || undefined
+        const patch: Partial<Technician> = {}
+
+        if (trimmedName !== editing.name) patch.name = trimmedName
+        if (trimmedPhone !== editing.phone) patch.phone = trimmedPhone
+        if (trimmedEmail !== (editing.email || undefined)) patch.email = trimmedEmail
+        if (!areasEqual(editing.areas, validAreas)) {
+          patch.areas = validAreas.map((a) => ({
             ...a,
             id: crypto.randomUUID(),
-          })) as ServiceArea[],
-        })
+          })) as ServiceArea[]
+        }
+
+        if (Object.keys(patch).length > 0) {
+          await updateTechnician(editing.id, patch)
+        }
       } else {
         await addTechnician({
           name: name.trim(),
