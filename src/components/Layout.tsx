@@ -43,66 +43,64 @@ export function Layout() {
       )}
 
       <aside
-        className={`fixed lg:static inset-y-0 left-0 z-50 w-64 lg:w-48 bg-icm-red-800 text-white transform transition-transform duration-300 lg:translate-x-0 shrink-0 ${
+        className={`fixed lg:sticky lg:top-0 lg:self-start inset-y-0 left-0 z-50 w-64 lg:w-52 bg-icm-red-800 text-white transform transition-transform duration-300 lg:translate-x-0 shrink-0 flex flex-col h-dvh max-h-dvh overflow-hidden ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="flex flex-col h-full lg:h-dvh">
-          <div className="flex items-center gap-2.5 px-4 py-3.5 border-b border-icm-red-700 safe-top">
-            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shrink-0">
-              <Church className="text-icm-red-700" size={18} />
-            </div>
-            <div className="min-w-0 flex-1">
-              <h1 className="font-bold text-sm leading-tight truncate">ICM Pedidos</h1>
-              <p className="text-icm-red-200 text-[10px] truncate">Espírito Santo</p>
-            </div>
-            <button
-              type="button"
-              className="lg:hidden p-1.5 shrink-0"
-              onClick={() => setSidebarOpen(false)}
-              aria-label="Fechar menu"
-            >
-              <X size={18} />
-            </button>
+        <div className="shrink-0 flex items-center gap-3 px-4 pb-4 border-b border-icm-red-700 sidebar-safe-top">
+          <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0">
+            <Church className="text-icm-red-700" size={18} />
           </div>
+          <div className="min-w-0 flex-1">
+            <h1 className="font-bold text-sm leading-snug">ICM Pedidos</h1>
+            <p className="text-icm-red-200 text-[11px] leading-snug mt-0.5">Espírito Santo</p>
+          </div>
+          <button
+            type="button"
+            className="lg:hidden p-2 -mr-1 shrink-0"
+            onClick={() => setSidebarOpen(false)}
+            aria-label="Fechar menu"
+          >
+            <X size={18} />
+          </button>
+        </div>
 
-          <nav className="flex-1 px-2 py-3 space-y-0.5">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                end={item.to === '/'}
-                onClick={() => setSidebarOpen(false)}
-                title={item.label === 'Novo' ? 'Novo Pedido' : item.label}
-                className={({ isActive }) =>
-                  `flex items-center gap-2 px-2.5 py-2 rounded-lg text-[13px] font-medium transition-all ${
-                    isActive
-                      ? 'bg-white text-icm-red-800 shadow-sm'
-                      : 'text-icm-red-100 hover:bg-icm-red-700 hover:text-white'
-                  }`
-                }
-              >
-                <item.icon size={17} className="shrink-0" />
-                <span className="truncate lg:text-xs xl:text-[13px]">
-                  {item.label === 'Novo' ? 'Novo Pedido' : item.label}
-                </span>
-              </NavLink>
-            ))}
-          </nav>
+        <nav className="flex-1 min-h-0 overflow-y-auto px-2 py-3 space-y-0.5">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.to === '/'}
+              onClick={() => setSidebarOpen(false)}
+              title={item.label === 'Novo' ? 'Novo Pedido' : item.label}
+              className={({ isActive }) =>
+                `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
+                  isActive
+                    ? 'bg-white text-icm-red-800 shadow-sm'
+                    : 'text-icm-red-100 hover:bg-icm-red-700 hover:text-white'
+                }`
+              }
+            >
+              <item.icon size={18} className="shrink-0" />
+              <span className="leading-snug">
+                {item.label === 'Novo' ? 'Novo Pedido' : item.label}
+              </span>
+            </NavLink>
+          ))}
+        </nav>
 
-          <div className="px-3 py-2.5 border-t border-icm-red-700 safe-bottom">
-            <p className="text-icm-red-300 text-[10px] text-center leading-tight">
-              Igreja Cristã Maranata
-            </p>
-            <div className="flex items-center justify-center gap-1.5 mt-1">
-              <SyncIndicator inverted />
-              <span className="text-icm-red-400/60 text-[10px]">v{APP_VERSION}</span>
-            </div>
+        <div className="shrink-0 px-4 pt-3 border-t border-icm-red-700 sidebar-safe-bottom">
+          <p className="text-icm-red-300 text-[11px] text-center leading-snug">
+            Igreja Cristã Maranata
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-2 pb-1">
+            <SyncIndicator inverted />
+            <span className="text-icm-red-300/80 text-[11px]">v{APP_VERSION}</span>
           </div>
         </div>
       </aside>
 
-      <div className="flex-1 flex flex-col min-w-0 bg-gray-50/60">
+      <div className="flex-1 flex flex-col min-w-0 min-h-dvh bg-gray-50/60">
         <header className="sticky top-0 z-30 bg-white border-b border-gray-200 safe-top shrink-0">
           <div className="flex items-center gap-3 px-4 sm:px-6 lg:px-8 py-3">
             <button

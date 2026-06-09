@@ -28,11 +28,19 @@ body {
 }
 
 .safe-top {
-  padding-top: env(safe-area-inset-top, 0px);
+  padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
 }
 
 .safe-bottom {
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+}
+
+.sidebar-safe-top {
+  padding-top: max(1.25rem, env(safe-area-inset-top, 0px));
+}
+
+.sidebar-safe-bottom {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
 }
 
 @supports (-webkit-touch-callout: none) {

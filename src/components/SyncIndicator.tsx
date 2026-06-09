@@ -46,7 +46,7 @@ export function SyncIndicator({ inverted }: SyncIndicatorProps) {
       aria-label={tooltip}
     >
       <Icon size={12} className={status === 'loading' ? 'animate-spin' : ''} />
-      <span className="hidden sm:inline">{label}</span>
+      {!inverted && <span className="hidden sm:inline">{label}</span>}
     </div>
   )
 }
