@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createRequire } from 'module'
@@ -7,11 +7,13 @@ const require = createRequire(import.meta.url)
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 
-const neighborhoods = require('brazilian-geographic-data/data/neighborhoods.json')
 const cities = require('brazilian-geographic-data/data/cities.json')
+const generatedPath = join(root, 'src', 'data', 'es-locations.generated.json')
+const generated = existsSync(generatedPath)
+  ? JSON.parse(readFileSync(generatedPath, 'utf8'))
+  : null
 
 const esCities = cities.filter((c) => c.state === 'ES').map((c) => c.name).sort((a, b) => a.localeCompare(b, 'pt-BR'))
-const esBairros = neighborhoods.filter((n) => n.state === 'ES')
 
 function decodeHtmlEntities(text) {
   return text
@@ -91,14 +93,24 @@ async function fetchPage(url) {
   return res.text()
 }
 
-function compareLists(ours, theirs, label) {
-  const ourSet = new Set(ours.map(normalize))
+function allKnownNames(bairros) {
+  const names = []
+  for (const b of bairros) {
+    names.push(b.nome)
+    for (const a of b.aliases ?? []) names.push(a)
+  }
+  return names
+}
+
+function compareLists(bairros, theirs, label) {
+  const ours = bairros.map((b) => b.nome)
+  const known = allKnownNames(bairros)
+  const ourSet = new Set(known.map(normalize))
   const theirSet = new Set(theirs.map(normalize))
 
   const onlyOurs = ours.filter((n) => !theirSet.has(normalize(n)))
   const onlyTheirs = theirs.filter((n) => !ourSet.has(normalize(n)))
-
-  const matched = ours.filter((n) => theirSet.has(normalize(n)))
+  const matched = theirs.filter((n) => ourSet.has(normalize(n)))
 
   return {
     label,
@@ -112,7 +124,10 @@ function compareLists(ours, theirs, label) {
 }
 
 function bairrosByCity(city) {
-  return esBairros.filter((b) => b.city === city).map((b) => b.name).sort((a, b) => a.localeCompare(b, 'pt-BR'))
+  if (!generated) return []
+  return generated.bairros
+    .filter((b) => b.cidade === city)
+    .sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'))
 }
 
 console.log('Buscando lista estadual no CEPBrasil...')
@@ -195,7 +210,9 @@ const summary = {
     onlyCepbrasil: citiesOnlyCep,
   },
   bairros: {
-    ibgeTotal: esBairros.length,
+    ibgeTotal: generated?.totalBairros ?? 0,
+    ibgeOficial: generated?.totalBairrosIbge ?? 0,
+    cepbrasilSupplement: generated?.totalBairrosCepbrasil ?? 0,
     citiesCompared: okReports.length,
     fetchErrors,
     totalMatched,
@@ -210,7 +227,7 @@ const outPath = join(root, 'data', 'cepbrasil-comparison.json')
 writeFileSync(outPath, JSON.stringify(summary, null, 2))
 
 console.log(`\n=== RESUMO BAIRROS ===`)
-console.log(`IBGE total: ${esBairros.length}`)
+console.log(`Bairros no sistema: ${generated?.totalBairros ?? 0} (${generated?.totalBairrosIbge ?? 0} IBGE + ${generated?.totalBairrosCepbrasil ?? 0} CEPBrasil)`)
 console.log(`Cidades comparadas: ${okReports.length} (${fetchErrors} erros)`)
 console.log(`Nomes coincidentes: ${totalMatched} de ${totalTheirs} no CEPBrasil (${summary.bairros.globalMatchPct}%)`)
 

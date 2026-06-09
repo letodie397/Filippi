@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T23:08:23.263Z",
+  "generatedAt": "2026-06-09T23:21:54.895Z",
   "source": "https://cepbrasil.org/espirito-santo/",
   "municipios": {
     "ibge": 78,
@@ -14,250 +14,17 @@
     ]
   },
   "bairros": {
-    "ibgeTotal": 772,
+    "ibgeTotal": 854,
+    "ibgeOficial": 772,
+    "cepbrasilSupplement": 82,
     "citiesCompared": 17,
     "fetchErrors": 0,
-    "totalMatched": 585,
+    "totalMatched": 715,
     "totalCepbrasil": 740,
-    "totalIbgeInCompared": 772,
-    "globalMatchPct": 79
+    "totalIbgeInCompared": 854,
+    "globalMatchPct": 97
   },
   "cityReports": [
-    {
-      "label": "Serra",
-      "ours": 133,
-      "theirs": 145,
-      "matched": 114,
-      "onlyOurs": [
-        "Alterozas",
-        "André Carlone",
-        "Bairro das Laranjeiras",
-        "Bairro de Fátima",
-        "Bairro Novo",
-        "Boa Vista (Carapina)",
-        "Boa Vista (Nova Almeida)",
-        "Centro Industrial do Município",
-        "Cidade Continental",
-        "Condomínio Ecológico Parque da Lagoa",
-        "Costabela",
-        "Lagoa Jacaraípe",
-        "Marbela",
-        "Planalto Carapina",
-        "Planalto Serrano",
-        "Santiago",
-        "São Marcos",
-        "Sítio Irema",
-        "Terminal Intermodal da Serra"
-      ],
-      "onlyTheirs": [
-        "Alterosas",
-        "André Carloni",
-        "Área Rural de Serra",
-        "Boa Vista I",
-        "Boa Vista II",
-        "Calogi",
-        "Chicópolis",
-        "Cidade Continental-Setor África",
-        "Cidade Continental-Setor América",
-        "Cidade Continental-Setor Ásia",
-        "Cidade Continental-Setor Europa",
-        "Cidade Continental-Setor Oceania",
-        "Comunidades Da Sede",
-        "Comunidades De Nova Almeida",
-        "Costa Bela",
-        "das Laranjeiras",
-        "de Fátima",
-        "Lagoa de Jacaraípe",
-        "Loteamento Potiguara",
-        "Marbella",
-        "Nova Almeida",
-        "Nova Carapina",
-        "Novo",
-        "Parque Residencial de Tubarão",
-        "Planalto de Carapina",
-        "Planalto Serrano Bloco A",
-        "Planalto Serrano Bloco B",
-        "Planalto Serrano Bloco C",
-        "Queimado",
-        "São Marcos I",
-        "Serra Dourada",
-        "TIMS"
-      ],
-      "coveragePct": 79
-    },
-    {
-      "label": "Cachoeiro de Itapemirim",
-      "ours": 69,
-      "theirs": 87,
-      "matched": 59,
-      "onlyOurs": [
-        "Álvaro Tavares (União)",
-        "Dr. Gilberto Machado",
-        "Gilson Carone",
-        "IBC",
-        "Luiz Tinoco da Fonseca (BNH de cima)",
-        "Parque das Laranjeiras",
-        "Presidente Arthur Costa e Silva",
-        "Sta. Cecília",
-        "Sta. Helena",
-        "Waldir Furtado Amorim (BNH de Baixo)"
-      ],
-      "onlyTheirs": [
-        "Álvaro Tavares",
-        "Área Rural de Cachoeiro de Itapemirim",
-        "Basílio Pimenta",
-        "Coutinho",
-        "Distrito Da Sede",
-        "Distrito De Coutinho",
-        "Distrito De Gruta",
-        "Distrito De São Vicente",
-        "Doutor Gilson Carone",
-        "Doutor Luiz Tinoco da Fonseca",
-        "Gilberto Machado",
-        "I B C",
-        "Montanha Residencial",
-        "Morro Grande",
-        "Octaviano Facini",
-        "Parque Laranjeiras",
-        "Presidente Arthur da Costa e Silva",
-        "Quilometro 90",
-        "Região De Monte Líbano",
-        "Safra",
-        "Santa Cecília",
-        "Santa Helena",
-        "Santa Izabel",
-        "Santo Agostinho",
-        "São José Do Frade",
-        "Sobrado",
-        "Urtiga",
-        "Waldir Furtado Amorim"
-      ],
-      "coveragePct": 68
-    },
-    {
-      "label": "Vila Velha",
-      "ours": 91,
-      "theirs": 108,
-      "matched": 90,
-      "onlyOurs": [
-        "Residencial Itaparica"
-      ],
-      "onlyTheirs": [
-        "Área Rural de Vila Velha",
-        "Chácara Kajó",
-        "Chácara Litorânea",
-        "Imobiliária Capixaba",
-        "IPESSA",
-        "Itanhangá",
-        "Jardim Praia da Concha",
-        "Morro Cavalieri",
-        "Morro do Moreno",
-        "Parque Gramado",
-        "Pólo Empresarial Novo México",
-        "Residencial Coqueiral",
-        "Residencial Santa Clara",
-        "Retiro Do Congo",
-        "Solar de Vênus",
-        "Tapuera da Barra",
-        "Vila Maria Ortiz",
-        "Xuri"
-      ],
-      "coveragePct": 83
-    },
-    {
-      "label": "Guarapari",
-      "ours": 59,
-      "theirs": 69,
-      "matched": 58,
-      "onlyOurs": [
-        "Concha D'Ostra"
-      ],
-      "onlyTheirs": [
-        "Amarelo",
-        "Área Rural de Guarapari",
-        "Baia Nova",
-        "Belo Horizonte",
-        "Buenos Aires",
-        "Concha DOstra",
-        "José Machado",
-        "Pedro Machado",
-        "Por do Sol",
-        "Rio Calçado",
-        "São João"
-      ],
-      "coveragePct": 84
-    },
-    {
-      "label": "Linhares",
-      "ours": 23,
-      "theirs": 34,
-      "matched": 23,
-      "onlyOurs": [],
-      "onlyTheirs": [
-        "Aeroporto",
-        "Área Rural de Linhares",
-        "Bebedouro",
-        "Comunidades De Desengano",
-        "Comunidades De Farias",
-        "Farias",
-        "Jardim Laguna Ii",
-        "Povoação",
-        "Residencial Gaivotas",
-        "Vila Capixaba",
-        "Vila Izabel"
-      ],
-      "coveragePct": 68
-    },
-    {
-      "label": "Cariacica",
-      "ours": 104,
-      "theirs": 105,
-      "matched": 96,
-      "onlyOurs": [
-        "Alto da Boa Vista",
-        "Área Não Identificada 1/2",
-        "Área Não Identificada 2/2",
-        "Pica-Pau",
-        "Porto das Pedras",
-        "Porto Engenho",
-        "Porto Santana",
-        "Presidente Médice"
-      ],
-      "onlyTheirs": [
-        "Alto Boa Vista",
-        "Alto Laje",
-        "Área Rural de Cariacica",
-        "Biriricas Setor 6",
-        "Flórida",
-        "Ibiapaba Setor 5",
-        "Porto de Santana",
-        "Presidente Médici",
-        "Roda DÁgua Setor 1"
-      ],
-      "coveragePct": 91
-    },
-    {
-      "label": "Viana",
-      "ours": 18,
-      "theirs": 25,
-      "matched": 16,
-      "onlyOurs": [
-        "Arlindo Angelo Villaschi",
-        "Cannaã"
-      ],
-      "onlyTheirs": [
-        "Área Rural de Viana",
-        "Arlindo Villaschi",
-        "Balneário Ponta da Fruta",
-        "Canaã",
-        "Jucu Setor Ii",
-        "Piapitangui Setor Iii",
-        "Retiro do Congo",
-        "São Paulo Setor Iv",
-        "Vinte e Três de Maio"
-      ],
-      "coveragePct": 64
-    },
     {
       "label": "Barra de São Francisco",
       "ours": 13,
@@ -291,29 +58,6 @@
       "coveragePct": 10
     },
     {
-      "label": "Vitória",
-      "ours": 83,
-      "theirs": 87,
-      "matched": 79,
-      "onlyOurs": [
-        "Carapina I",
-        "De Fátima",
-        "Hélio Ferraz",
-        "Joana D'arc"
-      ],
-      "onlyTheirs": [
-        "Ilha de Monte Belo",
-        "Joana Darc",
-        "Mangue Seco",
-        "Morro São José",
-        "Nossa Senhora da Consolação",
-        "Rio Branco",
-        "São Pedro V",
-        "Vila Maria"
-      ],
-      "coveragePct": 91
-    },
-    {
       "label": "Ecoporanga",
       "ours": 9,
       "theirs": 8,
@@ -338,23 +82,6 @@
         "Santa Luzia do Norte"
       ],
       "coveragePct": 13
-    },
-    {
-      "label": "Aracruz",
-      "ours": 46,
-      "theirs": 50,
-      "matched": 45,
-      "onlyOurs": [
-        "Santa Rosa"
-      ],
-      "onlyTheirs": [
-        "Área Rural de Aracruz",
-        "Distrito De Guaraná",
-        "Distrito De Santa Cruz",
-        "Residencial Solar Bitti",
-        "Residencial Valle Verde"
-      ],
-      "coveragePct": 90
     },
     {
       "label": "Brejetuba",
@@ -532,6 +259,141 @@
         "Centro"
       ],
       "coveragePct": 0
+    },
+    {
+      "label": "Vitória",
+      "ours": 86,
+      "theirs": 87,
+      "matched": 87,
+      "onlyOurs": [
+        "Carapina I",
+        "De Fátima",
+        "Hélio Ferraz",
+        "Joana D'arc"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Vila Velha",
+      "ours": 106,
+      "theirs": 108,
+      "matched": 108,
+      "onlyOurs": [
+        "Residencial Itaparica"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Serra",
+      "ours": 143,
+      "theirs": 145,
+      "matched": 145,
+      "onlyOurs": [
+        "Alterozas",
+        "André Carlone",
+        "Bairro das Laranjeiras",
+        "Bairro de Fátima",
+        "Bairro Novo",
+        "Boa Vista (Carapina)",
+        "Boa Vista (Nova Almeida)",
+        "Centro Industrial do Município",
+        "Cidade Continental",
+        "Condomínio Ecológico Parque da Lagoa",
+        "Costabela",
+        "Lagoa Jacaraípe",
+        "Marbela",
+        "Planalto Carapina",
+        "Planalto Serrano",
+        "Santiago",
+        "São Marcos",
+        "Sítio Irema",
+        "Terminal Intermodal da Serra"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Cariacica",
+      "ours": 109,
+      "theirs": 105,
+      "matched": 105,
+      "onlyOurs": [
+        "Alto da Boa Vista",
+        "Área Não Identificada 1/2",
+        "Área Não Identificada 2/2",
+        "Pica-Pau",
+        "Porto das Pedras",
+        "Porto Engenho",
+        "Porto Santana",
+        "Presidente Médice"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Guarapari",
+      "ours": 68,
+      "theirs": 69,
+      "matched": 69,
+      "onlyOurs": [
+        "Concha D'Ostra"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Linhares",
+      "ours": 33,
+      "theirs": 34,
+      "matched": 34,
+      "onlyOurs": [],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Cachoeiro de Itapemirim",
+      "ours": 89,
+      "theirs": 87,
+      "matched": 87,
+      "onlyOurs": [
+        "Álvaro Tavares (União)",
+        "Dr. Gilberto Machado",
+        "Gilson Carone",
+        "IBC",
+        "Luiz Tinoco da Fonseca (BNH de cima)",
+        "Parque das Laranjeiras",
+        "Presidente Arthur Costa e Silva",
+        "Sta. Cecília",
+        "Sta. Helena",
+        "Waldir Furtado Amorim (BNH de Baixo)"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Viana",
+      "ours": 25,
+      "theirs": 25,
+      "matched": 25,
+      "onlyOurs": [
+        "Arlindo Angelo Villaschi",
+        "Cannaã"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
+    },
+    {
+      "label": "Aracruz",
+      "ours": 49,
+      "theirs": 50,
+      "matched": 50,
+      "onlyOurs": [
+        "Santa Rosa"
+      ],
+      "onlyTheirs": [],
+      "coveragePct": 100
     },
     {
       "label": "Iúna",

@@ -1,0 +1,412 @@
+[
+  {
+    "cidade": "Vitória",
+    "nome": "Mangue Seco",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vitória",
+    "nome": "Rio Branco",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vitória",
+    "nome": "Vila Maria",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Área Rural de Vila Velha",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Chácara Kajó",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Chácara Litorânea",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Imobiliária Capixaba",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "IPESSA",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Itanhangá",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Jardim Praia da Concha",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Morro do Moreno",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Parque Gramado",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Residencial Coqueiral",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Retiro Do Congo",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Solar de Vênus",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Tapuera da Barra",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Vila Maria Ortiz",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Vila Velha",
+    "nome": "Xuri",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Área Rural de Serra",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Boa Vista I",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Boa Vista II",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Calogi",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Chicópolis",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Comunidades Da Sede",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Comunidades De Nova Almeida",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Loteamento Potiguara",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "Queimado",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Serra",
+    "nome": "TIMS",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cariacica",
+    "nome": "Área Rural de Cariacica",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cariacica",
+    "nome": "Biriricas Setor 6",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cariacica",
+    "nome": "Flórida",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cariacica",
+    "nome": "Ibiapaba Setor 5",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cariacica",
+    "nome": "Roda DÁgua Setor 1",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Área Rural de Guarapari",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Baia Nova",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Belo Horizonte",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Buenos Aires",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "José Machado",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Pedro Machado",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Por do Sol",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "Rio Calçado",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Guarapari",
+    "nome": "São João",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Aeroporto",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Área Rural de Linhares",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Bebedouro",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Comunidades De Desengano",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Comunidades De Farias",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Farias",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Povoação",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Residencial Gaivotas",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Vila Capixaba",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Linhares",
+    "nome": "Vila Izabel",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Área Rural de Cachoeiro de Itapemirim",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Basílio Pimenta",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Coutinho",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Distrito Da Sede",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Distrito De Coutinho",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Distrito De Gruta",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Distrito De São Vicente",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Doutor Luiz Tinoco da Fonseca",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Montanha Residencial",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Morro Grande",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Octaviano Facini",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Parque Laranjeiras",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Quilometro 90",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Região De Monte Líbano",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Safra",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Santa Izabel",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Santo Agostinho",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "São José Do Frade",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Sobrado",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Cachoeiro de Itapemirim",
+    "nome": "Urtiga",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "Área Rural de Viana",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "Arlindo Villaschi",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "Balneário Ponta da Fruta",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "Piapitangui Setor Iii",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "Retiro do Congo",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "São Paulo Setor Iv",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Viana",
+    "nome": "Vinte e Três de Maio",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Aracruz",
+    "nome": "Área Rural de Aracruz",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Aracruz",
+    "nome": "Residencial Solar Bitti",
+    "fonte": "cepbrasil"
+  },
+  {
+    "cidade": "Aracruz",
+    "nome": "Residencial Valle Verde",
+    "fonte": "cepbrasil"
+  }
+]

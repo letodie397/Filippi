@@ -1,14 +1,17 @@
 import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { createRequire } from 'module'
 
-const require = createRequire(import.meta.url)
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 
-const neighborhoods = require('brazilian-geographic-data/data/neighborhoods.json')
-const esBairros = neighborhoods.filter((n) => n.state === 'ES')
+const generatedPath = join(root, 'src', 'data', 'es-locations.generated.json')
+if (!existsSync(generatedPath)) {
+  console.error('Rode npm run build:locations primeiro')
+  process.exit(1)
+}
+const generated = JSON.parse(readFileSync(generatedPath, 'utf8'))
+const esBairros = generated.bairros.map((b) => ({ city: b.cidade, name: b.nome }))
 
 const cachePath = join(root, 'data', 'es-coordinates.cache.json')
 const manualPath = join(root, 'data', 'manual-coordinates.json')

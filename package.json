@@ -11,6 +11,8 @@
     "geocode:all": "node scripts/geocode-all-remaining.mjs && npm run build:locations",
     "geocode:missing": "node scripts/geocode-missing.mjs && npm run build:locations",
     "compare:cepbrasil": "node scripts/compare-cepbrasil.mjs",
+    "build:cepbrasil": "node scripts/build-cepbrasil-supplement.mjs",
+    "build:locations:full": "npm run build:cepbrasil && npm run build:locations",
     "geocode:centroids": "node scripts/generate-city-centroids.mjs && npm run build:locations",
     "audit:locations": "node scripts/audit-locations.mjs",
     "test": "npm run test:locations && npm run test:firebase",

@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+import { readFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { searchChurchLocations } from '../../src/data/church-parser.ts'
@@ -96,10 +96,35 @@ for (const city of majorCities) {
 if (citiesWithoutCentroid === 0) pass('Todas as cidades principais têm centroide')
 else fail(`${citiesWithoutCentroid} cidades principais sem centroide`)
 
+const totalBairros = generated.totalBairros ?? BAIRROS_ES.length
 const totalGps = generated.totalComGps ?? 0
-if (totalGps === 772) pass(`Cobertura global GPS: ${totalGps}/772 (100%)`)
-else if (totalGps >= 700) fail(`Cobertura GPS incompleta: ${totalGps}/772 — meta é 100%`)
-else fail(`Cobertura GPS baixa: ${totalGps}/772`)
+if (totalGps === totalBairros) pass(`Cobertura global GPS: ${totalGps}/${totalBairros} (100%)`)
+else fail(`Cobertura GPS incompleta: ${totalGps}/${totalBairros}`)
+
+// 1b. Cobertura CEPBrasil nas cidades principais com bairros
+console.log('\n1b. Cobertura CEPBrasil (cidades com subdivisão)')
+const cepReportPath = join(root, 'data/cepbrasil-comparison.json')
+const CEP_MAIN = ['Vitória', 'Vila Velha', 'Serra', 'Cariacica', 'Guarapari', 'Linhares', 'Cachoeiro de Itapemirim', 'Viana', 'Aracruz']
+if (existsSync(cepReportPath)) {
+  const cepReport = JSON.parse(readFileSync(cepReportPath, 'utf8'))
+  const reports = new Map(
+    (cepReport.cityReports as { label: string; coveragePct: number; onlyTheirs?: string[] }[]).map((r) => [r.label, r])
+  )
+  let below100 = 0
+  for (const city of CEP_MAIN) {
+    const r = reports.get(city)
+    if (!r) continue
+    const pct = r.coveragePct ?? 0
+    if (pct < 95) {
+      below100++
+      console.log(`     ${city}: ${pct}% CEP (${r.onlyTheirs?.length ?? 0} faltando)`)
+    }
+  }
+  if (below100 === 0) pass('Cidades principais com ≥95% dos bairros CEPBrasil')
+  else fail(`${below100} cidades principais abaixo de 95% CEPBrasil`)
+} else {
+  console.log('     (rode npm run compare:cepbrasil para relatório detalhado)')
+}
 
 // 2. Parser de igrejas
 console.log('\n2. Identificação de igrejas por cidade')

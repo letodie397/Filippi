@@ -52,30 +52,52 @@ const esCities = cities
 
 const cachePath = join(__dirname, '..', 'data', 'es-coordinates.cache.json')
 const manualPath = join(__dirname, '..', 'data', 'manual-coordinates.json')
+const supplementPath = join(__dirname, '..', 'data', 'cepbrasil-supplement.json')
+const extraAliasesPath = join(__dirname, '..', 'data', 'cepbrasil-extra-aliases.json')
 const coordCache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : {}
 const manualCoords = existsSync(manualPath) ? JSON.parse(readFileSync(manualPath, 'utf8')) : {}
+const cepSupplement = existsSync(supplementPath) ? JSON.parse(readFileSync(supplementPath, 'utf8')) : []
+const cepExtraAliases = existsSync(extraAliasesPath) ? JSON.parse(readFileSync(extraAliasesPath, 'utf8')) : {}
 const allCoords = { ...coordCache, ...manualCoords }
+
+function buildBairroEntry(nome, cidade, fonte = 'ibge') {
+  const aliases = generateAliases(nome, cidade)
+  const entry = { nome, cidade, fonte }
+  if (aliases.length > 0) entry.aliases = aliases
+
+  const extra = cepExtraAliases[`${cidade}|${nome}`]
+  if (extra?.length) {
+    entry.aliases = [...new Set([...(entry.aliases ?? []), ...extra])]
+  }
+
+  const coords = allCoords[`${cidade}|${nome}`]
+  if (coords?.lat && coords?.lng) {
+    entry.lat = coords.lat
+    entry.lng = coords.lng
+  }
+  if (coords?.aliases?.length) {
+    entry.aliases = [...new Set([...(entry.aliases ?? []), ...coords.aliases])]
+  }
+  return entry
+}
 
 const esNeighborhoods = neighborhoods
   .filter((n) => n.state === ESTADO)
-  .map((n) => {
-    const aliases = generateAliases(n.name, n.city)
-    const entry = { nome: n.name, cidade: n.city }
-    if (aliases.length > 0) entry.aliases = aliases
-    const coords = allCoords[`${n.city}|${n.name}`]
-    if (coords?.lat && coords?.lng) {
-      entry.lat = coords.lat
-      entry.lng = coords.lng
-    }
-    if (coords?.aliases?.length) {
-      entry.aliases = [...new Set([...(entry.aliases ?? []), ...coords.aliases])]
-    }
-    return entry
-  })
-  .sort((a, b) => {
-    const cityCmp = a.cidade.localeCompare(b.cidade, 'pt-BR')
-    return cityCmp !== 0 ? cityCmp : a.nome.localeCompare(b.nome, 'pt-BR')
-  })
+  .map((n) => buildBairroEntry(n.name, n.city, 'ibge'))
+
+const existingKeys = new Set(esNeighborhoods.map((b) => `${b.cidade}|${normalize(b.nome)}`))
+
+for (const item of cepSupplement) {
+  const key = `${item.cidade}|${normalize(item.nome)}`
+  if (existingKeys.has(key)) continue
+  esNeighborhoods.push(buildBairroEntry(item.nome, item.cidade, item.fonte ?? 'cepbrasil'))
+  existingKeys.add(key)
+}
+
+esNeighborhoods.sort((a, b) => {
+  const cityCmp = a.cidade.localeCompare(b.cidade, 'pt-BR')
+  return cityCmp !== 0 ? cityCmp : a.nome.localeCompare(b.nome, 'pt-BR')
+})
 
 const withCoords = esNeighborhoods.filter((b) => b.lat && b.lng)
 
@@ -94,13 +116,18 @@ for (const city of esCities) {
   }
 }
 
+const ibgeCount = esNeighborhoods.filter((b) => b.fonte === 'ibge').length
+const cepCount = esNeighborhoods.filter((b) => b.fonte === 'cepbrasil').length
+
 const output = {
   estado: 'Espírito Santo',
   uf: ESTADO,
-  fonte: 'IBGE via brazilian-geographic-data',
+  fonte: 'IBGE + CEPBrasil',
   geradoEm: new Date().toISOString(),
   totalCidades: esCities.length,
   totalBairros: esNeighborhoods.length,
+  totalBairrosIbge: ibgeCount,
+  totalBairrosCepbrasil: cepCount,
   totalComGps: withCoords.length,
   totalCentroidesCidade: Object.keys(cityCentroids).length,
   cidades: esCities,
@@ -113,7 +140,7 @@ writeFileSync(outPath, JSON.stringify(output))
 
 console.log(`Gerado: ${outPath}`)
 console.log(`  ${esCities.length} cidades`)
-console.log(`  ${esNeighborhoods.length} bairros`)
+console.log(`  ${esNeighborhoods.length} bairros (${ibgeCount} IBGE + ${cepCount} CEPBrasil)`)
 
 const vv = esNeighborhoods.filter((b) => b.cidade === 'Vila Velha')
 const vvCoords = vv.filter((b) => b.lat && b.lng)

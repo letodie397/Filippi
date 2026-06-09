@@ -3195,5 +3195,415 @@
     "lat": -19.8535432,
     "lng": -43.8838711,
     "source": "nominatim"
+  },
+  "Aracruz|Área Rural de Aracruz": {
+    "lat": -19.828274506818186,
+    "lng": -40.222378459090905,
+    "source": "centroide_cidade"
+  },
+  "Aracruz|Residencial Solar Bitti": {
+    "lat": -19.828274506818186,
+    "lng": -40.222378459090905,
+    "source": "centroide_cidade"
+  },
+  "Aracruz|Residencial Valle Verde": {
+    "lat": -19.828274506818186,
+    "lng": -40.222378459090905,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Área Rural de Cachoeiro de Itapemirim": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Basílio Pimenta": {
+    "lat": -20.8494475,
+    "lng": -41.1218152,
+    "source": "nominatim"
+  },
+  "Cachoeiro de Itapemirim|Coutinho": {
+    "lat": -20.7706637,
+    "lng": -41.2001151,
+    "source": "nominatim"
+  },
+  "Cachoeiro de Itapemirim|Distrito Da Sede": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Distrito De Coutinho": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Distrito De Gruta": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Distrito De São Vicente": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Doutor Luiz Tinoco da Fonseca": {
+    "lat": -20.8319928,
+    "lng": -41.1551706,
+    "source": "nominatim"
+  },
+  "Cachoeiro de Itapemirim|Montanha Residencial": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Morro Grande": {
+    "lat": -20.7971309,
+    "lng": -41.1548866,
+    "source": "nominatim"
+  },
+  "Cachoeiro de Itapemirim|Octaviano Facini": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Parque Laranjeiras": {
+    "lat": -20.8456578,
+    "lng": -41.1416624,
+    "source": "nominatim"
+  },
+  "Cachoeiro de Itapemirim|Quilometro 90": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Região De Monte Líbano": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Safra": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Santa Izabel": {
+    "lat": -20.8592146,
+    "lng": -41.1093443,
+    "source": "nominatim"
+  },
+  "Cachoeiro de Itapemirim|Santo Agostinho": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|São José Do Frade": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Sobrado": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "centroide_cidade"
+  },
+  "Cachoeiro de Itapemirim|Urtiga": {
+    "lat": -20.8560019,
+    "lng": -41.0712074,
+    "source": "nominatim"
+  },
+  "Cariacica|Área Rural de Cariacica": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Cariacica|Biriricas Setor 6": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Cariacica|Flórida": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Cariacica|Ibiapaba Setor 5": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Cariacica|Roda DÁgua Setor 1": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Área Rural de Guarapari": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Baia Nova": {
+    "lat": -20.5001138,
+    "lng": -40.5855857,
+    "source": "nominatim"
+  },
+  "Guarapari|Belo Horizonte": {
+    "lat": -20.626516,
+    "lng": -40.446955,
+    "source": "nominatim"
+  },
+  "Guarapari|Buenos Aires": {
+    "lat": -20.5808496,
+    "lng": -40.5408889,
+    "source": "nominatim"
+  },
+  "Guarapari|José Machado": {
+    "lat": -20.6460054,
+    "lng": -40.5172033,
+    "source": "nominatim"
+  },
+  "Guarapari|Pedro Machado": {
+    "lat": -20.6461957,
+    "lng": -40.5132465,
+    "source": "nominatim"
+  },
+  "Guarapari|Por do Sol": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade"
+  },
+  "Guarapari|Rio Calçado": {
+    "lat": -20.5211687,
+    "lng": -40.5422037,
+    "source": "nominatim"
+  },
+  "Guarapari|São João": {
+    "lat": -20.6312769,
+    "lng": -40.6022075,
+    "source": "nominatim"
+  },
+  "Linhares|Aeroporto": {
+    "lat": -19.3598195,
+    "lng": -40.0733051,
+    "source": "nominatim"
+  },
+  "Linhares|Área Rural de Linhares": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "centroide_cidade"
+  },
+  "Linhares|Bebedouro": {
+    "lat": -19.4895736,
+    "lng": -40.0258508,
+    "source": "nominatim"
+  },
+  "Linhares|Comunidades De Desengano": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "centroide_cidade"
+  },
+  "Linhares|Comunidades De Farias": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "centroide_cidade"
+  },
+  "Linhares|Farias": {
+    "lat": -19.2334751,
+    "lng": -39.9865455,
+    "source": "nominatim"
+  },
+  "Linhares|Povoação": {
+    "lat": -19.4698626,
+    "lng": -39.8262164,
+    "source": "nominatim"
+  },
+  "Linhares|Residencial Gaivotas": {
+    "lat": -19.3633539,
+    "lng": -40.0535218,
+    "source": "nominatim"
+  },
+  "Linhares|Vila Capixaba": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "centroide_cidade"
+  },
+  "Linhares|Vila Izabel": {
+    "lat": -19.317741,
+    "lng": -40.070278,
+    "source": "nominatim"
+  },
+  "Serra|Área Rural de Serra": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Serra|Boa Vista I": {
+    "lat": -20.0618563,
+    "lng": -40.1936547,
+    "source": "nominatim"
+  },
+  "Serra|Boa Vista II": {
+    "lat": -20.2364242,
+    "lng": -40.2802052,
+    "source": "nominatim"
+  },
+  "Serra|Calogi": {
+    "lat": -20.0814474,
+    "lng": -40.3972456,
+    "source": "nominatim"
+  },
+  "Serra|Chicópolis": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Serra|Comunidades Da Sede": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Serra|Comunidades De Nova Almeida": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Serra|Loteamento Potiguara": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "centroide_cidade"
+  },
+  "Serra|Queimado": {
+    "lat": -20.1555173,
+    "lng": -40.393073,
+    "source": "nominatim"
+  },
+  "Serra|TIMS": {
+    "lat": -20.2131607,
+    "lng": -40.2970728,
+    "source": "nominatim"
+  },
+  "Viana|Área Rural de Viana": {
+    "lat": -19.479974,
+    "lng": -42.6701833,
+    "source": "nominatim"
+  },
+  "Viana|Arlindo Villaschi": {
+    "lat": -20.3635122,
+    "lng": -40.414263,
+    "source": "nominatim"
+  },
+  "Viana|Balneário Ponta da Fruta": {
+    "lat": -20.3914471,
+    "lng": -40.4966587,
+    "source": "centroide_cidade"
+  },
+  "Viana|Piapitangui Setor Iii": {
+    "lat": -20.3914471,
+    "lng": -40.4966587,
+    "source": "centroide_cidade"
+  },
+  "Viana|Retiro do Congo": {
+    "lat": -20.3914471,
+    "lng": -40.4966587,
+    "source": "centroide_cidade"
+  },
+  "Viana|São Paulo Setor Iv": {
+    "lat": -20.3914471,
+    "lng": -40.4966587,
+    "source": "centroide_cidade"
+  },
+  "Viana|Vinte e Três de Maio": {
+    "lat": -20.3914471,
+    "lng": -40.4966587,
+    "source": "centroide_cidade"
+  },
+  "Vila Velha|Área Rural de Vila Velha": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade"
+  },
+  "Vila Velha|Chácara Kajó": {
+    "lat": -20.454021,
+    "lng": -40.3496504,
+    "source": "nominatim"
+  },
+  "Vila Velha|Chácara Litorânea": {
+    "lat": -20.4521309,
+    "lng": -40.3432167,
+    "source": "nominatim"
+  },
+  "Vila Velha|Imobiliária Capixaba": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade"
+  },
+  "Vila Velha|IPESSA": {
+    "lat": -20.3445755,
+    "lng": -40.3510251,
+    "source": "nominatim"
+  },
+  "Vila Velha|Itanhangá": {
+    "lat": -20.4791098,
+    "lng": -40.350498,
+    "source": "nominatim"
+  },
+  "Vila Velha|Jardim Praia da Concha": {
+    "lat": -20.421117,
+    "lng": -40.3280086,
+    "source": "nominatim"
+  },
+  "Vila Velha|Morro do Moreno": {
+    "lat": -20.3258668,
+    "lng": -40.2771634,
+    "source": "nominatim"
+  },
+  "Vila Velha|Parque Gramado": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade"
+  },
+  "Vila Velha|Residencial Coqueiral": {
+    "lat": -20.3556647,
+    "lng": -40.3050839,
+    "source": "nominatim"
+  },
+  "Vila Velha|Retiro Do Congo": {
+    "lat": -20.4639627,
+    "lng": -40.3657345,
+    "source": "nominatim"
+  },
+  "Vila Velha|Solar de Vênus": {
+    "lat": -20.4892868,
+    "lng": -40.3578938,
+    "source": "nominatim"
+  },
+  "Vila Velha|Tapuera da Barra": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade"
+  },
+  "Vila Velha|Vila Maria Ortiz": {
+    "lat": -20.4240958,
+    "lng": -40.3290506,
+    "source": "nominatim"
+  },
+  "Vila Velha|Xuri": {
+    "lat": -20.4778128,
+    "lng": -40.433649,
+    "source": "nominatim"
+  },
+  "Vitória|Mangue Seco": {
+    "lat": -20.2848445,
+    "lng": -40.3099483,
+    "source": "nominatim"
+  },
+  "Vitória|Rio Branco": {
+    "lat": -20.3062403,
+    "lng": -40.3020766,
+    "source": "nominatim"
+  },
+  "Vitória|Vila Maria": {
+    "lat": -20.3112833,
+    "lng": -40.3170354,
+    "source": "nominatim"
   }
 }
