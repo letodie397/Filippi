@@ -5,10 +5,7 @@
   "type": "module",
   "scripts": {
     "build:locations": "node scripts/build-locations.mjs",
-    "geocode:locations": "node scripts/geocode-locations.mjs --all",
-    "geocode:locations:batch": "node scripts/geocode-locations.mjs",
     "geocode:vila-velha": "node scripts/geocode-city.mjs \"Vila Velha\" && npm run build:locations",
-    "geocode:all": "node scripts/geocode-all-remaining.mjs && npm run build:locations",
     "geocode:missing": "node scripts/geocode-missing.mjs && npm run build:locations",
     "compare:cepbrasil": "node scripts/compare-cepbrasil.mjs",
     "build:cepbrasil": "node scripts/build-cepbrasil-supplement.mjs",

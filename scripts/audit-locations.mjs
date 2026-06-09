@@ -1,70 +1,46 @@
 import { readFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { createRequire } from 'module'
 
-const require = createRequire(import.meta.url)
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
-
-const neighborhoods = require('brazilian-geographic-data/data/neighborhoods.json')
-const esBairros = neighborhoods.filter((n) => n.state === 'ES')
-
-const cachePath = join(root, 'data', 'es-coordinates.cache.json')
-const manualPath = join(root, 'data', 'manual-coordinates.json')
 const generatedPath = join(root, 'src', 'data', 'es-locations.generated.json')
-const centroidsPath = join(root, 'data', 'city-centroids.json')
 
-const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : {}
-const manual = existsSync(manualPath) ? JSON.parse(readFileSync(manualPath, 'utf8')) : {}
-const allCoords = { ...cache, ...manual }
-const centroids = existsSync(centroidsPath) ? JSON.parse(readFileSync(centroidsPath, 'utf8')) : {}
-
-const byCity = {}
-for (const b of esBairros) {
-  if (!byCity[b.city]) byCity[b.city] = { total: 0, gps: 0, missing: [] }
-  byCity[b.city].total++
-  if (allCoords[`${b.city}|${b.name}`]) {
-    byCity[b.city].gps++
-  } else {
-    byCity[b.city].missing.push(b.name)
-  }
+if (!existsSync(generatedPath)) {
+  console.error('Rode npm run build:locations primeiro')
+  process.exit(1)
 }
 
-const totalGps = Object.values(allCoords).length
-const citiesWithCentroid = Object.keys(centroids).length
+const gen = JSON.parse(readFileSync(generatedPath, 'utf8'))
+const byCity = {}
+
+for (const b of gen.bairros) {
+  if (!byCity[b.cidade]) byCity[b.cidade] = { total: 0, gps: 0, ibge: 0, cep: 0, missing: [] }
+  byCity[b.cidade].total++
+  if (b.fonte === 'cepbrasil') byCity[b.cidade].cep++
+  else byCity[b.cidade].ibge++
+  if (b.lat && b.lng) byCity[b.cidade].gps++
+  else byCity[b.cidade].missing.push(b.nome)
+}
 
 console.log('=== Auditoria de Localidades ES ===\n')
-console.log(`Bairros IBGE: ${esBairros.length}`)
-console.log(`Com GPS direto: ${totalGps}`)
-console.log(`Centroides cidade: ${citiesWithCentroid}/78`)
-console.log(`Cobertura GPS bairro: ${((totalGps / esBairros.length) * 100).toFixed(1)}%\n`)
+console.log(`Bairros: ${gen.totalBairros} (${gen.totalBairrosIbge ?? '?'} IBGE + ${gen.totalBairrosCepbrasil ?? '?'} CEPBrasil)`)
+console.log(`GPS: ${gen.totalComGps}/${gen.totalBairros}`)
+console.log(`Centroides cidade: ${gen.totalCentroidesCidade ?? Object.keys(gen.centroidesCidade ?? {}).length}/78\n`)
 
-const lowCoverage = Object.entries(byCity)
-  .map(([city, data]) => ({ city, ...data, pct: (data.gps / data.total) * 100 }))
-  .filter((c) => c.pct < 50)
-  .sort((a, b) => a.pct - b.pct)
-
-if (lowCoverage.length > 0) {
-  console.log('Cidades com menos de 50% dos bairros com GPS:')
-  for (const c of lowCoverage) {
-    const hasCentroid = centroids[c.city] ? 'sim' : 'NÃO'
-    console.log(`  ${c.city}: ${c.gps}/${c.total} (${c.pct.toFixed(0)}%) — centroide: ${hasCentroid}`)
-  }
-  console.log('')
+const major = ['Vitória', 'Vila Velha', 'Serra', 'Cariacica', 'Guarapari', 'Linhares', 'Colatina', 'Cachoeiro de Itapemirim']
+for (const city of major) {
+  const data = byCity[city]
+  if (!data) continue
+  const pct = ((data.gps / data.total) * 100).toFixed(0)
+  console.log(`  ${city}: ${data.gps}/${data.total} GPS (${pct}%) — IBGE ${data.ibge} + CEP ${data.cep}`)
 }
 
-const vv = byCity['Vila Velha']
-if (vv) {
-  console.log(`Vila Velha: ${vv.gps}/${vv.total} bairros com GPS`)
-  if (vv.missing.length > 0 && vv.missing.length <= 20) {
-    console.log(`  Sem GPS: ${vv.missing.join(', ')}`)
-  } else if (vv.missing.length > 20) {
-    console.log(`  Sem GPS (${vv.missing.length}): ${vv.missing.slice(0, 10).join(', ')}...`)
-  }
-}
-
-if (existsSync(generatedPath)) {
-  const gen = JSON.parse(readFileSync(generatedPath, 'utf8'))
-  console.log(`\nJSON gerado: ${gen.totalComGps ?? '?'} bairros GPS, ${gen.totalCentroidesCidade ?? '?'} centroides`)
+const missing = gen.bairros.filter((b) => !b.lat || !b.lng)
+if (missing.length > 0) {
+  console.log(`\nSem GPS (${missing.length}):`)
+  for (const b of missing.slice(0, 15)) console.log(`  ${b.cidade}|${b.nome}`)
+  if (missing.length > 15) console.log(`  ... e mais ${missing.length - 15}`)
+} else {
+  console.log('\nTodos os bairros têm coordenadas.')
 }

@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Relatórios gerados (npm run compare:cepbrasil)
+data/cepbrasil-comparison.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

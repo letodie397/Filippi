@@ -59,10 +59,10 @@ Para habilitar o Pages pela primeira vez: **Settings → Pages → Source: GitHu
 ## Scripts úteis
 
 ```bash
-npm run build:locations   # regenera base de bairros/cidades
-npm run audit:locations   # audita cobertura GPS
-npm run geocode:all       # geocodifica bairros faltantes
-npm run test              # testes de mapa + Firebase
-npm run test:locations    # só localização/GPS
-npm run test:firebase     # só leitura/escrita/concorrência Firebase
+npm run build:locations:full  # CEPBrasil + IBGE → JSON do app
+npm run build:locations       # só rebuild a partir dos dados em data/
+npm run geocode:missing       # GPS dos bairros sem coordenada
+npm run compare:cepbrasil     # relatório de cobertura (gerado em data/, não versionado)
+npm run audit:locations       # resumo rápido de GPS por cidade
+npm run test                  # testes de mapa + Firebase
 ```
