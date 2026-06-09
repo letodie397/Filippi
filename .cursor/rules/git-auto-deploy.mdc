@@ -1,0 +1,32 @@
+---
+description: Commit e push automáticos no GitHub após cada alteração
+alwaysApply: true
+---
+
+# Git e deploy automático
+
+Este projeto está publicado em **https://letodie397.github.io/Filippi/** via GitHub Pages (branch `main`, workflow `.github/workflows/deploy.yml`).
+
+## Obrigatório após concluir qualquer tarefa com mudanças no código
+
+1. **Incrementar versão** em `src/config/version.ts` (`APP_VERSION` patch + `APP_BUILD` com data/letra)
+2. **Rodar build** se alterou código ou dados (`npm run build` ou `npm run build:locations` quando aplicável)
+3. **Git automático** — sem pedir confirmação ao usuário:
+   - `git status` e `git diff` para revisar
+   - `git add` dos arquivos relevantes (nunca `.env`, credenciais ou secrets)
+   - `git commit` com mensagem clara em português ou inglês (1–2 frases, foco no porquê)
+   - `git push origin main`
+4. Se o push falhar por autenticação, informar o usuário e deixar o commit local pronto
+
+## Convenções
+
+- Remote: `https://github.com/letodie397/Filippi.git`
+- Branch: `main`
+- Build Pages usa base `/Filippi/` (`npm run build:pages` no CI)
+- Não usar `git push --force` em `main`
+- Não alterar `git config`
+
+## Quando não commitar
+
+- Apenas perguntas/explicações sem editar arquivos
+- Usuário pedir explicitamente para não commitar
