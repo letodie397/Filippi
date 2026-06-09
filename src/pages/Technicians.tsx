@@ -156,8 +156,8 @@ export function Technicians() {
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Prestadores de Serviço</h1>
-          <p className="text-gray-500 mt-1">Gerencie técnicos e suas áreas de atendimento</p>
+          <h1 className="text-xl lg:text-2xl font-bold text-gray-900">Prestadores de Serviço</h1>
+          <p className="text-gray-500 mt-1 text-sm">Gerencie técnicos e suas áreas de atendimento</p>
         </div>
         <Button onClick={openCreate}>
           <Plus size={18} />
@@ -178,7 +178,7 @@ export function Technicians() {
           </Button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {technicians.map((tech) => (
             <div
               key={tech.id}

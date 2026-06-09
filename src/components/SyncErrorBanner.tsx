@@ -19,7 +19,7 @@ export function SyncErrorBanner() {
   }
 
   return (
-    <div className="mx-4 lg:mx-8 mt-3 p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-900">
+    <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-900">
       <div className="flex items-start gap-3">
         <AlertTriangle className="shrink-0 text-red-500 mt-0.5" size={18} />
         <div className="space-y-3 min-w-0">

@@ -14,6 +14,7 @@ import { Select } from '../components/ui/Select'
 import { AlertBanner } from '../components/ui/AlertBanner'
 import { ConfidenceBadge } from '../components/ui/Badge'
 import { LocationSuggestions } from '../components/LocationSuggestions'
+import { PageContainer } from '../components/PageContainer'
 import type { ChurchIdentification, ChurchIdentificationCandidate, ConflictAlert } from '../types'
 
 export function NewOrder() {
@@ -156,9 +157,9 @@ export function NewOrder() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
+    <PageContainer size="narrow" className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Novo Pedido</h1>
+        <h1 className="text-xl lg:text-2xl font-bold text-gray-900">Novo Pedido</h1>
         <p className="text-gray-500 mt-1">
           Cadastre um pedido informando o número e o nome da igreja
         </p>
@@ -371,6 +372,6 @@ export function NewOrder() {
           </div>
         </div>
       )}
-    </div>
+    </PageContainer>
   )
 }

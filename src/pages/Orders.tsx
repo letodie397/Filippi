@@ -60,8 +60,8 @@ export function Orders() {
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Pedidos</h1>
-          <p className="text-gray-500 mt-1">Lista de todos os pedidos cadastrados</p>
+          <h1 className="text-xl lg:text-2xl font-bold text-gray-900">Pedidos</h1>
+          <p className="text-gray-500 mt-1 text-sm">Lista de todos os pedidos cadastrados</p>
         </div>
         <Link to="/pedidos/novo">
           <Button>
@@ -112,30 +112,30 @@ export function Orders() {
           </p>
         </div>
       ) : (
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+        <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full">
+            <table className="w-full text-sm">
               <thead>
                 <tr className="bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  <th className="px-6 py-3">Pedido</th>
-                  <th className="px-6 py-3">Igreja</th>
-                  <th className="px-6 py-3">Localização</th>
-                  <th className="px-6 py-3">Técnico</th>
-                  <th className="px-6 py-3">Status</th>
-                  <th className="px-6 py-3">Data</th>
-                  <th className="px-6 py-3"></th>
+                  <th className="px-4 lg:px-5 py-3">Pedido</th>
+                  <th className="px-4 lg:px-5 py-3">Igreja</th>
+                  <th className="px-4 lg:px-5 py-3 hidden md:table-cell">Localização</th>
+                  <th className="px-4 lg:px-5 py-3 hidden lg:table-cell">Técnico</th>
+                  <th className="px-4 lg:px-5 py-3">Status</th>
+                  <th className="px-4 lg:px-5 py-3 hidden sm:table-cell">Data</th>
+                  <th className="px-4 lg:px-5 py-3 w-10"></th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-50">
                 {filtered.map((order) => (
                   <tr key={order.id} className="hover:bg-gray-50">
-                    <td className="px-6 py-4">
+                    <td className="px-4 lg:px-5 py-3.5">
                       <span className="font-semibold text-icm-red-700">#{order.numeroPedido}</span>
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-900 max-w-[200px] truncate">
+                    <td className="px-4 lg:px-5 py-3.5 text-gray-900 max-w-[180px] truncate">
                       {order.nomeIgreja}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-4 lg:px-5 py-3.5 hidden md:table-cell">
                       {order.bairroIdentificado || order.cidadeIdentificada ? (
                         <div className="flex items-center gap-1.5 text-sm text-gray-600">
                           <MapPin size={14} className="text-gray-400 shrink-0" />
@@ -149,10 +149,10 @@ export function Orders() {
                         <span className="text-sm text-gray-400">Não identificada</span>
                       )}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-600">
+                    <td className="px-4 lg:px-5 py-3.5 text-gray-600 hidden lg:table-cell">
                       {order.technicianName ?? '—'}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-4 lg:px-5 py-3.5">
                       <select
                         value={order.status}
                         onChange={(e) =>
@@ -170,10 +170,10 @@ export function Orders() {
                         <StatusBadge status={order.status} />
                       </div>
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500 whitespace-nowrap">
+                    <td className="px-4 lg:px-5 py-3.5 text-gray-500 whitespace-nowrap hidden sm:table-cell">
                       {new Date(order.createdAt).toLocaleDateString('pt-BR')}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-4 lg:px-5 py-3.5">
                       <button
                         onClick={() => handleDelete(order.id)}
                         className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg"
