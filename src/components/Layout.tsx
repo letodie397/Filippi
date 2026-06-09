@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import { APP_VERSION, APP_BUILD } from '../config/version'
 import { SyncIndicator } from './SyncIndicator'
+import { SyncErrorBanner } from './SyncErrorBanner'
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
@@ -122,8 +123,11 @@ export function Layout() {
           </div>
         </header>
 
-        <main className="flex-1 p-4 lg:p-8 overflow-auto pb-24 lg:pb-8">
-          <Outlet />
+        <main className="flex-1 overflow-auto pb-24 lg:pb-8">
+          <SyncErrorBanner />
+          <div className="p-4 lg:p-8">
+            <Outlet />
+          </div>
         </main>
 
         <nav className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-gray-200 safe-bottom">

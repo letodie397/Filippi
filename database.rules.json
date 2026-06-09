@@ -2,34 +2,7 @@
   "rules": {
     "icm": {
       ".read": true,
-      ".write": true,
-      "meta": {
-        ".read": true,
-        ".write": true
-      },
-      "technicians": {
-        ".read": true,
-        ".write": true,
-        "$id": {
-          ".validate": "newData.hasChildren(['name', 'phone', 'createdAt'])"
-        }
-      },
-      "orders": {
-        ".read": true,
-        ".write": true,
-        "$id": {
-          ".validate": "newData.hasChildren(['numeroPedido', 'nomeIgreja', 'status', 'createdAt'])"
-        }
-      },
-      "indexes": {
-        ".read": true,
-        ".write": true,
-        "pedidos": {
-          "$numero": {
-            ".validate": "newData.isString()"
-          }
-        }
-      }
+      ".write": true
     }
   }
 }

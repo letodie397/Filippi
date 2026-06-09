@@ -4,6 +4,7 @@ import { database } from './config'
 import { paths } from './paths'
 import { mapSnapshotToArray } from './sanitize'
 import { migrateLocalData } from './repository'
+import { getFirebaseErrorMessage } from './errors'
 import { db } from '../db'
 import type { Technician, Order, SyncStatus } from '../types'
 
@@ -63,9 +64,7 @@ export function FirebaseProvider({ children }: { children: ReactNode }) {
         console.error('[ICM] Bootstrap Firebase:', error)
         if (!cancelled) {
           setHasError(true)
-          setSyncError(
-            'Não foi possível conectar ao Firebase. Verifique se o Realtime Database foi criado no console.'
-          )
+          setSyncError(getFirebaseErrorMessage(error))
         }
       }
     }
@@ -93,9 +92,7 @@ export function FirebaseProvider({ children }: { children: ReactNode }) {
         console.error('[ICM] Erro ao ler prestadores:', error)
         if (!cancelled) {
           setHasError(true)
-          setSyncError(
-            'Erro ao ler prestadores. Confira se o Realtime Database está ativo e as regras permitem leitura em /icm.'
-          )
+          setSyncError(getFirebaseErrorMessage(error))
         }
       }
     )
@@ -117,9 +114,7 @@ export function FirebaseProvider({ children }: { children: ReactNode }) {
         console.error('[ICM] Erro ao ler pedidos:', error)
         if (!cancelled) {
           setHasError(true)
-          setSyncError(
-            'Erro ao ler pedidos. Confira se o Realtime Database está ativo e as regras permitem leitura em /icm.'
-          )
+          setSyncError(getFirebaseErrorMessage(error))
         }
       }
     )
