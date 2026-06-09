@@ -59,11 +59,13 @@ export interface ConflictAlert {
   severity: 'warning' | 'info' | 'error'
 }
 
-export type MatchType = 'exato' | 'prefixo' | 'palavra' | 'parcial'
+export type MatchType = 'exato' | 'prefixo' | 'palavra' | 'parcial' | 'historico'
 
 export interface ChurchIdentification {
   bairro?: string
   cidade?: string
+  /** Nome antigo/extinto quando a localização foi resolvida via bairro histórico */
+  bairroHistorico?: string
   confidence: 'alta' | 'media' | 'baixa'
   matchedFrom: string
   matchType?: MatchType

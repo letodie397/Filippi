@@ -32,6 +32,18 @@ const CHURCH_CASES: TestCase[] = [
   { name: 'Cachoeiro - Centro', input: 'cachoeiro centro 1', expectCidade: 'Cachoeiro de Itapemirim', minConfidence: 'baixa' },
   { name: 'Viana - Centro', input: 'viana centro 1', expectCidade: 'Viana', minConfidence: 'baixa' },
   { name: 'Vila Velha - Ponta da Fruta', input: 'balneario 1', expectCidade: 'Vila Velha', minConfidence: 'media' },
+  {
+    name: 'Vila Velha - Ilha da Jussara (histórico)',
+    input: 'ilha da jussara 1',
+    expectBairro: 'Ulisses Guimarães',
+    expectCidade: 'Vila Velha',
+  },
+  {
+    name: 'Vila Velha - Jussara (histórico)',
+    input: 'jussara 2',
+    expectBairro: 'Ulisses Guimarães',
+    expectCidade: 'Vila Velha',
+  },
 ]
 
 const PROXIMITY_CASES = [

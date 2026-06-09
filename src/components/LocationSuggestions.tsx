@@ -7,6 +7,7 @@ const matchTypeLabel = {
   prefixo: 'Início do nome',
   palavra: 'Primeira palavra',
   parcial: 'Correspondência parcial',
+  historico: 'Bairro histórico',
 }
 
 interface LocationSuggestionsProps {
@@ -70,11 +71,19 @@ export function LocationSuggestions({
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-medium text-gray-900">{suggestion.bairro}</span>
                     <ConfidenceBadge confidence={suggestion.confidence} />
-                    <span className="text-xs text-gray-400">
-                      {matchTypeLabel[suggestion.matchType]}
-                    </span>
+                    {suggestion.matchType && (
+                      <span className="text-xs text-gray-400">
+                        {matchTypeLabel[suggestion.matchType]}
+                      </span>
+                    )}
                   </div>
                   <p className="text-sm text-gray-500 mt-0.5">{suggestion.cidade} — ES</p>
+                  {suggestion.bairroHistorico && suggestion.bairroHistorico !== suggestion.bairro && (
+                    <p className="text-xs text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-2 py-1 mt-1.5">
+                      Nome antigo da igreja: <strong>{suggestion.bairroHistorico}</strong> → hoje{' '}
+                      {suggestion.bairro}
+                    </p>
+                  )}
                   <p className="text-xs text-gray-400 mt-1">
                     Correspondência: "{suggestion.matchedFrom}"
                   </p>

@@ -54,10 +54,12 @@ const cachePath = join(__dirname, '..', 'data', 'es-coordinates.cache.json')
 const manualPath = join(__dirname, '..', 'data', 'manual-coordinates.json')
 const supplementPath = join(__dirname, '..', 'data', 'cepbrasil-supplement.json')
 const extraAliasesPath = join(__dirname, '..', 'data', 'cepbrasil-extra-aliases.json')
+const historicalPath = join(__dirname, '..', 'data', 'historical-bairros.json')
 const coordCache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : {}
 const manualCoords = existsSync(manualPath) ? JSON.parse(readFileSync(manualPath, 'utf8')) : {}
 const cepSupplement = existsSync(supplementPath) ? JSON.parse(readFileSync(supplementPath, 'utf8')) : []
 const cepExtraAliases = existsSync(extraAliasesPath) ? JSON.parse(readFileSync(extraAliasesPath, 'utf8')) : {}
+const historicalBairros = existsSync(historicalPath) ? JSON.parse(readFileSync(historicalPath, 'utf8')) : []
 const allCoords = { ...coordCache, ...manualCoords }
 
 function buildBairroEntry(nome, cidade, fonte = 'ibge') {
@@ -92,6 +94,15 @@ for (const item of cepSupplement) {
   if (existingKeys.has(key)) continue
   esNeighborhoods.push(buildBairroEntry(item.nome, item.cidade, item.fonte ?? 'cepbrasil'))
   existingKeys.add(key)
+}
+
+for (const h of historicalBairros) {
+  const target = esNeighborhoods.find(
+    (b) => b.cidade === h.cidade && b.nome === h.bairroAtual
+  )
+  if (!target) continue
+  const histNames = [h.historico, ...(h.aliases ?? [])]
+  target.aliases = [...new Set([...(target.aliases ?? []), ...histNames])]
 }
 
 esNeighborhoods.sort((a, b) => {

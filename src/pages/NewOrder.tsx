@@ -88,6 +88,7 @@ export function NewOrder() {
     setSelectedLocation({
       bairro: candidate.bairro,
       cidade: candidate.cidade,
+      bairroHistorico: candidate.bairroHistorico,
       confidence: candidate.confidence,
       matchedFrom: candidate.matchedFrom,
       matchType: candidate.matchType,
@@ -244,6 +245,13 @@ export function NewOrder() {
                   </p>
                 </div>
               </div>
+              {identification.bairroHistorico &&
+                identification.bairroHistorico !== identification.bairro && (
+                  <p className="text-xs text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-2 py-1.5 mt-3">
+                    Igreja com nome de bairro antigo: <strong>{identification.bairroHistorico}</strong>{' '}
+                    (hoje {identification.bairro}, {identification.cidade})
+                  </p>
+                )}
               <p className="text-xs text-icm-red-600 mt-2">
                 Correspondência: "{identification.matchedFrom}"
                 {identification.matchType && ` (${identification.matchType})`}

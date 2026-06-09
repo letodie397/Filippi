@@ -1,4 +1,5 @@
 import { BAIRROS_ES, CIDADES_ES } from './es-locations'
+import { findHistoricalBairro } from './historical-bairros'
 import type {
   ChurchIdentification,
   ChurchIdentificationCandidate,
@@ -224,9 +225,28 @@ function dedupeCandidates(candidates: RawCandidate[]): RawCandidate[] {
 }
 
 function toConfidence(score: number, matchType: MatchType): 'alta' | 'media' | 'baixa' {
-  if (matchType === 'exato' || score >= 90) return 'alta'
+  if (matchType === 'historico' || matchType === 'exato' || score >= 90) return 'alta'
   if (matchType === 'prefixo' || matchType === 'palavra' || score >= 60) return 'media'
   return 'baixa'
+}
+
+function historicalCandidate(
+  query: string,
+  cidadeHint?: string
+): ChurchIdentificationCandidate | undefined {
+  const hit = findHistoricalBairro(query, cidadeHint)
+  if (!hit) return undefined
+
+  const cityBonus = CITY_PRIORITY[hit.cidade] ?? 0
+  return {
+    bairro: hit.bairroAtual,
+    cidade: hit.cidade,
+    bairroHistorico: hit.historico,
+    confidence: 'alta',
+    matchedFrom: hit.matchedFrom,
+    matchType: 'historico',
+    score: 120 + hit.matchedFrom.length + cityBonus,
+  }
 }
 
 function candidateToIdentification(c: RawCandidate): ChurchIdentificationCandidate {
@@ -250,6 +270,8 @@ export function searchChurchLocations(nomeIgreja: string): ChurchSearchResult {
 
   const cidadeHint = findCityInText(cleaned) ?? findCityInText(nomeIgreja)
 
+  const historical = historicalCandidate(cleaned, cidadeHint) ?? historicalCandidate(query, cidadeHint)
+
   function collectMatches(filterByCity?: string) {
     const results: RawCandidate[] = []
     for (const bairro of BAIRROS_ES) {
@@ -268,9 +290,20 @@ export function searchChurchLocations(nomeIgreja: string): ChurchSearchResult {
     raw.push(...collectMatches())
   }
 
-  const suggestions = dedupeCandidates(raw)
+  let suggestions = dedupeCandidates(raw)
     .slice(0, MAX_SUGGESTIONS)
     .map(candidateToIdentification)
+
+  if (historical) {
+    suggestions = [
+      historical,
+      ...suggestions.filter(
+        (s) =>
+          normalize(s.bairro) !== normalize(historical.bairro) ||
+          normalize(s.cidade) !== normalize(historical.cidade)
+      ),
+    ].slice(0, MAX_SUGGESTIONS)
+  }
 
   const best = suggestions[0]
   const second = suggestions[1]

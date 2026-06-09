@@ -66,3 +66,7 @@ npm run compare:cepbrasil     # relatório de cobertura (gerado em data/, não v
 npm run audit:locations       # resumo rápido de GPS por cidade
 npm run test                  # testes de mapa + Firebase
 ```
+
+### Bairros históricos (nomes antigos de igrejas)
+
+Igrejas antigas podem manter nomes de bairros extintos. Cadastre em `data/historical-bairros.json` (ex.: Ilha da Jussara → Ulisses Guimarães, Vila Velha).

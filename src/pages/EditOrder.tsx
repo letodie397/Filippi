@@ -108,6 +108,7 @@ export function EditOrder() {
     setSelectedLocation({
       bairro: candidate.bairro,
       cidade: candidate.cidade,
+      bairroHistorico: candidate.bairroHistorico,
       confidence: candidate.confidence,
       matchedFrom: candidate.matchedFrom,
       matchType: candidate.matchType,

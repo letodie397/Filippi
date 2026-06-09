@@ -1,4 +1,5 @@
 import locationsData from './es-locations.generated.json'
+import { resolveHistoricalCoordinates } from './historical-bairros'
 import type { Coordinates } from './geo-utils'
 import { bairroKey } from './geo-utils'
 
@@ -46,6 +47,11 @@ for (const b of BAIRROS_ES) {
 }
 
 export function getBairroCoordinates(cidade: string, bairro: string): Coordinates | undefined {
+  const resolved = resolveHistoricalCoordinates(cidade, bairro)
+  if (resolved) {
+    return getBairroCoordinates(resolved.cidade, resolved.bairro)
+  }
+
   const direct = coordinatesIndex.get(bairroKey(cidade, bairro))
   if (direct) return direct
 
