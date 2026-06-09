@@ -1,0 +1,398 @@
+{
+  "Alegre": {
+    "lat": -20.780724338888884,
+    "lng": -41.52549845,
+    "source": "media_bairros",
+    "count": 18
+  },
+  "Aracruz": {
+    "lat": -19.828274506818186,
+    "lng": -40.222378459090905,
+    "source": "media_bairros",
+    "count": 44
+  },
+  "Barra de São Francisco": {
+    "lat": -18.757571846153844,
+    "lng": -40.892306161538464,
+    "source": "media_bairros",
+    "count": 13
+  },
+  "Brejetuba": {
+    "lat": -20.1268295,
+    "lng": -41.29597033333333,
+    "source": "media_bairros",
+    "count": 3
+  },
+  "Cachoeiro de Itapemirim": {
+    "lat": -20.8535863,
+    "lng": -41.124172428571434,
+    "source": "media_bairros",
+    "count": 7
+  },
+  "Vila Velha": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "media_bairros",
+    "count": 50
+  },
+  "Afonso Cláudio": {
+    "lat": -20.0744817,
+    "lng": -41.1251335,
+    "source": "geocode_cidade"
+  },
+  "Águia Branca": {
+    "lat": -18.9847265,
+    "lng": -40.7391844,
+    "source": "geocode_cidade"
+  },
+  "Água Doce do Norte": {
+    "lat": -18.54822,
+    "lng": -40.979012,
+    "source": "geocode_cidade"
+  },
+  "Alfredo Chaves": {
+    "lat": -20.6356507,
+    "lng": -40.7484424,
+    "source": "geocode_cidade"
+  },
+  "Alto Rio Novo": {
+    "lat": -19.0577208,
+    "lng": -41.0171518,
+    "source": "geocode_cidade"
+  },
+  "Anchieta": {
+    "lat": -20.8057672,
+    "lng": -40.6454564,
+    "source": "geocode_cidade"
+  },
+  "Apiacá": {
+    "lat": -21.152272,
+    "lng": -41.569297,
+    "source": "geocode_cidade"
+  },
+  "Atílio Vivácqua": {
+    "lat": -20.9156033,
+    "lng": -41.1945658,
+    "source": "geocode_cidade"
+  },
+  "Baixo Guandu": {
+    "lat": -19.5138322,
+    "lng": -41.0182089,
+    "source": "geocode_cidade"
+  },
+  "Boa Esperança": {
+    "lat": -18.5395472,
+    "lng": -40.2904088,
+    "source": "geocode_cidade"
+  },
+  "Bom Jesus do Norte": {
+    "lat": -21.1254776,
+    "lng": -41.6711646,
+    "source": "geocode_cidade"
+  },
+  "Cariacica": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "geocode_cidade"
+  },
+  "Castelo": {
+    "lat": -20.6022098,
+    "lng": -41.2032124,
+    "source": "geocode_cidade"
+  },
+  "Colatina": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "geocode_cidade"
+  },
+  "Conceição da Barra": {
+    "lat": -18.5841421,
+    "lng": -39.7371844,
+    "source": "geocode_cidade"
+  },
+  "Conceição do Castelo": {
+    "lat": -20.3601311,
+    "lng": -41.2470343,
+    "source": "geocode_cidade"
+  },
+  "Divino de São Lourenço": {
+    "lat": -20.6224575,
+    "lng": -41.6853124,
+    "source": "geocode_cidade"
+  },
+  "Domingos Martins": {
+    "lat": -20.3646483,
+    "lng": -40.6585797,
+    "source": "geocode_cidade"
+  },
+  "Dores do Rio Preto": {
+    "lat": -20.6907113,
+    "lng": -41.846385,
+    "source": "geocode_cidade"
+  },
+  "Ecoporanga": {
+    "lat": -18.3720918,
+    "lng": -40.8321351,
+    "source": "geocode_cidade"
+  },
+  "Fundão": {
+    "lat": -19.9332174,
+    "lng": -40.4049674,
+    "source": "geocode_cidade"
+  },
+  "Governador Lindenberg": {
+    "lat": -19.250788,
+    "lng": -40.4630612,
+    "source": "geocode_cidade"
+  },
+  "Guaçuí": {
+    "lat": -20.7718645,
+    "lng": -41.6754813,
+    "source": "geocode_cidade"
+  },
+  "Guarapari": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "geocode_cidade"
+  },
+  "Ibatiba": {
+    "lat": -20.2342792,
+    "lng": -41.5082981,
+    "source": "geocode_cidade"
+  },
+  "Ibiraçu": {
+    "lat": -19.8309496,
+    "lng": -40.3686594,
+    "source": "geocode_cidade"
+  },
+  "Ibitirama": {
+    "lat": -20.5394377,
+    "lng": -41.6644451,
+    "source": "geocode_cidade"
+  },
+  "Iconha": {
+    "lat": -20.7935003,
+    "lng": -40.8108852,
+    "source": "geocode_cidade"
+  },
+  "Irupi": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "geocode_cidade"
+  },
+  "Itaguaçu": {
+    "lat": -19.8032523,
+    "lng": -40.8564458,
+    "source": "geocode_cidade"
+  },
+  "Itapemirim": {
+    "lat": -21.0105534,
+    "lng": -40.8351239,
+    "source": "geocode_cidade"
+  },
+  "Itarana": {
+    "lat": -19.8748185,
+    "lng": -40.8762716,
+    "source": "geocode_cidade"
+  },
+  "Iúna": {
+    "lat": -20.3427029,
+    "lng": -41.5360386,
+    "source": "geocode_cidade"
+  },
+  "Jaguaré": {
+    "lat": -18.9058375,
+    "lng": -40.0710964,
+    "source": "geocode_cidade"
+  },
+  "Jerônimo Monteiro": {
+    "lat": -20.7881687,
+    "lng": -41.3920954,
+    "source": "geocode_cidade"
+  },
+  "João Neiva": {
+    "lat": -19.7570307,
+    "lng": -40.3856633,
+    "source": "geocode_cidade"
+  },
+  "Laranja da Terra": {
+    "lat": -19.9000548,
+    "lng": -41.0567612,
+    "source": "geocode_cidade"
+  },
+  "Linhares": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "geocode_cidade"
+  },
+  "Mantenópolis": {
+    "lat": -18.8626177,
+    "lng": -41.1224012,
+    "source": "geocode_cidade"
+  },
+  "Marataízes": {
+    "lat": -21.0443673,
+    "lng": -40.8272204,
+    "source": "geocode_cidade"
+  },
+  "Marechal Floriano": {
+    "lat": -20.4124966,
+    "lng": -40.6749858,
+    "source": "geocode_cidade"
+  },
+  "Marilândia": {
+    "lat": -19.4117824,
+    "lng": -40.5442916,
+    "source": "geocode_cidade"
+  },
+  "Mimoso do Sul": {
+    "lat": -21.0628724,
+    "lng": -41.3640478,
+    "source": "geocode_cidade"
+  },
+  "Montanha": {
+    "lat": -18.1263191,
+    "lng": -40.3641584,
+    "source": "geocode_cidade"
+  },
+  "Mucurici": {
+    "lat": -18.0940112,
+    "lng": -40.5184761,
+    "source": "geocode_cidade"
+  },
+  "Muniz Freire": {
+    "lat": -20.4636068,
+    "lng": -41.4137007,
+    "source": "geocode_cidade"
+  },
+  "Muqui": {
+    "lat": -20.9509368,
+    "lng": -41.3444285,
+    "source": "geocode_cidade"
+  },
+  "Nova Venécia": {
+    "lat": -18.7082544,
+    "lng": -40.4000087,
+    "source": "geocode_cidade"
+  },
+  "Pancas": {
+    "lat": -19.2239225,
+    "lng": -40.8502555,
+    "source": "geocode_cidade"
+  },
+  "Pedro Canário": {
+    "lat": -18.2993128,
+    "lng": -39.9549993,
+    "source": "geocode_cidade"
+  },
+  "Pinheiros": {
+    "lat": -18.4124694,
+    "lng": -40.2147939,
+    "source": "geocode_cidade"
+  },
+  "Piúma": {
+    "lat": -20.8375312,
+    "lng": -40.7271589,
+    "source": "geocode_cidade"
+  },
+  "Ponto Belo": {
+    "lat": -18.1227076,
+    "lng": -40.5392272,
+    "source": "geocode_cidade"
+  },
+  "Presidente Kennedy": {
+    "lat": -21.0998837,
+    "lng": -41.045038,
+    "source": "geocode_cidade"
+  },
+  "Rio Bananal": {
+    "lat": -19.2614413,
+    "lng": -40.3353272,
+    "source": "geocode_cidade"
+  },
+  "Rio Novo do Sul": {
+    "lat": -20.8641487,
+    "lng": -40.9384378,
+    "source": "geocode_cidade"
+  },
+  "Santa Leopoldina": {
+    "lat": -20.0987046,
+    "lng": -40.5269434,
+    "source": "geocode_cidade"
+  },
+  "Santa Maria de Jetibá": {
+    "lat": -20.025296,
+    "lng": -40.743931,
+    "source": "geocode_cidade"
+  },
+  "Santa Teresa": {
+    "lat": -19.936339,
+    "lng": -40.597945,
+    "source": "geocode_cidade"
+  },
+  "São Domingos do Norte": {
+    "lat": -19.1461276,
+    "lng": -40.6214803,
+    "source": "geocode_cidade"
+  },
+  "São Gabriel da Palha": {
+    "lat": -19.0148349,
+    "lng": -40.539464,
+    "source": "geocode_cidade"
+  },
+  "São José do Calçado": {
+    "lat": -21.0271161,
+    "lng": -41.654069,
+    "source": "geocode_cidade"
+  },
+  "São Mateus": {
+    "lat": -18.7146049,
+    "lng": -39.8539499,
+    "source": "geocode_cidade"
+  },
+  "São Roque do Canaã": {
+    "lat": -19.7385942,
+    "lng": -40.6598575,
+    "source": "geocode_cidade"
+  },
+  "Serra": {
+    "lat": -20.1252961,
+    "lng": -40.3064477,
+    "source": "geocode_cidade"
+  },
+  "Sooretama": {
+    "lat": -19.1918129,
+    "lng": -40.1037067,
+    "source": "geocode_cidade"
+  },
+  "Vargem Alta": {
+    "lat": -20.6733324,
+    "lng": -41.0107231,
+    "source": "geocode_cidade"
+  },
+  "Venda Nova do Imigrante": {
+    "lat": -20.3325787,
+    "lng": -41.1295842,
+    "source": "geocode_cidade"
+  },
+  "Viana": {
+    "lat": -20.3914471,
+    "lng": -40.4966587,
+    "source": "geocode_cidade"
+  },
+  "Vila Pavão": {
+    "lat": -18.6191731,
+    "lng": -40.6043622,
+    "source": "geocode_cidade"
+  },
+  "Vila Valério": {
+    "lat": -18.9984033,
+    "lng": -40.3894342,
+    "source": "geocode_cidade"
+  },
+  "Vitória": {
+    "lat": -20.3200917,
+    "lng": -40.3376682,
+    "source": "geocode_cidade"
+  }
+}

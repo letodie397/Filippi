@@ -1,0 +1,38 @@
+{
+  "name": "pedidos",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:locations": "node scripts/build-locations.mjs",
+    "geocode:locations": "node scripts/geocode-locations.mjs --all",
+    "geocode:locations:batch": "node scripts/geocode-locations.mjs",
+    "geocode:vila-velha": "node scripts/geocode-city.mjs \"Vila Velha\" && npm run build:locations",
+    "geocode:all": "node scripts/geocode-all-remaining.mjs && npm run build:locations",
+    "geocode:centroids": "node scripts/generate-city-centroids.mjs && npm run build:locations",
+    "audit:locations": "node scripts/audit-locations.mjs",
+    "dev": "vite",
+    "build": "npm run build:locations && tsc && vite build",
+    "build:pages": "node scripts/build-pages.mjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vite-plugin-pwa": "^1.3.0"
+  },
+  "dependencies": {
+    "brazilian-geographic-data": "^2.0.0",
+    "dexie": "^4.4.3",
+    "dexie-react-hooks": "^4.4.0",
+    "lucide-react": "^1.17.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.17.0"
+  }
+}

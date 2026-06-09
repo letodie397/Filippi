@@ -1,0 +1,18 @@
+{
+  "Vila Velha|Balneário Ponta da Fruta": {
+    "lat": -20.5107872,
+    "lng": -40.3702678,
+    "source": "CEP 29128-500 - Rua da Banana",
+    "aliases": ["Balneario", "Balneario Ponta da Fruta", "Ponta da Fruta"]
+  },
+  "Vila Velha|Ponta da Fruta": {
+    "lat": -20.5085,
+    "lng": -40.3720,
+    "source": "Distrito Jucu - extremo sul Vila Velha"
+  },
+  "Vila Velha|Nova Ponta da Fruta": {
+    "lat": -20.5150,
+    "lng": -40.3680,
+    "source": "Adjacente Ponta da Fruta - sul"
+  }
+}

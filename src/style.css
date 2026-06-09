@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-icm-red-50: #fef2f2;
+  --color-icm-red-100: #fee2e2;
+  --color-icm-red-200: #fecaca;
+  --color-icm-red-300: #fca5a5;
+  --color-icm-red-400: #f87171;
+  --color-icm-red-500: #ef4444;
+  --color-icm-red-600: #dc2626;
+  --color-icm-red-700: #b91c1c;
+  --color-icm-red-800: #991b1b;
+  --color-icm-red-900: #7f1d1d;
+  --color-icm-red-950: #450a0a;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+#root {
+  @apply min-h-dvh;
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@supports (-webkit-touch-callout: none) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-icm-red-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-icm-red-500;
+}
