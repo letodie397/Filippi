@@ -44,6 +44,55 @@ const CHURCH_CASES: TestCase[] = [
     expectBairro: 'Ulisses Guimarães',
     expectCidade: 'Vila Velha',
   },
+  {
+    name: 'Vitória - Miramar (histórico)',
+    input: 'miramar 1',
+    expectBairro: 'Comdusa',
+    expectCidade: 'Vitória',
+  },
+  {
+    name: 'Vitória - Alto Caratoíra (sub-bairro)',
+    input: 'alto caratoira 1',
+    expectBairro: 'Caratoíra',
+    expectCidade: 'Vitória',
+  },
+  {
+    name: 'Serra - Itapocu (histórico)',
+    input: 'itapocu 1',
+    expectBairro: 'Calogi',
+    expectCidade: 'Serra',
+  },
+  {
+    name: 'Vitória - Chapada (sub-bairro)',
+    input: 'chapada 1',
+    expectBairro: 'do Quadro',
+    expectCidade: 'Vitória',
+  },
+  {
+    name: 'Maranata - Ilha da Jussara I (oficial)',
+    input: 'ilha da jussara 1',
+    expectBairro: 'Ulisses Guimarães',
+    expectCidade: 'Vila Velha',
+    minConfidence: 'alta',
+  },
+  {
+    name: 'Maranata - código 060380 (Ilha dos Ayres)',
+    input: '060380',
+    expectBairro: 'Ilha dos Ayres',
+    expectCidade: 'Vila Velha',
+  },
+  {
+    name: 'Maranata - Normilia I (oficial)',
+    input: 'normilia 1',
+    expectBairro: 'Normília da Cunha',
+    expectCidade: 'Vila Velha',
+  },
+  {
+    name: 'Maranata - Ilha dos Ayres I',
+    input: 'ilha dos ayres 1',
+    expectBairro: 'Ilha dos Ayres',
+    expectCidade: 'Vila Velha',
+  },
 ]
 
 const PROXIMITY_CASES = [

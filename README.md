@@ -70,3 +70,16 @@ npm run test                  # testes de mapa + Firebase
 ### Bairros históricos (nomes antigos de igrejas)
 
 Igrejas antigas podem manter nomes de bairros extintos. Cadastre em `data/historical-bairros.json` (ex.: Ilha da Jussara → Ulisses Guimarães, Vila Velha).
+
+### Cadastro oficial ICM (Maranata)
+
+As 1.060 igrejas do ES vêm da [consulta pública ICM](https://consulta-publica-igrejas.presbiterio.org.br) e ficam em `src/data/maranata-churches.generated.json`:
+
+```bash
+npm run build:maranata          # baixa API + gera JSON do app
+npm run geocode:maranata        # GPS de cada igreja pelo endereço (Nominatim)
+npm run geocode:maranata:missing  # só igrejas sem GPS no cache
+npm run compare:maranata        # relatório de bairros sem match no mapa
+```
+
+Aliases de bairro Maranata → mapa local: `data/maranata-bairro-aliases.json`.

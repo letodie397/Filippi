@@ -1,0 +1,6362 @@
+{
+  "060001": {
+    "lat": -20.2920273,
+    "lng": -40.3066557,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:02.311Z"
+  },
+  "060002": {
+    "lat": -20.7569089,
+    "lng": -41.5412379,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:07.206Z"
+  },
+  "060003": {
+    "lat": -19.6559045,
+    "lng": -40.4632165,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:08.690Z"
+  },
+  "060004": {
+    "lat": -20.3524801,
+    "lng": -40.300914,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:12.707Z"
+  },
+  "060005": {
+    "lat": -20.0801225,
+    "lng": -41.1231631,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:14.128Z"
+  },
+  "060006": {
+    "lat": -19.5104476,
+    "lng": -41.015558,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:16.190Z"
+  },
+  "060007": {
+    "lat": -20.2476785,
+    "lng": -40.2651216,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:18.258Z"
+  },
+  "060008": {
+    "lat": -21.0155741,
+    "lng": -40.8109175,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:20.311Z"
+  },
+  "060009": {
+    "lat": -20.3482688,
+    "lng": -40.3691073,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:22.171Z"
+  },
+  "060010": {
+    "lat": -20.339047,
+    "lng": -40.390685,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:23.925Z"
+  },
+  "060011": {
+    "lat": -20.2676194,
+    "lng": -40.4162237,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:25.344Z"
+  },
+  "060012": {
+    "lat": -20.3519629,
+    "lng": -40.3582438,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:27.297Z"
+  },
+  "060013": {
+    "lat": -20.3639271,
+    "lng": -40.3572534,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:29.172Z"
+  },
+  "060014": {
+    "lat": -19.5359535,
+    "lng": -40.6293955,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:34.188Z"
+  },
+  "060015": {
+    "lat": -19.9316529,
+    "lng": -40.140862,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:40.453Z"
+  },
+  "060016": {
+    "lat": -20.346953,
+    "lng": -40.2972838,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:45.691Z"
+  },
+  "060017": {
+    "lat": -18.3709112,
+    "lng": -40.8327962,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:47.118Z"
+  },
+  "060018": {
+    "lat": -20.3386622,
+    "lng": -40.3746703,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:50.563Z"
+  },
+  "060019": {
+    "lat": -20.3362861,
+    "lng": -40.3079253,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:55.578Z"
+  },
+  "060020": {
+    "lat": -20.2700407,
+    "lng": -40.2907167,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:57.069Z"
+  },
+  "060021": {
+    "lat": -20.671725,
+    "lng": -40.5027996,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:22:59.235Z"
+  },
+  "060022": {
+    "lat": -20.2325359,
+    "lng": -41.5055411,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:04.997Z"
+  },
+  "060023": {
+    "lat": -20.3503054,
+    "lng": -40.290796,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:06.859Z"
+  },
+  "060024": {
+    "lat": -20.3464627,
+    "lng": -40.3333344,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:13.652Z"
+  },
+  "060025": {
+    "lat": -20.3491188,
+    "lng": -41.5327195,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:15.616Z"
+  },
+  "060026": {
+    "lat": -20.3294099,
+    "lng": -40.3924726,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:17.471Z"
+  },
+  "060027": {
+    "lat": -20.3234049,
+    "lng": -40.3737316,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:22.370Z"
+  },
+  "060028": {
+    "lat": -20.3252497,
+    "lng": -40.3617178,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:24.428Z"
+  },
+  "060029": {
+    "lat": -20.3378334,
+    "lng": -40.3645712,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:26.382Z"
+  },
+  "060031": {
+    "lat": -20.2815971,
+    "lng": -40.2953381,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:35.563Z"
+  },
+  "060032": {
+    "lat": -19.7612858,
+    "lng": -40.3870653,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:41.344Z"
+  },
+  "060033": {
+    "lat": -20.1942428,
+    "lng": -40.273663,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:43.197Z"
+  },
+  "060034": {
+    "lat": -19.3907359,
+    "lng": -40.071948,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:46.810Z"
+  },
+  "060035": {
+    "lat": -20.2001421,
+    "lng": -40.2520064,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:52.836Z"
+  },
+  "060036": {
+    "lat": -21.0590339,
+    "lng": -41.3627752,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:54.258Z"
+  },
+  "060037": {
+    "lat": -20.3168642,
+    "lng": -40.3491534,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:23:56.115Z"
+  },
+  "060038": {
+    "lat": -20.3449678,
+    "lng": -40.3552621,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:01.610Z"
+  },
+  "060039": {
+    "lat": -20.33492,
+    "lng": -40.3997407,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:03.030Z"
+  },
+  "060040": {
+    "lat": -19.8250438,
+    "lng": -40.6592776,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:05.082Z"
+  },
+  "060041": {
+    "lat": -20.2046277,
+    "lng": -40.2468193,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:06.498Z"
+  },
+  "060042": {
+    "lat": -20.3321721,
+    "lng": -40.3375229,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:08.355Z"
+  },
+  "060043": {
+    "lat": -20.3088483,
+    "lng": -40.3685848,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:10.213Z"
+  },
+  "060044": {
+    "lat": -20.336383,
+    "lng": -40.3690179,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:12.058Z"
+  },
+  "060045": {
+    "lat": -20.3338186,
+    "lng": -40.28919,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:14.624Z"
+  },
+  "060046": {
+    "lat": -18.718636,
+    "lng": -39.8548803,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:16.576Z"
+  },
+  "060047": {
+    "lat": -20.3009764,
+    "lng": -40.320579,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:18.639Z"
+  },
+  "060048": {
+    "lat": -19.9345704,
+    "lng": -40.6004885,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:23.042Z"
+  },
+  "060049": {
+    "lat": -20.2189119,
+    "lng": -40.2602565,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:25.108Z"
+  },
+  "060050": {
+    "lat": -20.3099532,
+    "lng": -40.3882478,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:30.418Z"
+  },
+  "060051": {
+    "lat": -20.3486784,
+    "lng": -40.3046419,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:32.376Z"
+  },
+  "060052": {
+    "lat": -20.3080868,
+    "lng": -40.3550045,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:37.933Z"
+  },
+  "060053": {
+    "lat": -20.3588399,
+    "lng": -40.3169031,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:39.698Z"
+  },
+  "060055": {
+    "lat": -20.1252052,
+    "lng": -40.3058801,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:41.664Z"
+  },
+  "060056": {
+    "lat": -20.3426882,
+    "lng": -40.2918574,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:43.527Z"
+  },
+  "060057": {
+    "lat": -20.3357766,
+    "lng": -40.2981135,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:45.479Z"
+  },
+  "060058": {
+    "lat": -20.318256,
+    "lng": -40.3427849,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:24:47.333Z"
+  },
+  "060060": {
+    "lat": -19.7582936,
+    "lng": -40.3893084,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:00.018Z"
+  },
+  "060061": {
+    "lat": -20.3516148,
+    "lng": -40.3095203,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:01.977Z"
+  },
+  "060062": {
+    "lat": -20.8642762,
+    "lng": -40.9359828,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:03.844Z"
+  },
+  "060064": {
+    "lat": -20.2735423,
+    "lng": -40.3973875,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:09.157Z"
+  },
+  "060065": {
+    "lat": -20.338165,
+    "lng": -40.4185743,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:11.013Z"
+  },
+  "060066": {
+    "lat": -20.3791029,
+    "lng": -40.3662998,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:12.878Z"
+  },
+  "060068": {
+    "lat": -20.3405193,
+    "lng": -40.3386135,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:18.415Z"
+  },
+  "060069": {
+    "lat": -18.7567867,
+    "lng": -40.8912224,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:20.274Z"
+  },
+  "060070": {
+    "lat": -20.3381749,
+    "lng": -40.351139,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:22.132Z"
+  },
+  "060071": {
+    "lat": -20.3711673,
+    "lng": -40.3172604,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:24.094Z"
+  },
+  "060072": {
+    "lat": -20.8429022,
+    "lng": -41.1120827,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:25.957Z"
+  },
+  "060073": {
+    "lat": -19.7482062,
+    "lng": -40.0439405,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:31.491Z"
+  },
+  "060074": {
+    "lat": -20.6061586,
+    "lng": -41.2016773,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:37.167Z"
+  },
+  "060075": {
+    "lat": -20.3369883,
+    "lng": -40.375095,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:38.606Z"
+  },
+  "060076": {
+    "lat": -20.3706428,
+    "lng": -40.3469714,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:42.825Z"
+  },
+  "060077": {
+    "lat": -20.6379508,
+    "lng": -40.7472019,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:48.688Z"
+  },
+  "060078": {
+    "lat": -20.8074249,
+    "lng": -40.6425321,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:52.117Z"
+  },
+  "060079": {
+    "lat": -20.3628967,
+    "lng": -40.6593737,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:25:57.502Z"
+  },
+  "060080": {
+    "lat": -20.3535704,
+    "lng": -40.4262979,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:02.766Z"
+  },
+  "060081": {
+    "lat": -20.3078954,
+    "lng": -40.3750768,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:06.245Z"
+  },
+  "060082": {
+    "lat": -20.3035176,
+    "lng": -40.3891615,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:10.258Z"
+  },
+  "060083": {
+    "lat": -20.2958685,
+    "lng": -40.309509,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:12.126Z"
+  },
+  "060084": {
+    "lat": -20.3398215,
+    "lng": -40.3740905,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:14.087Z"
+  },
+  "060085": {
+    "lat": -20.3497307,
+    "lng": -40.3148763,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:16.866Z"
+  },
+  "060086": {
+    "lat": -20.3741711,
+    "lng": -40.3473955,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:18.823Z"
+  },
+  "060087": {
+    "lat": -19.9324079,
+    "lng": -40.4038781,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:20.676Z"
+  },
+  "060088": {
+    "lat": -20.9553387,
+    "lng": -41.3418392,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:24.170Z"
+  },
+  "060089": {
+    "lat": -20.3635331,
+    "lng": -40.3038749,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:30.357Z"
+  },
+  "060090": {
+    "lat": -20.3299884,
+    "lng": -40.3491717,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:33.713Z"
+  },
+  "060091": {
+    "lat": -20.7887572,
+    "lng": -41.3931335,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:35.564Z"
+  },
+  "060092": {
+    "lat": -18.5381977,
+    "lng": -40.2935164,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:37.010Z"
+  },
+  "060093": {
+    "lat": -20.3833993,
+    "lng": -40.3252272,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:38.406Z"
+  },
+  "060094": {
+    "lat": -20.367092,
+    "lng": -40.3145412,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:41.171Z"
+  },
+  "060095": {
+    "lat": -20.3031731,
+    "lng": -40.3129677,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:43.725Z"
+  },
+  "060096": {
+    "lat": -20.7718787,
+    "lng": -41.6744435,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:49.688Z"
+  },
+  "060097": {
+    "lat": -20.3921776,
+    "lng": -40.4985191,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:51.541Z"
+  },
+  "060098": {
+    "lat": -20.6234258,
+    "lng": -40.4887655,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:26:56.843Z"
+  },
+  "060099": {
+    "lat": -20.8389745,
+    "lng": -40.725632,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:02.264Z"
+  },
+  "060100": {
+    "lat": -20.6738202,
+    "lng": -40.5212995,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:04.222Z"
+  },
+  "060102": {
+    "lat": -20.6618236,
+    "lng": -40.4989993,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:08.812Z"
+  },
+  "060103": {
+    "lat": -20.3088122,
+    "lng": -40.3193274,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:13.997Z"
+  },
+  "060104": {
+    "lat": -20.4209064,
+    "lng": -40.4599149,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:15.856Z"
+  },
+  "060105": {
+    "lat": -20.3628967,
+    "lng": -40.6593737,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:20.504Z"
+  },
+  "060106": {
+    "lat": -20.0034102,
+    "lng": -40.4118985,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:21.929Z"
+  },
+  "060107": {
+    "lat": -20.4651153,
+    "lng": -41.4132495,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:23.788Z"
+  },
+  "060108": {
+    "lat": -20.3415142,
+    "lng": -40.3166335,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:29.132Z"
+  },
+  "060109": {
+    "lat": -20.3694199,
+    "lng": -40.3694758,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:33.059Z"
+  },
+  "060110": {
+    "lat": -20.3373967,
+    "lng": -41.3909918,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:35.029Z"
+  },
+  "060111": {
+    "lat": -20.3181977,
+    "lng": -40.3922051,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:40.610Z"
+  },
+  "060112": {
+    "lat": -20.2718858,
+    "lng": -40.3186733,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:42.472Z"
+  },
+  "060113": {
+    "lat": -20.2579835,
+    "lng": -40.2979268,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:47.821Z"
+  },
+  "060114": {
+    "lat": -20.2570735,
+    "lng": -40.271488,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:49.667Z"
+  },
+  "060115": {
+    "lat": -20.3480538,
+    "lng": -40.3913532,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:51.532Z"
+  },
+  "060116": {
+    "lat": -18.7119795,
+    "lng": -40.4011281,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:53.589Z"
+  },
+  "060117": {
+    "lat": -19.2185943,
+    "lng": -40.592027,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:27:55.444Z"
+  },
+  "060119": {
+    "lat": -20.1391019,
+    "lng": -40.2570326,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:07.000Z"
+  },
+  "060120": {
+    "lat": -20.9139423,
+    "lng": -41.1954195,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:08.861Z"
+  },
+  "060121": {
+    "lat": -20.1433836,
+    "lng": -40.2528561,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:15.044Z"
+  },
+  "060123": {
+    "lat": -20.6203045,
+    "lng": -41.6826767,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:17.013Z"
+  },
+  "060124": {
+    "lat": -20.3011358,
+    "lng": -40.4024354,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:22.807Z"
+  },
+  "060125": {
+    "lat": -20.2993613,
+    "lng": -40.4024688,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:26.719Z"
+  },
+  "060126": {
+    "lat": -20.262668,
+    "lng": -40.383867,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:29.825Z"
+  },
+  "060127": {
+    "lat": -20.366286,
+    "lng": -40.3193274,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:31.789Z"
+  },
+  "060128": {
+    "lat": -20.3577826,
+    "lng": -40.4187308,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:33.430Z"
+  },
+  "060129": {
+    "lat": -20.2945895,
+    "lng": -40.2915963,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:35.280Z"
+  },
+  "060131": {
+    "lat": -18.7304103,
+    "lng": -39.8399801,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:37.030Z"
+  },
+  "060132": {
+    "lat": -19.8275867,
+    "lng": -40.2795492,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:38.471Z"
+  },
+  "060133": {
+    "lat": -20.6903469,
+    "lng": -41.8458511,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:40.444Z"
+  },
+  "060134": {
+    "lat": -20.236243,
+    "lng": -40.275027,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:42.305Z"
+  },
+  "060136": {
+    "lat": -19.833073,
+    "lng": -40.3667912,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:44.283Z"
+  },
+  "060137": {
+    "lat": -20.2767561,
+    "lng": -40.3355575,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:46.238Z"
+  },
+  "060138": {
+    "lat": -18.2645443,
+    "lng": -40.6996847,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:50.720Z"
+  },
+  "060139": {
+    "lat": -20.257965,
+    "lng": -40.2646794,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:52.577Z"
+  },
+  "060140": {
+    "lat": -20.314653,
+    "lng": -40.3551429,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:55.136Z"
+  },
+  "060141": {
+    "lat": -20.3483821,
+    "lng": -40.3417729,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:28:57.103Z"
+  },
+  "060142": {
+    "lat": -20.343416,
+    "lng": -40.3494976,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:00.277Z"
+  },
+  "060143": {
+    "lat": -21.1527719,
+    "lng": -41.5682381,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:05.940Z"
+  },
+  "060144": {
+    "lat": -20.4243346,
+    "lng": -40.3262379,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:08.710Z"
+  },
+  "060145": {
+    "lat": -20.3095888,
+    "lng": -40.3672474,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:10.668Z"
+  },
+  "060146": {
+    "lat": -20.3040507,
+    "lng": -40.3705964,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:15.495Z"
+  },
+  "060147": {
+    "lat": -20.3557469,
+    "lng": -41.2425784,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:19.300Z"
+  },
+  "060148": {
+    "lat": -20.3528304,
+    "lng": -40.3697077,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:21.261Z"
+  },
+  "060149": {
+    "lat": -20.3118995,
+    "lng": -40.3078502,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:23.123Z"
+  },
+  "060150": {
+    "lat": -20.3577157,
+    "lng": -40.438441,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:25.188Z"
+  },
+  "060151": {
+    "lat": -18.0828478,
+    "lng": -40.0961449,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:30.927Z"
+  },
+  "060152": {
+    "lat": -20.3320291,
+    "lng": -40.3945142,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:36.816Z"
+  },
+  "060153": {
+    "lat": -19.9580895,
+    "lng": -40.1544392,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:38.393Z"
+  },
+  "060155": {
+    "lat": -21.025917,
+    "lng": -41.6543135,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:44.370Z"
+  },
+  "060156": {
+    "lat": -20.3549226,
+    "lng": -40.3617386,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:46.228Z"
+  },
+  "060157": {
+    "lat": -19.5072071,
+    "lng": -41.0285528,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:48.296Z"
+  },
+  "060158": {
+    "lat": -18.7217384,
+    "lng": -39.8680269,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:54.189Z"
+  },
+  "060159": {
+    "lat": -18.9113789,
+    "lng": -40.0766367,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:55.622Z"
+  },
+  "060160": {
+    "lat": -20.1962735,
+    "lng": -40.2489536,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:57.479Z"
+  },
+  "060161": {
+    "lat": -20.3467221,
+    "lng": -41.6423719,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:29:59.344Z"
+  },
+  "060162": {
+    "lat": -19.8265461,
+    "lng": -40.0636815,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:04.937Z"
+  },
+  "060163": {
+    "lat": -20.7360361,
+    "lng": -40.5429866,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:08.440Z"
+  },
+  "060164": {
+    "lat": -20.3245096,
+    "lng": -40.3687863,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:10.404Z"
+  },
+  "060165": {
+    "lat": -20.0551996,
+    "lng": -40.1963982,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:12.467Z"
+  },
+  "060166": {
+    "lat": -20.154784,
+    "lng": -40.2732734,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:14.430Z"
+  },
+  "060167": {
+    "lat": -20.3290309,
+    "lng": -40.3795592,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:15.866Z"
+  },
+  "060168": {
+    "lat": -20.3205071,
+    "lng": -40.3365969,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:17.452Z"
+  },
+  "060169": {
+    "lat": -20.1705197,
+    "lng": -40.2819369,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:19.412Z"
+  },
+  "060170": {
+    "lat": -20.3005309,
+    "lng": -40.3648215,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:21.257Z"
+  },
+  "060171": {
+    "lat": -21.1807929,
+    "lng": -40.9858812,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:27.035Z"
+  },
+  "060173": {
+    "lat": -20.2737465,
+    "lng": -40.2886339,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:28.989Z"
+  },
+  "060174": {
+    "lat": -20.0448772,
+    "lng": -40.1961108,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:33.218Z"
+  },
+  "060175": {
+    "lat": -20.1790718,
+    "lng": -40.254996,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:39.192Z"
+  },
+  "060176": {
+    "lat": -20.3477693,
+    "lng": -40.3706284,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:41.250Z"
+  },
+  "060177": {
+    "lat": -20.1966187,
+    "lng": -40.1943623,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:43.103Z"
+  },
+  "060178": {
+    "lat": -19.0180877,
+    "lng": -40.5372212,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:44.961Z"
+  },
+  "060180": {
+    "lat": -20.3436454,
+    "lng": -40.3238591,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:50.732Z"
+  },
+  "060181": {
+    "lat": -20.1414195,
+    "lng": -40.2985251,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:52.131Z"
+  },
+  "060182": {
+    "lat": -20.3648789,
+    "lng": -40.3905624,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:30:58.729Z"
+  },
+  "060183": {
+    "lat": -20.3344655,
+    "lng": -40.330009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:04.398Z"
+  },
+  "060184": {
+    "lat": -20.2578846,
+    "lng": -40.2951015,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:06.147Z"
+  },
+  "060185": {
+    "lat": -20.3611515,
+    "lng": -40.4449072,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:08.009Z"
+  },
+  "060186": {
+    "lat": -18.1282366,
+    "lng": -40.3735367,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:11.563Z"
+  },
+  "060188": {
+    "lat": -20.3041902,
+    "lng": -40.3487015,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:21.361Z"
+  },
+  "060189": {
+    "lat": -20.3621701,
+    "lng": -40.3744201,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:23.321Z"
+  },
+  "060190": {
+    "lat": -20.3300258,
+    "lng": -40.4267495,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:25.182Z"
+  },
+  "060191": {
+    "lat": -20.3564696,
+    "lng": -40.3702587,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:26.612Z"
+  },
+  "060192": {
+    "lat": -20.1601389,
+    "lng": -40.186762,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:28.568Z"
+  },
+  "060193": {
+    "lat": -20.3231584,
+    "lng": -40.3646989,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:30.778Z"
+  },
+  "060194": {
+    "lat": -20.1639684,
+    "lng": -40.2523213,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:37.152Z"
+  },
+  "060195": {
+    "lat": -20.1556254,
+    "lng": -40.2679154,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:42.361Z"
+  },
+  "060196": {
+    "lat": -20.281536,
+    "lng": -40.3374728,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:44.218Z"
+  },
+  "060197": {
+    "lat": -20.2865988,
+    "lng": -40.3107897,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:46.173Z"
+  },
+  "060198": {
+    "lat": -20.3378656,
+    "lng": -40.32001,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:48.034Z"
+  },
+  "060199": {
+    "lat": -20.2914345,
+    "lng": -40.3167854,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:50.093Z"
+  },
+  "060200": {
+    "lat": -20.2993539,
+    "lng": -40.3229921,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:52.858Z"
+  },
+  "060201": {
+    "lat": -20.1405601,
+    "lng": -40.2450932,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:54.248Z"
+  },
+  "060202": {
+    "lat": -18.5860769,
+    "lng": -39.7328275,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:56.218Z"
+  },
+  "060203": {
+    "lat": -20.344283,
+    "lng": -40.3790298,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:31:58.078Z"
+  },
+  "060204": {
+    "lat": -20.6443969,
+    "lng": -40.5105978,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:03.532Z"
+  },
+  "060205": {
+    "lat": -20.2281643,
+    "lng": -40.2780777,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:05.601Z"
+  },
+  "060206": {
+    "lat": -18.4152451,
+    "lng": -40.2128465,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:07.455Z"
+  },
+  "060207": {
+    "lat": -19.5312062,
+    "lng": -40.6762924,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:13.125Z"
+  },
+  "060208": {
+    "lat": -20.6511658,
+    "lng": -40.4850515,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:20.118Z"
+  },
+  "060209": {
+    "lat": -20.4631337,
+    "lng": -40.4879015,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:21.978Z"
+  },
+  "060210": {
+    "lat": -20.6579467,
+    "lng": -40.5212048,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:27.550Z"
+  },
+  "060211": {
+    "lat": -20.1699604,
+    "lng": -40.2562475,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:29.508Z"
+  },
+  "060212": {
+    "lat": -20.2313349,
+    "lng": -40.2682345,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:31.475Z"
+  },
+  "060213": {
+    "lat": -20.1722211,
+    "lng": -40.2146223,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:33.443Z"
+  },
+  "060214": {
+    "lat": -20.7031123,
+    "lng": -41.0163904,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:39.831Z"
+  },
+  "060215": {
+    "lat": -20.2837621,
+    "lng": -40.3850313,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:45.808Z"
+  },
+  "060216": {
+    "lat": -20.3466413,
+    "lng": -40.4060556,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:47.773Z"
+  },
+  "060217": {
+    "lat": -20.2194735,
+    "lng": -40.2506962,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:49.732Z"
+  },
+  "060218": {
+    "lat": -18.0945986,
+    "lng": -40.5183076,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:51.697Z"
+  },
+  "060219": {
+    "lat": -20.6246854,
+    "lng": -40.4689696,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:57.575Z"
+  },
+  "060220": {
+    "lat": -20.3159336,
+    "lng": -40.395602,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:32:59.534Z"
+  },
+  "060221": {
+    "lat": -20.3052226,
+    "lng": -40.3829899,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:02.946Z"
+  },
+  "060222": {
+    "lat": -20.3061911,
+    "lng": -40.3044464,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:04.813Z"
+  },
+  "060223": {
+    "lat": -20.3678636,
+    "lng": -40.310506,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:06.363Z"
+  },
+  "060224": {
+    "lat": -20.5396106,
+    "lng": -41.66376,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:11.645Z"
+  },
+  "060225": {
+    "lat": -20.6875977,
+    "lng": -40.5627508,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:15.457Z"
+  },
+  "060226": {
+    "lat": -20.6413201,
+    "lng": -40.5147798,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:19.577Z"
+  },
+  "060227": {
+    "lat": -20.3172783,
+    "lng": -40.438798,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:21.087Z"
+  },
+  "060228": {
+    "lat": -20.3545227,
+    "lng": -40.3029585,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:23.444Z"
+  },
+  "060229": {
+    "lat": -20.2265542,
+    "lng": -40.2654031,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:25.414Z"
+  },
+  "060230": {
+    "lat": -20.2787846,
+    "lng": -40.4073103,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:27.276Z"
+  },
+  "060232": {
+    "lat": -20.3567511,
+    "lng": -40.3458487,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:28.662Z"
+  },
+  "060233": {
+    "lat": -20.367254,
+    "lng": -40.4055704,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:30.727Z"
+  },
+  "060234": {
+    "lat": -20.3454902,
+    "lng": -40.4241544,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:32.603Z"
+  },
+  "060235": {
+    "lat": -19.8030143,
+    "lng": -40.8554218,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:37.952Z"
+  },
+  "060237": {
+    "lat": -20.3793417,
+    "lng": -40.3203029,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:39.466Z"
+  },
+  "060238": {
+    "lat": -20.3080868,
+    "lng": -40.3550045,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:44.747Z"
+  },
+  "060239": {
+    "lat": -20.3409605,
+    "lng": -40.2944059,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:46.608Z"
+  },
+  "060241": {
+    "lat": -20.2645024,
+    "lng": -40.4278099,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:48.114Z"
+  },
+  "060242": {
+    "lat": -21.1331748,
+    "lng": -41.6771804,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:50.170Z"
+  },
+  "060245": {
+    "lat": -20.2016821,
+    "lng": -40.2743785,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:52.120Z"
+  },
+  "060246": {
+    "lat": -20.8552816,
+    "lng": -41.1059697,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:53.602Z"
+  },
+  "060247": {
+    "lat": -20.1951141,
+    "lng": -40.2587116,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:55.468Z"
+  },
+  "060248": {
+    "lat": -18.9980723,
+    "lng": -40.3883025,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:33:57.333Z"
+  },
+  "060252": {
+    "lat": -20.3886932,
+    "lng": -40.3702749,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:02.913Z"
+  },
+  "060253": {
+    "lat": -20.3693738,
+    "lng": -40.355376,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:04.769Z"
+  },
+  "060258": {
+    "lat": -20.3291548,
+    "lng": -40.4084288,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:06.728Z"
+  },
+  "060263": {
+    "lat": -20.7659153,
+    "lng": -41.5314401,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:10.482Z"
+  },
+  "060264": {
+    "lat": -20.3720797,
+    "lng": -40.4334038,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:12.347Z"
+  },
+  "060266": {
+    "lat": -19.6686694,
+    "lng": -40.2809247,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:17.208Z"
+  },
+  "060267": {
+    "lat": -20.2624892,
+    "lng": -40.4161762,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:18.654Z"
+  },
+  "060268": {
+    "lat": -20.3516148,
+    "lng": -40.3413462,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:20.118Z"
+  },
+  "060269": {
+    "lat": -20.1722242,
+    "lng": -40.2534531,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:26.300Z"
+  },
+  "060270": {
+    "lat": -19.5432791,
+    "lng": -40.6247018,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:27.790Z"
+  },
+  "060271": {
+    "lat": -20.3410058,
+    "lng": -40.2881713,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:31.510Z"
+  },
+  "060273": {
+    "lat": -20.2983237,
+    "lng": -40.3115037,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:33.362Z"
+  },
+  "060274": {
+    "lat": -20.8256453,
+    "lng": -40.7194889,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:38.935Z"
+  },
+  "060275": {
+    "lat": -20.3908795,
+    "lng": -40.3731818,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:40.400Z"
+  },
+  "060277": {
+    "lat": -21.0302633,
+    "lng": -40.858003,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:45.623Z"
+  },
+  "060278": {
+    "lat": -20.3213214,
+    "lng": -40.3802437,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:47.489Z"
+  },
+  "060281": {
+    "lat": -20.1484314,
+    "lng": -40.2583905,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:34:53.166Z"
+  },
+  "060284": {
+    "lat": -18.1224928,
+    "lng": -40.54016,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:06.153Z"
+  },
+  "060285": {
+    "lat": -20.3310908,
+    "lng": -40.2802259,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:08.004Z"
+  },
+  "060286": {
+    "lat": -20.3268132,
+    "lng": -40.3920774,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:09.969Z"
+  },
+  "060287": {
+    "lat": -20.3144503,
+    "lng": -40.3180567,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:15.363Z"
+  },
+  "060288": {
+    "lat": -20.3324008,
+    "lng": -40.4038176,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:16.770Z"
+  },
+  "060289": {
+    "lat": -20.3357805,
+    "lng": -40.2935083,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:20.893Z"
+  },
+  "060292": {
+    "lat": -20.3410058,
+    "lng": -40.2881713,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:22.360Z"
+  },
+  "060293": {
+    "lat": -20.3508872,
+    "lng": -40.2875584,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:24.317Z"
+  },
+  "060294": {
+    "lat": -20.3362126,
+    "lng": -40.2872665,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:26.185Z"
+  },
+  "060296": {
+    "lat": -20.6679883,
+    "lng": -41.3337717,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:31.474Z"
+  },
+  "060297": {
+    "lat": -19.748145,
+    "lng": -40.0446665,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:33.427Z"
+  },
+  "060298": {
+    "lat": -20.671132,
+    "lng": -40.4994027,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:39.794Z"
+  },
+  "060300": {
+    "lat": -20.1278662,
+    "lng": -40.2800388,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:43.433Z"
+  },
+  "060301": {
+    "lat": -20.1013278,
+    "lng": -40.5272827,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:45.386Z"
+  },
+  "060302": {
+    "lat": -20.3704332,
+    "lng": -40.3761578,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:47.249Z"
+  },
+  "060303": {
+    "lat": -20.3233093,
+    "lng": -40.3670506,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:49.113Z"
+  },
+  "060304": {
+    "lat": -20.3064654,
+    "lng": -40.3918494,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:50.967Z"
+  },
+  "060305": {
+    "lat": -20.3426246,
+    "lng": -40.3878254,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:52.929Z"
+  },
+  "060306": {
+    "lat": -20.3458369,
+    "lng": -40.4286846,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:54.793Z"
+  },
+  "060309": {
+    "lat": -20.3057703,
+    "lng": -40.296355,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:56.749Z"
+  },
+  "060310": {
+    "lat": -20.0279342,
+    "lng": -40.742241,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:35:58.714Z"
+  },
+  "060313": {
+    "lat": -20.3727099,
+    "lng": -40.3524577,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:03.952Z"
+  },
+  "060314": {
+    "lat": -18.6193014,
+    "lng": -40.6048759,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:10.447Z"
+  },
+  "060315": {
+    "lat": -18.413908,
+    "lng": -40.2090628,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:17.518Z"
+  },
+  "060316": {
+    "lat": -18.7248261,
+    "lng": -40.189826,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:22.802Z"
+  },
+  "060319": {
+    "lat": -18.8642064,
+    "lng": -41.125861,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:24.663Z"
+  },
+  "060320": {
+    "lat": -20.2875644,
+    "lng": -40.3736527,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:30.539Z"
+  },
+  "060323": {
+    "lat": -20.3512951,
+    "lng": -40.3829142,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:32.507Z"
+  },
+  "060324": {
+    "lat": -19.3666097,
+    "lng": -40.0502609,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:37.823Z"
+  },
+  "060325": {
+    "lat": -20.8326819,
+    "lng": -41.1501672,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:39.247Z"
+  },
+  "060332": {
+    "lat": -20.3486086,
+    "lng": -40.3747529,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:41.112Z"
+  },
+  "060333": {
+    "lat": -20.3039913,
+    "lng": -40.3465357,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:43.170Z"
+  },
+  "060334": {
+    "lat": -20.1747332,
+    "lng": -40.2063458,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:48.030Z"
+  },
+  "060336": {
+    "lat": -20.1262687,
+    "lng": -40.1844057,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:49.635Z"
+  },
+  "060337": {
+    "lat": -20.1957395,
+    "lng": -40.2715324,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:36:51.589Z"
+  },
+  "060340": {
+    "lat": -20.3257138,
+    "lng": -40.383584,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:00.996Z"
+  },
+  "060341": {
+    "lat": -20.3547801,
+    "lng": -40.4381452,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:03.066Z"
+  },
+  "060342": {
+    "lat": -20.3112588,
+    "lng": -40.2982109,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:04.921Z"
+  },
+  "060345": {
+    "lat": -20.3481772,
+    "lng": -40.3006348,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:06.775Z"
+  },
+  "060346": {
+    "lat": -20.3870948,
+    "lng": -40.4741096,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:08.329Z"
+  },
+  "060347": {
+    "lat": -20.6511658,
+    "lng": -40.4850515,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:13.142Z"
+  },
+  "060348": {
+    "lat": -20.1506874,
+    "lng": -40.2496077,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:15.004Z"
+  },
+  "060349": {
+    "lat": -20.3307162,
+    "lng": -41.129586,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:16.860Z"
+  },
+  "060350": {
+    "lat": -20.2741009,
+    "lng": -40.3254044,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:19.023Z"
+  },
+  "060351": {
+    "lat": -19.0207728,
+    "lng": -40.5323473,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:25.315Z"
+  },
+  "060352": {
+    "lat": -20.3661064,
+    "lng": -40.3663116,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:29.340Z"
+  },
+  "060353": {
+    "lat": -18.9035015,
+    "lng": -40.2292447,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:31.202Z"
+  },
+  "060354": {
+    "lat": -19.4115068,
+    "lng": -40.0072691,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:35.838Z"
+  },
+  "060355": {
+    "lat": -20.2422852,
+    "lng": -40.2689618,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:37.694Z"
+  },
+  "060356": {
+    "lat": -20.2049368,
+    "lng": -40.273634,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:40.067Z"
+  },
+  "060358": {
+    "lat": -20.2557595,
+    "lng": -40.3828175,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:45.954Z"
+  },
+  "060359": {
+    "lat": -20.2275405,
+    "lng": -40.2815418,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:50.464Z"
+  },
+  "060360": {
+    "lat": -20.3573903,
+    "lng": -40.4375716,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:56.654Z"
+  },
+  "060361": {
+    "lat": -20.3740123,
+    "lng": -40.3073968,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:37:58.715Z"
+  },
+  "060363": {
+    "lat": -20.2786121,
+    "lng": -40.4051748,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:04.227Z"
+  },
+  "060365": {
+    "lat": -20.3573938,
+    "lng": -40.3482726,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:09.476Z"
+  },
+  "060366": {
+    "lat": -20.833646,
+    "lng": -41.155861,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:10.900Z"
+  },
+  "060367": {
+    "lat": -19.1628264,
+    "lng": -40.7736073,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:16.566Z"
+  },
+  "060369": {
+    "lat": -19.1927096,
+    "lng": -40.0966649,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:17.966Z"
+  },
+  "060370": {
+    "lat": -21.099008,
+    "lng": -41.0449303,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:23.296Z"
+  },
+  "060371": {
+    "lat": -19.5160257,
+    "lng": -41.0069267,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:29.165Z"
+  },
+  "060372": {
+    "lat": -20.2773641,
+    "lng": -40.3287773,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:31.022Z"
+  },
+  "060373": {
+    "lat": -20.3497645,
+    "lng": -40.3885462,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:32.872Z"
+  },
+  "060374": {
+    "lat": -20.2848875,
+    "lng": -40.3108251,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:34.829Z"
+  },
+  "060375": {
+    "lat": -20.3418944,
+    "lng": -40.3559494,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:39.626Z"
+  },
+  "060376": {
+    "lat": -20.3357766,
+    "lng": -40.2981135,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:41.493Z"
+  },
+  "060377": {
+    "lat": -18.4299836,
+    "lng": -39.9311953,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:46.849Z"
+  },
+  "060378": {
+    "lat": -20.3510258,
+    "lng": -40.3955735,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:48.703Z"
+  },
+  "060379": {
+    "lat": -19.3792149,
+    "lng": -40.0649714,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:50.653Z"
+  },
+  "060380": {
+    "lat": -20.3424999,
+    "lng": -40.3010105,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:38:54.775Z"
+  },
+  "060381": {
+    "lat": -20.373976,
+    "lng": -40.4165591,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:01.553Z"
+  },
+  "060382": {
+    "lat": -21.0759709,
+    "lng": -41.4935246,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:05.271Z"
+  },
+  "060383": {
+    "lat": -20.9073315,
+    "lng": -40.7858215,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:10.946Z"
+  },
+  "060384": {
+    "lat": -20.2741099,
+    "lng": -40.4129321,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:14.768Z"
+  },
+  "060385": {
+    "lat": -20.3433552,
+    "lng": -40.4191139,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:19.377Z"
+  },
+  "060386": {
+    "lat": -20.1349967,
+    "lng": -40.2407156,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:25.116Z"
+  },
+  "060387": {
+    "lat": -19.2240063,
+    "lng": -40.8522971,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:30.067Z"
+  },
+  "060388": {
+    "lat": -20.3742028,
+    "lng": -40.311092,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:36.445Z"
+  },
+  "060390": {
+    "lat": -20.3528612,
+    "lng": -40.3645378,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:38.606Z"
+  },
+  "060392": {
+    "lat": -20.6765334,
+    "lng": -40.5094395,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:40.237Z"
+  },
+  "060393": {
+    "lat": -20.3576218,
+    "lng": -40.4478643,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:42.084Z"
+  },
+  "060394": {
+    "lat": -20.3533109,
+    "lng": -40.5127499,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:47.576Z"
+  },
+  "060395": {
+    "lat": -20.3234049,
+    "lng": -40.3737316,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:52.498Z"
+  },
+  "060396": {
+    "lat": -18.7183118,
+    "lng": -39.8437884,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:56.153Z"
+  },
+  "060397": {
+    "lat": -19.5188758,
+    "lng": -40.6391155,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:39:58.022Z"
+  },
+  "060399": {
+    "lat": -20.8342703,
+    "lng": -40.7240937,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:11.167Z"
+  },
+  "060400": {
+    "lat": -20.3400146,
+    "lng": -40.4312311,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:13.033Z"
+  },
+  "060401": {
+    "lat": -20.32873,
+    "lng": -40.3675455,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:14.891Z"
+  },
+  "060402": {
+    "lat": -20.3448777,
+    "lng": -40.3352353,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:20.705Z"
+  },
+  "060403": {
+    "lat": -20.3518502,
+    "lng": -40.3692413,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:22.565Z"
+  },
+  "060404": {
+    "lat": -20.787976,
+    "lng": -40.8017081,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:28.222Z"
+  },
+  "060405": {
+    "lat": -20.2966136,
+    "lng": -40.3850587,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:30.084Z"
+  },
+  "060406": {
+    "lat": -20.8369921,
+    "lng": -41.1834898,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:31.508Z"
+  },
+  "060407": {
+    "lat": -20.8389,
+    "lng": -41.1280475,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:37.283Z"
+  },
+  "060408": {
+    "lat": -20.439314,
+    "lng": -40.3421187,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:40.963Z"
+  },
+  "060409": {
+    "lat": -18.3019873,
+    "lng": -39.9547322,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:46.713Z"
+  },
+  "060410": {
+    "lat": -20.3155199,
+    "lng": -40.338421,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:48.768Z"
+  },
+  "060412": {
+    "lat": -20.3697596,
+    "lng": -40.3157943,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:50.629Z"
+  },
+  "060414": {
+    "lat": -20.3405193,
+    "lng": -40.3386135,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:55.663Z"
+  },
+  "060415": {
+    "lat": -20.2296289,
+    "lng": -40.2879074,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:40:57.513Z"
+  },
+  "060417": {
+    "lat": -20.51321,
+    "lng": -40.3613672,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:05.744Z"
+  },
+  "060418": {
+    "lat": -20.2842568,
+    "lng": -40.31718,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:10.974Z"
+  },
+  "060419": {
+    "lat": -20.2163115,
+    "lng": -40.2761747,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:12.834Z"
+  },
+  "060420": {
+    "lat": -20.3650113,
+    "lng": -40.3654939,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:14.783Z"
+  },
+  "060421": {
+    "lat": -20.3551387,
+    "lng": -40.3561374,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:20.162Z"
+  },
+  "060423": {
+    "lat": -20.2364242,
+    "lng": -40.2802052,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:27.156Z"
+  },
+  "060426": {
+    "lat": -20.2837607,
+    "lng": -40.3315849,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:29.107Z"
+  },
+  "060427": {
+    "lat": -20.3595327,
+    "lng": -40.3076374,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:30.723Z"
+  },
+  "060428": {
+    "lat": -20.3379949,
+    "lng": -40.3382172,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:33.495Z"
+  },
+  "060429": {
+    "lat": -20.3753602,
+    "lng": -40.3358738,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:37.518Z"
+  },
+  "060430": {
+    "lat": -20.6476542,
+    "lng": -40.4997718,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:43.107Z"
+  },
+  "060431": {
+    "lat": -20.338117,
+    "lng": -40.3615897,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:49.290Z"
+  },
+  "060432": {
+    "lat": -20.301907,
+    "lng": -40.3781198,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:54.659Z"
+  },
+  "060433": {
+    "lat": -21.0449172,
+    "lng": -40.8340977,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:57.423Z"
+  },
+  "060434": {
+    "lat": -20.3393763,
+    "lng": -40.3251059,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:41:59.278Z"
+  },
+  "060435": {
+    "lat": -20.3015055,
+    "lng": -40.3170554,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:04.746Z"
+  },
+  "060436": {
+    "lat": -20.2654427,
+    "lng": -40.4380772,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:08.777Z"
+  },
+  "060437": {
+    "lat": -20.1331604,
+    "lng": -40.2492553,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:12.232Z"
+  },
+  "060438": {
+    "lat": -20.2858291,
+    "lng": -40.300615,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:13.661Z"
+  },
+  "060439": {
+    "lat": -20.3928815,
+    "lng": -40.4972272,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:15.620Z"
+  },
+  "060441": {
+    "lat": -20.3369873,
+    "lng": -40.2977684,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:17.695Z"
+  },
+  "060442": {
+    "lat": -20.359902,
+    "lng": -40.4544417,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:19.565Z"
+  },
+  "060443": {
+    "lat": -20.288527,
+    "lng": -40.309795,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:25.446Z"
+  },
+  "060444": {
+    "lat": -20.3434218,
+    "lng": -40.3826006,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:29.272Z"
+  },
+  "060445": {
+    "lat": -20.2913661,
+    "lng": -40.3461263,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:30.711Z"
+  },
+  "060446": {
+    "lat": -20.6707445,
+    "lng": -40.5120379,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:35.711Z"
+  },
+  "060447": {
+    "lat": -20.309849,
+    "lng": -40.3936693,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:37.665Z"
+  },
+  "060448": {
+    "lat": -20.3218582,
+    "lng": -40.3496725,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:39.522Z"
+  },
+  "060449": {
+    "lat": -20.1496825,
+    "lng": -40.2720398,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:43.238Z"
+  },
+  "060450": {
+    "lat": -20.3275457,
+    "lng": -40.3339912,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:45.187Z"
+  },
+  "060451": {
+    "lat": -20.2612319,
+    "lng": -40.2651728,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:46.751Z"
+  },
+  "060452": {
+    "lat": -20.2930909,
+    "lng": -40.2980211,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:48.621Z"
+  },
+  "060454": {
+    "lat": -20.2360551,
+    "lng": -41.3829263,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:52.310Z"
+  },
+  "060455": {
+    "lat": -20.0355135,
+    "lng": -40.3924251,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:42:56.036Z"
+  },
+  "060457": {
+    "lat": -20.402929,
+    "lng": -41.5495145,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:09.690Z"
+  },
+  "060458": {
+    "lat": -20.3928479,
+    "lng": -40.9994633,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:14.130Z"
+  },
+  "060459": {
+    "lat": -20.2330562,
+    "lng": -40.2215632,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:16.201Z"
+  },
+  "060460": {
+    "lat": -20.347611,
+    "lng": -40.3988729,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:17.665Z"
+  },
+  "060461": {
+    "lat": -18.6977639,
+    "lng": -40.4002132,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:19.521Z"
+  },
+  "060462": {
+    "lat": -20.2820175,
+    "lng": -40.3368799,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:25.163Z"
+  },
+  "060463": {
+    "lat": -19.8325391,
+    "lng": -40.2687009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:27.027Z"
+  },
+  "060464": {
+    "lat": -21.0320867,
+    "lng": -40.8152422,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:28.883Z"
+  },
+  "060465": {
+    "lat": -20.3509495,
+    "lng": -40.314705,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:34.162Z"
+  },
+  "060466": {
+    "lat": -20.2180358,
+    "lng": -40.2663839,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:39.633Z"
+  },
+  "060467": {
+    "lat": -19.7405483,
+    "lng": -40.6598678,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:41.597Z"
+  },
+  "060469": {
+    "lat": -20.2652449,
+    "lng": -40.3911321,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:43.661Z"
+  },
+  "060472": {
+    "lat": -20.3487526,
+    "lng": -40.6541899,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:45.086Z"
+  },
+  "060473": {
+    "lat": -20.4409257,
+    "lng": -40.3401109,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:46.941Z"
+  },
+  "060476": {
+    "lat": -20.2697031,
+    "lng": -40.3025802,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:48.795Z"
+  },
+  "060477": {
+    "lat": -20.3412967,
+    "lng": -40.3379241,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:50.223Z"
+  },
+  "060478": {
+    "lat": -20.2258236,
+    "lng": -40.2844838,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:51.607Z"
+  },
+  "060479": {
+    "lat": -20.2581131,
+    "lng": -40.3016459,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:53.477Z"
+  },
+  "060480": {
+    "lat": -20.3533864,
+    "lng": -40.3008122,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:57.101Z"
+  },
+  "060481": {
+    "lat": -20.2945543,
+    "lng": -40.3453338,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:43:58.587Z"
+  },
+  "060483": {
+    "lat": -20.1742074,
+    "lng": -40.2473866,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:00.546Z"
+  },
+  "060484": {
+    "lat": -20.3532977,
+    "lng": -40.3050379,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:02.408Z"
+  },
+  "060485": {
+    "lat": -20.3522652,
+    "lng": -40.3178693,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:06.338Z"
+  },
+  "060486": {
+    "lat": -20.3628164,
+    "lng": -40.3169894,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:08.199Z"
+  },
+  "060487": {
+    "lat": -20.2565146,
+    "lng": -40.4314748,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:09.598Z"
+  },
+  "060488": {
+    "lat": -20.3338111,
+    "lng": -40.2885063,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:11.761Z"
+  },
+  "060489": {
+    "lat": -20.6638916,
+    "lng": -40.5072891,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:13.728Z"
+  },
+  "060492": {
+    "lat": -20.3252972,
+    "lng": -40.4304466,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:19.180Z"
+  },
+  "060493": {
+    "lat": -20.3146125,
+    "lng": -40.3228954,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:21.040Z"
+  },
+  "060495": {
+    "lat": -20.3452464,
+    "lng": -40.3483841,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:25.796Z"
+  },
+  "060496": {
+    "lat": -20.1498716,
+    "lng": -40.1891241,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:27.657Z"
+  },
+  "060497": {
+    "lat": -20.3403595,
+    "lng": -40.3871139,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:33.242Z"
+  },
+  "060498": {
+    "lat": -18.1276289,
+    "lng": -40.3655971,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:38.633Z"
+  },
+  "060499": {
+    "lat": -18.5818991,
+    "lng": -39.7376891,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:40.490Z"
+  },
+  "060500": {
+    "lat": -20.1699234,
+    "lng": -40.3139225,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:45.461Z"
+  },
+  "060502": {
+    "lat": -20.3506949,
+    "lng": -40.2947981,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:47.421Z"
+  },
+  "060503": {
+    "lat": -20.2217401,
+    "lng": -40.2515919,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:44:51.608Z"
+  },
+  "060505": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "bairro_mapa",
+    "geocodedAt": "2026-06-10T01:44:59.234Z"
+  },
+  "060506": {
+    "lat": -20.2652604,
+    "lng": -40.4213165,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:01.094Z"
+  },
+  "060507": {
+    "lat": -19.8147475,
+    "lng": -40.2703822,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:02.519Z"
+  },
+  "060508": {
+    "lat": -20.343417,
+    "lng": -40.3954179,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:08.901Z"
+  },
+  "060509": {
+    "lat": -20.3283565,
+    "lng": -40.3347793,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:12.702Z"
+  },
+  "060511": {
+    "lat": -20.8411674,
+    "lng": -40.7329759,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:27.254Z"
+  },
+  "060512": {
+    "lat": -20.3528179,
+    "lng": -40.3375833,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:28.697Z"
+  },
+  "060513": {
+    "lat": -20.3505692,
+    "lng": -40.3778025,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:30.217Z"
+  },
+  "060514": {
+    "lat": -20.3847217,
+    "lng": -40.3253901,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:32.079Z"
+  },
+  "060515": {
+    "lat": -18.7615516,
+    "lng": -40.8965535,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:37.558Z"
+  },
+  "060516": {
+    "lat": -20.3516359,
+    "lng": -40.4006218,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:39.411Z"
+  },
+  "060517": {
+    "lat": -19.4895736,
+    "lng": -40.0258508,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:45.380Z"
+  },
+  "060518": {
+    "lat": -19.3949805,
+    "lng": -40.0410769,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:47.449Z"
+  },
+  "060520": {
+    "lat": -20.4474951,
+    "lng": -40.3534799,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:49.297Z"
+  },
+  "060521": {
+    "lat": -20.3314003,
+    "lng": -40.3004644,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:45:53.812Z"
+  },
+  "060525": {
+    "lat": -20.3522924,
+    "lng": -40.2896807,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:04.929Z"
+  },
+  "060526": {
+    "lat": -20.2139775,
+    "lng": -40.2171858,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:08.741Z"
+  },
+  "060528": {
+    "lat": -20.6565887,
+    "lng": -40.4978704,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:12.874Z"
+  },
+  "060529": {
+    "lat": -20.2853361,
+    "lng": -40.3777699,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:14.341Z"
+  },
+  "060530": {
+    "lat": -20.2970777,
+    "lng": -40.3480487,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:16.312Z"
+  },
+  "060531": {
+    "lat": -20.1594185,
+    "lng": -40.2671249,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:18.169Z"
+  },
+  "060533": {
+    "lat": -20.3184819,
+    "lng": -40.3501483,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:20.029Z"
+  },
+  "060534": {
+    "lat": -20.4304209,
+    "lng": -40.3383542,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:24.982Z"
+  },
+  "060535": {
+    "lat": -20.4285117,
+    "lng": -40.3251852,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:30.950Z"
+  },
+  "060536": {
+    "lat": -20.3464627,
+    "lng": -40.3333344,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:36.385Z"
+  },
+  "060537": {
+    "lat": -20.3533907,
+    "lng": -40.3665083,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:37.865Z"
+  },
+  "060538": {
+    "lat": -20.3502246,
+    "lng": -40.4236413,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:39.721Z"
+  },
+  "060539": {
+    "lat": -20.172994,
+    "lng": -40.2512777,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:41.209Z"
+  },
+  "060540": {
+    "lat": -20.2158691,
+    "lng": -40.243253,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:47.301Z"
+  },
+  "060541": {
+    "lat": -20.2856085,
+    "lng": -40.3350671,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:49.158Z"
+  },
+  "060542": {
+    "lat": -20.1533682,
+    "lng": -40.2375153,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:51.012Z"
+  },
+  "060543": {
+    "lat": -18.6890876,
+    "lng": -40.391663,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:52.970Z"
+  },
+  "060544": {
+    "lat": -19.055483,
+    "lng": -41.0162394,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:54.825Z"
+  },
+  "060545": {
+    "lat": -20.4424161,
+    "lng": -40.3404177,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:46:56.777Z"
+  },
+  "060547": {
+    "lat": -20.3541721,
+    "lng": -40.3942555,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:02.773Z"
+  },
+  "060548": {
+    "lat": -20.3620446,
+    "lng": -40.3109765,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:04.841Z"
+  },
+  "060549": {
+    "lat": -20.6792099,
+    "lng": -40.5151249,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:06.706Z"
+  },
+  "060551": {
+    "lat": -20.3563195,
+    "lng": -40.374541,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:10.136Z"
+  },
+  "060552": {
+    "lat": -20.2922634,
+    "lng": -40.4036637,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:14.897Z"
+  },
+  "060553": {
+    "lat": -18.7210251,
+    "lng": -39.8605454,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:19.729Z"
+  },
+  "060554": {
+    "lat": -20.3826697,
+    "lng": -40.3280194,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:21.586Z"
+  },
+  "060556": {
+    "lat": -20.2543344,
+    "lng": -40.3881284,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:25.995Z"
+  },
+  "060557": {
+    "lat": -20.2601794,
+    "lng": -40.3942981,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:32.058Z"
+  },
+  "060561": {
+    "lat": -20.2963157,
+    "lng": -40.3198376,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:38.237Z"
+  },
+  "060562": {
+    "lat": -20.3663419,
+    "lng": -40.323379,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:43.893Z"
+  },
+  "060563": {
+    "lat": -20.8934952,
+    "lng": -40.7761644,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:45.754Z"
+  },
+  "060564": {
+    "lat": -20.3508835,
+    "lng": -41.5320404,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:47.153Z"
+  },
+  "060565": {
+    "lat": -20.1477767,
+    "lng": -41.2910756,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:52.049Z"
+  },
+  "060566": {
+    "lat": -20.2833869,
+    "lng": -40.3339751,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:57.581Z"
+  },
+  "060567": {
+    "lat": -19.396122,
+    "lng": -40.0419828,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:47:59.545Z"
+  },
+  "060568": {
+    "lat": -20.4415363,
+    "lng": -40.3547199,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:01.514Z"
+  },
+  "060569": {
+    "lat": -20.8282297,
+    "lng": -40.6967075,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:03.038Z"
+  },
+  "060571": {
+    "lat": -19.7330881,
+    "lng": -40.3728408,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:15.868Z"
+  },
+  "060572": {
+    "lat": -20.2258231,
+    "lng": -40.2776009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:17.724Z"
+  },
+  "060573": {
+    "lat": -20.3625461,
+    "lng": -40.3562138,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:19.107Z"
+  },
+  "060574": {
+    "lat": -18.4144881,
+    "lng": -40.2233716,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:23.202Z"
+  },
+  "060575": {
+    "lat": -18.200232,
+    "lng": -40.2648739,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:26.651Z"
+  },
+  "060578": {
+    "lat": -20.3455345,
+    "lng": -40.3117815,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:32.835Z"
+  },
+  "060579": {
+    "lat": -20.3571588,
+    "lng": -40.2995619,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:34.701Z"
+  },
+  "060580": {
+    "lat": -20.3596665,
+    "lng": -40.3139654,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:36.557Z"
+  },
+  "060581": {
+    "lat": -20.2179351,
+    "lng": -40.2265624,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:42.324Z"
+  },
+  "060582": {
+    "lat": -20.1461385,
+    "lng": -40.2605528,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:44.381Z"
+  },
+  "060583": {
+    "lat": -20.1349889,
+    "lng": -40.2057567,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:49.634Z"
+  },
+  "060584": {
+    "lat": -20.3141404,
+    "lng": -40.3537321,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:51.485Z"
+  },
+  "060585": {
+    "lat": -18.7130905,
+    "lng": -39.8510785,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:53.032Z"
+  },
+  "060586": {
+    "lat": -20.8380984,
+    "lng": -40.7241683,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:54.559Z"
+  },
+  "060587": {
+    "lat": -20.3729492,
+    "lng": -40.3917805,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:56.411Z"
+  },
+  "060588": {
+    "lat": -20.385503,
+    "lng": -40.3217245,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:57.871Z"
+  },
+  "060589": {
+    "lat": -20.3842871,
+    "lng": -40.4062205,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:48:59.730Z"
+  },
+  "060590": {
+    "lat": -18.5392648,
+    "lng": -40.2964646,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:05.411Z"
+  },
+  "060592": {
+    "lat": -20.3391289,
+    "lng": -40.3104257,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:14.280Z"
+  },
+  "060593": {
+    "lat": -20.3413163,
+    "lng": -40.3301528,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:19.568Z"
+  },
+  "060594": {
+    "lat": -18.4162979,
+    "lng": -40.2120169,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:21.419Z"
+  },
+  "060595": {
+    "lat": -20.8428632,
+    "lng": -41.1177353,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:23.287Z"
+  },
+  "060596": {
+    "lat": -20.8544905,
+    "lng": -41.1514349,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:25.249Z"
+  },
+  "060597": {
+    "lat": -20.8443948,
+    "lng": -41.1112362,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:26.642Z"
+  },
+  "060598": {
+    "lat": -20.3151712,
+    "lng": -40.3696395,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:30.660Z"
+  },
+  "060599": {
+    "lat": -20.1747332,
+    "lng": -40.2063458,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:35.199Z"
+  },
+  "060600": {
+    "lat": -20.3493238,
+    "lng": -40.2856876,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:37.064Z"
+  },
+  "060601": {
+    "lat": -20.7706554,
+    "lng": -41.5352484,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:39.025Z"
+  },
+  "060602": {
+    "lat": -20.2179351,
+    "lng": -40.2265624,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:43.121Z"
+  },
+  "060603": {
+    "lat": -19.1468236,
+    "lng": -40.6211528,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:44.556Z"
+  },
+  "060604": {
+    "lat": -20.1747502,
+    "lng": -40.2077002,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:48.476Z"
+  },
+  "060605": {
+    "lat": -20.3527459,
+    "lng": -40.2835182,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:55.134Z"
+  },
+  "060606": {
+    "lat": -20.3893271,
+    "lng": -40.3369966,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:49:56.993Z"
+  },
+  "060607": {
+    "lat": -20.303801,
+    "lng": -40.367676,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:01.000Z"
+  },
+  "060608": {
+    "lat": -18.4157901,
+    "lng": -40.206183,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:04.924Z"
+  },
+  "060609": {
+    "lat": -20.5951095,
+    "lng": -40.5009944,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:10.247Z"
+  },
+  "060610": {
+    "lat": -21.0008921,
+    "lng": -40.8080784,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:11.825Z"
+  },
+  "060611": {
+    "lat": -20.640405,
+    "lng": -40.5130398,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:15.241Z"
+  },
+  "060612": {
+    "lat": -20.1423943,
+    "lng": -40.2503318,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:17.107Z"
+  },
+  "060613": {
+    "lat": -18.6986046,
+    "lng": -40.3971302,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:18.525Z"
+  },
+  "060614": {
+    "lat": -20.0644642,
+    "lng": -40.1903095,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:20.140Z"
+  },
+  "060616": {
+    "lat": -20.1936697,
+    "lng": -40.2291181,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:22.094Z"
+  },
+  "060617": {
+    "lat": -20.5442054,
+    "lng": -40.3973373,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:28.388Z"
+  },
+  "060618": {
+    "lat": -19.7312049,
+    "lng": -40.3623245,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:33.754Z"
+  },
+  "060619": {
+    "lat": -19.7569331,
+    "lng": -40.3790456,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:35.614Z"
+  },
+  "060621": {
+    "lat": -20.2600195,
+    "lng": -40.424844,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:39.638Z"
+  },
+  "060622": {
+    "lat": -20.2049207,
+    "lng": -40.2499077,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:41.499Z"
+  },
+  "060623": {
+    "lat": -20.1850678,
+    "lng": -40.2319726,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:43.663Z"
+  },
+  "060624": {
+    "lat": -20.194892,
+    "lng": -40.2767654,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:45.526Z"
+  },
+  "060625": {
+    "lat": -20.0736965,
+    "lng": -41.1239962,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:48.728Z"
+  },
+  "060626": {
+    "lat": -20.2254098,
+    "lng": -40.2778279,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:53.931Z"
+  },
+  "060627": {
+    "lat": -20.2569698,
+    "lng": -40.291465,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:50:55.783Z"
+  },
+  "060628": {
+    "lat": -20.4376532,
+    "lng": -40.3475626,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:01.757Z"
+  },
+  "060629": {
+    "lat": -20.2599804,
+    "lng": -40.267894,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:06.015Z"
+  },
+  "060631": {
+    "lat": -18.1283909,
+    "lng": -40.3603113,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:07.756Z"
+  },
+  "060632": {
+    "lat": -20.3178875,
+    "lng": -40.3259174,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:09.614Z"
+  },
+  "060633": {
+    "lat": -20.1309891,
+    "lng": -40.2371599,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:13.433Z"
+  },
+  "060634": {
+    "lat": -20.220709,
+    "lng": -40.2274756,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:14.818Z"
+  },
+  "060635": {
+    "lat": -20.2179351,
+    "lng": -40.2265624,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:20.249Z"
+  },
+  "060636": {
+    "lat": -19.4036935,
+    "lng": -40.0489167,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:22.099Z"
+  },
+  "060638": {
+    "lat": -18.7384943,
+    "lng": -39.750913,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:28.423Z"
+  },
+  "060641": {
+    "lat": -19.7491482,
+    "lng": -40.3817799,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:30.790Z"
+  },
+  "060643": {
+    "lat": -20.4107832,
+    "lng": -40.6733522,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:33.159Z"
+  },
+  "060644": {
+    "lat": -20.3120888,
+    "lng": -40.3575294,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:35.316Z"
+  },
+  "060645": {
+    "lat": -20.358996,
+    "lng": -40.3745394,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:37.170Z"
+  },
+  "060647": {
+    "lat": -20.6576053,
+    "lng": -40.6176621,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:42.838Z"
+  },
+  "060648": {
+    "lat": -20.2708349,
+    "lng": -40.3202644,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:44.816Z"
+  },
+  "060650": {
+    "lat": -20.8479057,
+    "lng": -41.1052679,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:46.771Z"
+  },
+  "060651": {
+    "lat": -20.8542897,
+    "lng": -41.1486951,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:49.690Z"
+  },
+  "060652": {
+    "lat": -20.8622212,
+    "lng": -41.1214678,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:51.126Z"
+  },
+  "060653": {
+    "lat": -20.3241783,
+    "lng": -40.3881618,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:53.087Z"
+  },
+  "060654": {
+    "lat": -20.333986,
+    "lng": -40.293771,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:51:54.953Z"
+  },
+  "060655": {
+    "lat": -20.8627013,
+    "lng": -40.948731,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:00.852Z"
+  },
+  "060657": {
+    "lat": -20.3220152,
+    "lng": -40.3722973,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:02.386Z"
+  },
+  "060658": {
+    "lat": -20.3028247,
+    "lng": -40.3006106,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:08.243Z"
+  },
+  "060660": {
+    "lat": -20.3623645,
+    "lng": -40.2996693,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:10.109Z"
+  },
+  "060662": {
+    "lat": -20.332528,
+    "lng": -40.4155757,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:11.960Z"
+  },
+  "060663": {
+    "lat": -20.3559288,
+    "lng": -40.4010187,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:13.437Z"
+  },
+  "060664": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "bairro_mapa",
+    "geocodedAt": "2026-06-10T01:52:21.254Z"
+  },
+  "060665": {
+    "lat": -18.2945253,
+    "lng": -39.9508626,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:23.021Z"
+  },
+  "060667": {
+    "lat": -20.4456921,
+    "lng": -40.3535515,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:24.880Z"
+  },
+  "060668": {
+    "lat": -20.3498853,
+    "lng": -40.3835765,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:31.660Z"
+  },
+  "060671": {
+    "lat": -20.3224653,
+    "lng": -40.3474299,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:33.503Z"
+  },
+  "060672": {
+    "lat": -19.5220279,
+    "lng": -40.7051743,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:35.860Z"
+  },
+  "060674": {
+    "lat": -20.3568057,
+    "lng": -40.3783686,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:42.008Z"
+  },
+  "060675": {
+    "lat": -20.3405608,
+    "lng": -40.4315224,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:46.027Z"
+  },
+  "060676": {
+    "lat": -20.8378377,
+    "lng": -41.1110055,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:47.885Z"
+  },
+  "060677": {
+    "lat": -19.9237513,
+    "lng": -40.1187765,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:49.284Z"
+  },
+  "060679": {
+    "lat": -21.0422496,
+    "lng": -40.8313644,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:55.046Z"
+  },
+  "060681": {
+    "lat": -20.1747332,
+    "lng": -40.2063458,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:52:59.703Z"
+  },
+  "060682": {
+    "lat": -20.1464095,
+    "lng": -40.237085,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:03.274Z"
+  },
+  "060683": {
+    "lat": -18.7169585,
+    "lng": -39.8804926,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:09.046Z"
+  },
+  "060684": {
+    "lat": -20.8804527,
+    "lng": -41.0989061,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:10.549Z"
+  },
+  "060685": {
+    "lat": -20.342652,
+    "lng": -40.3348783,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:12.508Z"
+  },
+  "060687": {
+    "lat": -20.2565257,
+    "lng": -40.2934443,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:14.370Z"
+  },
+  "060688": {
+    "lat": -20.4371825,
+    "lng": -40.341314,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:16.319Z"
+  },
+  "060690": {
+    "lat": -20.2685295,
+    "lng": -40.4120212,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:18.176Z"
+  },
+  "060691": {
+    "lat": -20.7760822,
+    "lng": -41.6688228,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:20.131Z"
+  },
+  "060692": {
+    "lat": -20.3319393,
+    "lng": -40.345151,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:26.059Z"
+  },
+  "060694": {
+    "lat": -20.3325452,
+    "lng": -40.3378444,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:29.985Z"
+  },
+  "060698": {
+    "lat": -19.9331718,
+    "lng": -40.4066304,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:42.544Z"
+  },
+  "060700": {
+    "lat": -20.378275,
+    "lng": -40.372972,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:44.502Z"
+  },
+  "060702": {
+    "lat": -21.0299456,
+    "lng": -41.6571963,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:46.367Z"
+  },
+  "060703": {
+    "lat": -20.3573369,
+    "lng": -40.320869,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:48.324Z"
+  },
+  "060704": {
+    "lat": -20.3577787,
+    "lng": -40.3879379,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:50.287Z"
+  },
+  "060705": {
+    "lat": -20.2735423,
+    "lng": -40.3973875,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:54.526Z"
+  },
+  "060706": {
+    "lat": -20.1996333,
+    "lng": -40.2608433,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:53:56.088Z"
+  },
+  "060707": {
+    "lat": -20.373976,
+    "lng": -40.4165591,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:01.318Z"
+  },
+  "060708": {
+    "lat": -20.1747332,
+    "lng": -40.2063458,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:06.936Z"
+  },
+  "060709": {
+    "lat": -19.5073821,
+    "lng": -40.9123142,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:12.232Z"
+  },
+  "060710": {
+    "lat": -20.3366143,
+    "lng": -40.3628341,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:16.149Z"
+  },
+  "060711": {
+    "lat": -20.2221287,
+    "lng": -40.2723885,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:20.473Z"
+  },
+  "060714": {
+    "lat": -20.4362327,
+    "lng": -40.3339591,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:21.922Z"
+  },
+  "060715": {
+    "lat": -20.3350315,
+    "lng": -40.2824025,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:27.387Z"
+  },
+  "060716": {
+    "lat": -20.3219675,
+    "lng": -40.387578,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:30.353Z"
+  },
+  "060717": {
+    "lat": -20.3163547,
+    "lng": -40.3572601,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:34.160Z"
+  },
+  "060718": {
+    "lat": -20.3727405,
+    "lng": -40.309686,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:37.649Z"
+  },
+  "060719": {
+    "lat": -20.3635063,
+    "lng": -40.4233983,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:45.139Z"
+  },
+  "060720": {
+    "lat": -20.7818393,
+    "lng": -41.5879195,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:50.521Z"
+  },
+  "060721": {
+    "lat": -20.859236,
+    "lng": -41.1090817,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:51.985Z"
+  },
+  "060723": {
+    "lat": -20.3073823,
+    "lng": -40.3753681,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:54:55.912Z"
+  },
+  "060724": {
+    "lat": -20.2650628,
+    "lng": -40.4258565,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:00.041Z"
+  },
+  "060725": {
+    "lat": -20.2198331,
+    "lng": -40.2518266,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:01.904Z"
+  },
+  "060727": {
+    "lat": -20.3130227,
+    "lng": -40.3889303,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:03.759Z"
+  },
+  "060728": {
+    "lat": -20.3366413,
+    "lng": -40.4276648,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:05.709Z"
+  },
+  "060729": {
+    "lat": -20.2866941,
+    "lng": -40.2933931,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:07.561Z"
+  },
+  "060730": {
+    "lat": -20.4298128,
+    "lng": -40.3385085,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:09.922Z"
+  },
+  "060731": {
+    "lat": -20.1790718,
+    "lng": -40.254996,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:15.649Z"
+  },
+  "060733": {
+    "lat": -20.3264214,
+    "lng": -40.384878,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:17.607Z"
+  },
+  "060734": {
+    "lat": -20.3577608,
+    "lng": -40.3157278,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:19.557Z"
+  },
+  "060735": {
+    "lat": -20.1169385,
+    "lng": -40.2983437,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:22.999Z"
+  },
+  "060736": {
+    "lat": -20.3403595,
+    "lng": -40.3871139,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:27.432Z"
+  },
+  "060738": {
+    "lat": -20.323234,
+    "lng": -40.3907544,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:28.912Z"
+  },
+  "060740": {
+    "lat": -20.3305145,
+    "lng": -41.0406583,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:33.853Z"
+  },
+  "060742": {
+    "lat": -20.1543178,
+    "lng": -40.2490347,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:37.777Z"
+  },
+  "060743": {
+    "lat": -20.315158,
+    "lng": -40.3533887,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:40.538Z"
+  },
+  "060746": {
+    "lat": -20.1510577,
+    "lng": -40.2358969,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:42.502Z"
+  },
+  "060747": {
+    "lat": -19.3615201,
+    "lng": -40.0498118,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:44.367Z"
+  },
+  "060748": {
+    "lat": -20.1535818,
+    "lng": -40.26453,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:46.322Z"
+  },
+  "060750": {
+    "lat": -20.3764552,
+    "lng": -40.318561,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:48.177Z"
+  },
+  "060751": {
+    "lat": -20.131835,
+    "lng": -40.2518797,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:52.899Z"
+  },
+  "060752": {
+    "lat": -20.6481232,
+    "lng": -40.4832547,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:54.862Z"
+  },
+  "060753": {
+    "lat": -20.4855551,
+    "lng": -40.3505752,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:56.722Z"
+  },
+  "060754": {
+    "lat": -20.3291399,
+    "lng": -40.3765809,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:55:58.591Z"
+  },
+  "060755": {
+    "lat": -20.3684803,
+    "lng": -40.3844738,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:02.204Z"
+  },
+  "060756": {
+    "lat": -20.3352545,
+    "lng": -40.3901824,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:08.984Z"
+  },
+  "060759": {
+    "lat": -20.3621911,
+    "lng": -40.3697127,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:10.836Z"
+  },
+  "060760": {
+    "lat": -20.2752529,
+    "lng": -40.3268891,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:12.899Z"
+  },
+  "060761": {
+    "lat": -20.3737896,
+    "lng": -40.3679149,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:14.749Z"
+  },
+  "060763": {
+    "lat": -20.3614353,
+    "lng": -40.3062886,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:16.520Z"
+  },
+  "060765": {
+    "lat": -19.5377579,
+    "lng": -40.624158,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:18.370Z"
+  },
+  "060766": {
+    "lat": -19.3838678,
+    "lng": -40.0575993,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:20.230Z"
+  },
+  "060769": {
+    "lat": -20.2653806,
+    "lng": -40.3996336,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:22.093Z"
+  },
+  "060770": {
+    "lat": -20.3059474,
+    "lng": -40.2927989,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:23.539Z"
+  },
+  "060774": {
+    "lat": -20.3400446,
+    "lng": -40.3797722,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:28.918Z"
+  },
+  "060775": {
+    "lat": -20.3521017,
+    "lng": -40.3665887,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:35.518Z"
+  },
+  "060776": {
+    "lat": -20.3570236,
+    "lng": -40.3683237,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:40.951Z"
+  },
+  "060778": {
+    "lat": -20.1657956,
+    "lng": -40.1938781,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:46.533Z"
+  },
+  "060779": {
+    "lat": -20.386124,
+    "lng": -40.36762,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:47.991Z"
+  },
+  "060781": {
+    "lat": -19.3903344,
+    "lng": -40.0634127,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:52.214Z"
+  },
+  "060782": {
+    "lat": -20.2690133,
+    "lng": -40.298706,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:54.061Z"
+  },
+  "060783": {
+    "lat": -20.4388831,
+    "lng": -40.3397355,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:55.927Z"
+  },
+  "060784": {
+    "lat": -19.8216099,
+    "lng": -40.2747077,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:57.788Z"
+  },
+  "060785": {
+    "lat": -20.1728191,
+    "lng": -40.1968007,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:56:59.259Z"
+  },
+  "060786": {
+    "lat": -20.3273021,
+    "lng": -40.3959105,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:01.123Z"
+  },
+  "060787": {
+    "lat": -20.3436454,
+    "lng": -40.3238591,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:06.347Z"
+  },
+  "060788": {
+    "lat": -20.3487274,
+    "lng": -40.3053031,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:11.715Z"
+  },
+  "060790": {
+    "lat": -20.4980279,
+    "lng": -40.355001,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:15.543Z"
+  },
+  "060791": {
+    "lat": -20.3535704,
+    "lng": -40.4262979,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:20.776Z"
+  },
+  "060792": {
+    "lat": -20.1581417,
+    "lng": -40.246944,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:27.660Z"
+  },
+  "060793": {
+    "lat": -20.3454081,
+    "lng": -40.4063853,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:32.994Z"
+  },
+  "060794": {
+    "lat": -20.1888922,
+    "lng": -40.2742358,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:34.627Z"
+  },
+  "060795": {
+    "lat": -20.2327167,
+    "lng": -40.2732536,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:38.652Z"
+  },
+  "060798": {
+    "lat": -20.3559702,
+    "lng": -40.3672028,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:40.507Z"
+  },
+  "060800": {
+    "lat": -20.3036236,
+    "lng": -40.3736048,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:42.575Z"
+  },
+  "060801": {
+    "lat": -20.5192927,
+    "lng": -40.4785035,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:47.898Z"
+  },
+  "060802": {
+    "lat": -20.3048874,
+    "lng": -40.3852502,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:54.283Z"
+  },
+  "060803": {
+    "lat": -20.3324307,
+    "lng": -40.3453404,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:57:56.242Z"
+  },
+  "060804": {
+    "lat": -20.3819068,
+    "lng": -40.623297,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:02.321Z"
+  },
+  "060805": {
+    "lat": -20.4917163,
+    "lng": -40.7712971,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:04.281Z"
+  },
+  "060806": {
+    "lat": -20.3616946,
+    "lng": -40.3541217,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:06.245Z"
+  },
+  "060807": {
+    "lat": -20.344776,
+    "lng": -41.53265,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:08.205Z"
+  },
+  "060809": {
+    "lat": -20.319198,
+    "lng": -40.3453596,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:09.691Z"
+  },
+  "060811": {
+    "lat": -20.2954342,
+    "lng": -40.3074574,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:11.548Z"
+  },
+  "060812": {
+    "lat": -20.3448556,
+    "lng": -40.3460295,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:13.396Z"
+  },
+  "060813": {
+    "lat": -20.4363568,
+    "lng": -40.3631887,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:15.365Z"
+  },
+  "060814": {
+    "lat": -20.3482597,
+    "lng": -40.3414222,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:18.987Z"
+  },
+  "060816": {
+    "lat": -18.1239752,
+    "lng": -40.3636938,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:24.947Z"
+  },
+  "060817": {
+    "lat": -20.3261071,
+    "lng": -40.3717915,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:26.800Z"
+  },
+  "060818": {
+    "lat": -20.36985,
+    "lng": -40.3195438,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:32.153Z"
+  },
+  "060819": {
+    "lat": -18.37205,
+    "lng": -40.3659049,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:36.171Z"
+  },
+  "060820": {
+    "lat": -20.2616375,
+    "lng": -40.381686,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:37.641Z"
+  },
+  "060821": {
+    "lat": -19.5215354,
+    "lng": -40.6155592,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:39.497Z"
+  },
+  "060822": {
+    "lat": -20.2596572,
+    "lng": -40.4106572,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:41.464Z"
+  },
+  "060823": {
+    "lat": -19.5145265,
+    "lng": -40.6195339,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:42.951Z"
+  },
+  "060824": {
+    "lat": -20.3300592,
+    "lng": -40.3683687,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:44.810Z"
+  },
+  "060825": {
+    "lat": -20.4377657,
+    "lng": -40.3361224,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:46.661Z"
+  },
+  "060829": {
+    "lat": -20.335523,
+    "lng": -40.3662567,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:55.920Z"
+  },
+  "060830": {
+    "lat": -20.3733947,
+    "lng": -40.388545,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:57.401Z"
+  },
+  "060831": {
+    "lat": -20.0153633,
+    "lng": -40.7477639,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:58:58.929Z"
+  },
+  "060833": {
+    "lat": -20.2551992,
+    "lng": -40.3783655,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:00.795Z"
+  },
+  "060834": {
+    "lat": -18.7092635,
+    "lng": -40.4027147,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:02.754Z"
+  },
+  "060835": {
+    "lat": -19.8204283,
+    "lng": -40.276886,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:04.715Z"
+  },
+  "060836": {
+    "lat": -19.5873174,
+    "lng": -40.1958248,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:06.216Z"
+  },
+  "060837": {
+    "lat": -20.8445443,
+    "lng": -40.7469502,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:09.602Z"
+  },
+  "060838": {
+    "lat": -20.3459683,
+    "lng": -40.3394927,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:11.478Z"
+  },
+  "060839": {
+    "lat": -19.8788671,
+    "lng": -40.0858383,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:13.335Z"
+  },
+  "060840": {
+    "lat": -19.3747673,
+    "lng": -40.0723185,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:15.299Z"
+  },
+  "060841": {
+    "lat": -19.3210064,
+    "lng": -40.0712314,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:20.001Z"
+  },
+  "060842": {
+    "lat": -20.6337033,
+    "lng": -40.4323388,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:24.228Z"
+  },
+  "060843": {
+    "lat": -19.3744055,
+    "lng": -40.0543158,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:26.086Z"
+  },
+  "060844": {
+    "lat": -18.7326917,
+    "lng": -39.855415,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:32.679Z"
+  },
+  "060846": {
+    "lat": -20.3675801,
+    "lng": -40.3567368,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:34.631Z"
+  },
+  "060848": {
+    "lat": -20.2391149,
+    "lng": -41.5101413,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:36.029Z"
+  },
+  "060851": {
+    "lat": -20.349741,
+    "lng": -40.3345321,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:49.128Z"
+  },
+  "060854": {
+    "lat": -20.3612858,
+    "lng": -40.3626658,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:50.987Z"
+  },
+  "060858": {
+    "lat": -20.3520252,
+    "lng": -40.3840747,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:52.956Z"
+  },
+  "060860": {
+    "lat": -20.3452464,
+    "lng": -40.3483841,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:57.997Z"
+  },
+  "060862": {
+    "lat": -20.3339067,
+    "lng": -40.4233308,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T01:59:59.986Z"
+  },
+  "060864": {
+    "lat": -20.2876295,
+    "lng": -40.3759758,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:01.848Z"
+  },
+  "060865": {
+    "lat": -20.6304829,
+    "lng": -40.4378932,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:06.753Z"
+  },
+  "060866": {
+    "lat": -20.3490395,
+    "lng": -40.3722122,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:08.615Z"
+  },
+  "060867": {
+    "lat": -20.6233891,
+    "lng": -40.4901579,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:14.912Z"
+  },
+  "060868": {
+    "lat": -20.3350052,
+    "lng": -40.352732,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:16.335Z"
+  },
+  "060869": {
+    "lat": -20.3010825,
+    "lng": -40.3945079,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:18.198Z"
+  },
+  "060872": {
+    "lat": -20.415304,
+    "lng": -40.3341448,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:19.679Z"
+  },
+  "060873": {
+    "lat": -20.3573938,
+    "lng": -40.3482726,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:24.387Z"
+  },
+  "060874": {
+    "lat": -20.3740267,
+    "lng": -40.3485769,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:26.229Z"
+  },
+  "060877": {
+    "lat": -18.2051953,
+    "lng": -40.604921,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:28.092Z"
+  },
+  "060880": {
+    "lat": -20.3398057,
+    "lng": -40.3198411,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:30.055Z"
+  },
+  "060881": {
+    "lat": -20.3658568,
+    "lng": -40.4268257,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:32.217Z"
+  },
+  "060882": {
+    "lat": -20.3263109,
+    "lng": -40.3745585,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:34.085Z"
+  },
+  "060883": {
+    "lat": -20.1171126,
+    "lng": -40.183164,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:36.240Z"
+  },
+  "060884": {
+    "lat": -20.3213405,
+    "lng": -40.3772263,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:38.108Z"
+  },
+  "060885": {
+    "lat": -19.396122,
+    "lng": -40.0419828,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:39.608Z"
+  },
+  "060886": {
+    "lat": -20.2194255,
+    "lng": -40.2753505,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:45.028Z"
+  },
+  "060887": {
+    "lat": -20.33602,
+    "lng": -40.3951748,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:46.464Z"
+  },
+  "060888": {
+    "lat": -20.3341451,
+    "lng": -40.4041834,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:48.428Z"
+  },
+  "060889": {
+    "lat": -20.2327578,
+    "lng": -41.5007088,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:53.351Z"
+  },
+  "060890": {
+    "lat": -20.3331123,
+    "lng": -40.3575148,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:00:59.252Z"
+  },
+  "060892": {
+    "lat": -20.132784,
+    "lng": -40.3130541,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:04.674Z"
+  },
+  "060893": {
+    "lat": -20.6237047,
+    "lng": -40.4492209,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:08.481Z"
+  },
+  "060894": {
+    "lat": -20.2513367,
+    "lng": -40.3845346,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:13.013Z"
+  },
+  "060898": {
+    "lat": -20.2158691,
+    "lng": -40.243253,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:24.293Z"
+  },
+  "060901": {
+    "lat": -20.3303005,
+    "lng": -40.3878472,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:27.862Z"
+  },
+  "060903": {
+    "lat": -21.1532143,
+    "lng": -41.5663136,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:29.820Z"
+  },
+  "060904": {
+    "lat": -20.346953,
+    "lng": -40.2972838,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:35.060Z"
+  },
+  "060907": {
+    "lat": -21.0214834,
+    "lng": -40.8170601,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:36.492Z"
+  },
+  "060908": {
+    "lat": -20.948735,
+    "lng": -41.6976718,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:41.403Z"
+  },
+  "060909": {
+    "lat": -19.3907528,
+    "lng": -40.0642029,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:43.352Z"
+  },
+  "060910": {
+    "lat": -20.3077824,
+    "lng": -40.3253982,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:45.125Z"
+  },
+  "060911": {
+    "lat": -18.4324333,
+    "lng": -40.3894439,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:51.712Z"
+  },
+  "060912": {
+    "lat": -19.2758434,
+    "lng": -40.3194065,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:53.672Z"
+  },
+  "060913": {
+    "lat": -18.5398487,
+    "lng": -40.2847202,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:55.149Z"
+  },
+  "060914": {
+    "lat": -20.3672588,
+    "lng": -40.3934648,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:01:58.799Z"
+  },
+  "060916": {
+    "lat": -20.5289557,
+    "lng": -40.3749557,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:08.286Z"
+  },
+  "060917": {
+    "lat": -20.1161338,
+    "lng": -40.3085237,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:10.345Z"
+  },
+  "060918": {
+    "lat": -19.8295176,
+    "lng": -40.0675959,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:14.459Z"
+  },
+  "060920": {
+    "lat": -18.7579315,
+    "lng": -40.8862233,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:15.863Z"
+  },
+  "060921": {
+    "lat": -20.6740148,
+    "lng": -40.5171924,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:20.795Z"
+  },
+  "060922": {
+    "lat": -19.4120898,
+    "lng": -40.5466773,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:22.859Z"
+  },
+  "060923": {
+    "lat": -20.3756448,
+    "lng": -40.3515242,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:24.388Z"
+  },
+  "060924": {
+    "lat": -20.1341549,
+    "lng": -40.2993021,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:29.803Z"
+  },
+  "060925": {
+    "lat": -18.3676966,
+    "lng": -40.8363074,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:31.569Z"
+  },
+  "060927": {
+    "lat": -19.9302855,
+    "lng": -40.1526326,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:33.423Z"
+  },
+  "060929": {
+    "lat": -20.4304209,
+    "lng": -40.3383542,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:39.282Z"
+  },
+  "060932": {
+    "lat": -19.8030143,
+    "lng": -40.8554218,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:43.799Z"
+  },
+  "060933": {
+    "lat": -19.8711569,
+    "lng": -40.873929,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:45.649Z"
+  },
+  "060934": {
+    "lat": -20.8391808,
+    "lng": -40.7136239,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:47.507Z"
+  },
+  "060935": {
+    "lat": -20.1376498,
+    "lng": -40.2914545,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:51.510Z"
+  },
+  "060936": {
+    "lat": -20.3768719,
+    "lng": -40.4392622,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:02:57.285Z"
+  },
+  "060937": {
+    "lat": -20.7227234,
+    "lng": -40.5255617,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:00.996Z"
+  },
+  "060938": {
+    "lat": -20.3277967,
+    "lng": -40.3613321,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:06.125Z"
+  },
+  "060940": {
+    "lat": -19.395377,
+    "lng": -40.0465764,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:07.995Z"
+  },
+  "060943": {
+    "lat": -20.3691951,
+    "lng": -40.3198565,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:09.950Z"
+  },
+  "060944": {
+    "lat": -20.3727166,
+    "lng": -40.4223297,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:11.915Z"
+  },
+  "060945": {
+    "lat": -20.2205329,
+    "lng": -40.2117421,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:17.092Z"
+  },
+  "060946": {
+    "lat": -20.3649167,
+    "lng": -40.3087487,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:18.937Z"
+  },
+  "060947": {
+    "lat": -20.2922634,
+    "lng": -40.4036637,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:23.869Z"
+  },
+  "060948": {
+    "lat": -20.1961841,
+    "lng": -40.2799455,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:29.310Z"
+  },
+  "060949": {
+    "lat": -19.1886658,
+    "lng": -40.1059555,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:30.688Z"
+  },
+  "060950": {
+    "lat": -17.9576083,
+    "lng": -40.5298013,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:36.478Z"
+  },
+  "060954": {
+    "lat": -21.0638092,
+    "lng": -41.3723432,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:42.352Z"
+  },
+  "060956": {
+    "lat": -20.5909847,
+    "lng": -41.0516697,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:47.416Z"
+  },
+  "060957": {
+    "lat": -20.2599804,
+    "lng": -40.267894,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:52.027Z"
+  },
+  "060958": {
+    "lat": -20.2179316,
+    "lng": -40.2572399,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:55.649Z"
+  },
+  "060959": {
+    "lat": -20.0403848,
+    "lng": -40.1887045,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:57.509Z"
+  },
+  "060960": {
+    "lat": -20.3708073,
+    "lng": -40.4187241,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:03:59.372Z"
+  },
+  "060961": {
+    "lat": -18.7247581,
+    "lng": -40.4233445,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:04.512Z"
+  },
+  "060962": {
+    "lat": -20.2115334,
+    "lng": -40.2643801,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:06.357Z"
+  },
+  "060966": {
+    "lat": -20.0208614,
+    "lng": -40.6834603,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:20.038Z"
+  },
+  "060967": {
+    "lat": -19.525128,
+    "lng": -40.6691418,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:25.919Z"
+  },
+  "060968": {
+    "lat": -19.8730548,
+    "lng": -40.3606714,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:31.198Z"
+  },
+  "060969": {
+    "lat": -20.3634229,
+    "lng": -40.3073659,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:36.965Z"
+  },
+  "060970": {
+    "lat": -18.5446448,
+    "lng": -40.9825055,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:38.915Z"
+  },
+  "060971": {
+    "lat": -20.3179924,
+    "lng": -40.3291909,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:40.769Z"
+  },
+  "060973": {
+    "lat": -20.4311374,
+    "lng": -40.3644796,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:51.475Z"
+  },
+  "060974": {
+    "lat": -18.7060517,
+    "lng": -40.396204,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:53.338Z"
+  },
+  "060975": {
+    "lat": -20.3795321,
+    "lng": -40.3749937,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:55.192Z"
+  },
+  "060976": {
+    "lat": -20.438536,
+    "lng": -40.3538978,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:57.155Z"
+  },
+  "060979": {
+    "lat": -19.9392582,
+    "lng": -40.6059697,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:04:58.772Z"
+  },
+  "060982": {
+    "lat": -18.7151795,
+    "lng": -39.886765,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:04.359Z"
+  },
+  "060983": {
+    "lat": -18.7488323,
+    "lng": -39.8591934,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:09.720Z"
+  },
+  "060984": {
+    "lat": -18.7159269,
+    "lng": -39.86862,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:15.893Z"
+  },
+  "060985": {
+    "lat": -18.2942331,
+    "lng": -39.9589477,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:21.767Z"
+  },
+  "060986": {
+    "lat": -20.3607041,
+    "lng": -40.3787111,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:23.255Z"
+  },
+  "060987": {
+    "lat": -19.5262077,
+    "lng": -40.6379307,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:28.923Z"
+  },
+  "060989": {
+    "lat": -20.1293025,
+    "lng": -40.2809199,
+    "source": "bairro_mapa",
+    "geocodedAt": "2026-06-10T02:05:34.943Z"
+  },
+  "060990": {
+    "lat": -20.2439113,
+    "lng": -40.265896,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:37.014Z"
+  },
+  "060991": {
+    "lat": -20.4752223,
+    "lng": -40.3663152,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:38.969Z"
+  },
+  "060992": {
+    "lat": -20.3285296,
+    "lng": -40.2904477,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:40.835Z"
+  },
+  "060996": {
+    "lat": -20.1502112,
+    "lng": -40.2777667,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:49.928Z"
+  },
+  "060998": {
+    "lat": -20.4442885,
+    "lng": -40.3507008,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:53.431Z"
+  },
+  "061000": {
+    "lat": -20.1793572,
+    "lng": -40.2052957,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:05:55.304Z"
+  },
+  "061001": {
+    "lat": -18.8829657,
+    "lng": -41.0156672,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:00.595Z"
+  },
+  "061002": {
+    "lat": -20.1184585,
+    "lng": -40.3168035,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:02.549Z"
+  },
+  "061003": {
+    "lat": -20.1541923,
+    "lng": -40.2602833,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:06.781Z"
+  },
+  "061004": {
+    "lat": -20.3583645,
+    "lng": -40.3554696,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:08.221Z"
+  },
+  "061005": {
+    "lat": -20.4462777,
+    "lng": -40.3508858,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:12.428Z"
+  },
+  "061006": {
+    "lat": -20.671132,
+    "lng": -40.4994027,
+    "source": "bairro_mapa",
+    "geocodedAt": "2026-06-10T02:06:20.246Z"
+  },
+  "061008": {
+    "lat": -20.4445787,
+    "lng": -40.3412493,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:22.107Z"
+  },
+  "061009": {
+    "lat": -20.1716048,
+    "lng": -40.19585,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:23.962Z"
+  },
+  "061010": {
+    "lat": -20.3456956,
+    "lng": -40.3573682,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:25.822Z"
+  },
+  "061014": {
+    "lat": -20.316598,
+    "lng": -40.8028487,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:29.089Z"
+  },
+  "061016": {
+    "lat": -20.3509495,
+    "lng": -40.314705,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:34.340Z"
+  },
+  "061019": {
+    "lat": -20.6824081,
+    "lng": -40.5147698,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:47.320Z"
+  },
+  "061021": {
+    "lat": -20.3424147,
+    "lng": -40.3244427,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:48.769Z"
+  },
+  "061022": {
+    "lat": -19.3585745,
+    "lng": -40.0449519,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:54.849Z"
+  },
+  "061023": {
+    "lat": -18.9850929,
+    "lng": -40.7396651,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:06:56.704Z"
+  },
+  "061024": {
+    "lat": -18.8079578,
+    "lng": -40.6866565,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:02.385Z"
+  },
+  "061025": {
+    "lat": -20.6441535,
+    "lng": -40.5174522,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:04.554Z"
+  },
+  "061026": {
+    "lat": -20.1456416,
+    "lng": -40.2701791,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:06.010Z"
+  },
+  "061028": {
+    "lat": -20.3563215,
+    "lng": -40.3467843,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:09.172Z"
+  },
+  "061030": {
+    "lat": -20.6284258,
+    "lng": -40.4460065,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:13.194Z"
+  },
+  "061031": {
+    "lat": -20.6262349,
+    "lng": -40.4835753,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:19.180Z"
+  },
+  "061032": {
+    "lat": -20.7425709,
+    "lng": -41.4548775,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:24.951Z"
+  },
+  "061033": {
+    "lat": -20.7660304,
+    "lng": -41.5400335,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:28.665Z"
+  },
+  "061035": {
+    "lat": -18.9041914,
+    "lng": -40.4488141,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:34.524Z"
+  },
+  "061036": {
+    "lat": -20.1111625,
+    "lng": -40.3230396,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:36.382Z"
+  },
+  "061037": {
+    "lat": -20.7322474,
+    "lng": -40.5617793,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:37.781Z"
+  },
+  "061038": {
+    "lat": -18.4154596,
+    "lng": -40.2265155,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:42.774Z"
+  },
+  "061039": {
+    "lat": -20.3760811,
+    "lng": -40.3467776,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:44.623Z"
+  },
+  "061042": {
+    "lat": -20.8100886,
+    "lng": -40.7357903,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:56.633Z"
+  },
+  "061043": {
+    "lat": -20.3372774,
+    "lng": -40.3377553,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:07:58.486Z"
+  },
+  "061046": {
+    "lat": -20.6443505,
+    "lng": -40.5207829,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:04.359Z"
+  },
+  "061047": {
+    "lat": -20.6411581,
+    "lng": -40.5125315,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:06.223Z"
+  },
+  "061048": {
+    "lat": -20.3740813,
+    "lng": -40.4066436,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:08.177Z"
+  },
+  "061049": {
+    "lat": -20.3349799,
+    "lng": -40.3281395,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:12.086Z"
+  },
+  "061051": {
+    "lat": -18.1320496,
+    "lng": -40.3679123,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:17.517Z"
+  },
+  "061052": {
+    "lat": -20.798084,
+    "lng": -40.5942252,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:22.855Z"
+  },
+  "061053": {
+    "lat": -20.1732575,
+    "lng": -40.2603102,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:24.709Z"
+  },
+  "061054": {
+    "lat": -21.0759709,
+    "lng": -41.4935246,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:28.421Z"
+  },
+  "061055": {
+    "lat": -20.3639597,
+    "lng": -40.3592013,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:30.281Z"
+  },
+  "061056": {
+    "lat": -20.3270886,
+    "lng": -41.1471515,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:33.760Z"
+  },
+  "061059": {
+    "lat": -19.1989777,
+    "lng": -40.1112106,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:37.196Z"
+  },
+  "061060": {
+    "lat": -20.3863886,
+    "lng": -41.2091911,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:42.133Z"
+  },
+  "061063": {
+    "lat": -21.1617879,
+    "lng": -41.4866667,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:48.013Z"
+  },
+  "061065": {
+    "lat": -20.3379594,
+    "lng": -40.3338783,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:49.871Z"
+  },
+  "061066": {
+    "lat": -19.1459428,
+    "lng": -40.3368724,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:55.435Z"
+  },
+  "061067": {
+    "lat": -20.345936,
+    "lng": -40.330237,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:08:57.303Z"
+  },
+  "061068": {
+    "lat": -20.3344655,
+    "lng": -40.330009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:02.237Z"
+  },
+  "061075": {
+    "lat": -20.4969272,
+    "lng": -40.3650331,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:08.428Z"
+  },
+  "061076": {
+    "lat": -20.7621953,
+    "lng": -41.6707225,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:10.395Z"
+  },
+  "061077": {
+    "lat": -20.5992832,
+    "lng": -41.2045613,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:14.311Z"
+  },
+  "061078": {
+    "lat": -20.5884216,
+    "lng": -41.3367605,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:19.474Z"
+  },
+  "061079": {
+    "lat": -19.0006538,
+    "lng": -40.5382777,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:24.951Z"
+  },
+  "061080": {
+    "lat": -20.425221,
+    "lng": -40.6830207,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:26.911Z"
+  },
+  "061081": {
+    "lat": -20.5134241,
+    "lng": -40.3668835,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:28.750Z"
+  },
+  "061082": {
+    "lat": -18.1282737,
+    "lng": -40.5382266,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:33.478Z"
+  },
+  "061085": {
+    "lat": -20.3185061,
+    "lng": -40.3034245,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:34.937Z"
+  },
+  "061087": {
+    "lat": -20.3487274,
+    "lng": -40.3053031,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:39.616Z"
+  },
+  "061088": {
+    "lat": -20.4728748,
+    "lng": -40.3486285,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:41.136Z"
+  },
+  "061089": {
+    "lat": -18.2623523,
+    "lng": -40.0797594,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:46.353Z"
+  },
+  "061090": {
+    "lat": -20.2081756,
+    "lng": -40.2757627,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:48.307Z"
+  },
+  "061091": {
+    "lat": -20.232103,
+    "lng": -40.290211,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:09:50.155Z"
+  },
+  "061094": {
+    "lat": -20.2944536,
+    "lng": -40.3229385,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:03.772Z"
+  },
+  "061099": {
+    "lat": -20.2115138,
+    "lng": -40.1991837,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:12.253Z"
+  },
+  "061100": {
+    "lat": -21.1220546,
+    "lng": -41.6662091,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:17.921Z"
+  },
+  "061102": {
+    "lat": -20.3106023,
+    "lng": -40.3486418,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:30.105Z"
+  },
+  "061103": {
+    "lat": -19.7991965,
+    "lng": -40.2733584,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:31.965Z"
+  },
+  "061104": {
+    "lat": -19.5390753,
+    "lng": -40.088886,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:37.739Z"
+  },
+  "061105": {
+    "lat": -20.3156022,
+    "lng": -40.3431492,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:43.619Z"
+  },
+  "061107": {
+    "lat": -20.2925711,
+    "lng": -41.632088,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:49.365Z"
+  },
+  "061108": {
+    "lat": -20.3334201,
+    "lng": -40.3503856,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:51.227Z"
+  },
+  "061111": {
+    "lat": -19.522117,
+    "lng": -40.6520561,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:52.710Z"
+  },
+  "061112": {
+    "lat": -20.1433808,
+    "lng": -40.2990656,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:54.110Z"
+  },
+  "061114": {
+    "lat": -20.4327594,
+    "lng": -40.345632,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:58.023Z"
+  },
+  "061117": {
+    "lat": -20.3458542,
+    "lng": -40.3320753,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:10:59.989Z"
+  },
+  "061118": {
+    "lat": -19.3782229,
+    "lng": -40.0598611,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:03.386Z"
+  },
+  "061119": {
+    "lat": -20.1268456,
+    "lng": -40.3029474,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:09.063Z"
+  },
+  "061122": {
+    "lat": -20.2081756,
+    "lng": -40.2757627,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:10.922Z"
+  },
+  "061123": {
+    "lat": -20.3344655,
+    "lng": -40.330009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:15.752Z"
+  },
+  "061124": {
+    "lat": -20.4358313,
+    "lng": -40.3388755,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:17.707Z"
+  },
+  "061126": {
+    "lat": -20.3759484,
+    "lng": -40.3943439,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:20.078Z"
+  },
+  "061127": {
+    "lat": -20.4485936,
+    "lng": -40.3538179,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:25.299Z"
+  },
+  "061128": {
+    "lat": -18.5073831,
+    "lng": -40.0179433,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:30.281Z"
+  },
+  "061132": {
+    "lat": -20.1836503,
+    "lng": -41.2683596,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:34.304Z"
+  },
+  "061135": {
+    "lat": -18.5868335,
+    "lng": -39.7395509,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:38.202Z"
+  },
+  "061136": {
+    "lat": -18.5658994,
+    "lng": -39.7526196,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:40.067Z"
+  },
+  "061139": {
+    "lat": -19.808669,
+    "lng": -40.2762441,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:41.924Z"
+  },
+  "061141": {
+    "lat": -20.2506335,
+    "lng": -40.2664058,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:43.434Z"
+  },
+  "061142": {
+    "lat": -20.2648548,
+    "lng": -40.2975442,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:45.295Z"
+  },
+  "061147": {
+    "lat": -20.1831699,
+    "lng": -40.22269,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:51.870Z"
+  },
+  "061149": {
+    "lat": -20.3770182,
+    "lng": -40.36658,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:53.318Z"
+  },
+  "061151": {
+    "lat": -19.8306143,
+    "lng": -40.2816482,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:11:59.003Z"
+  },
+  "061152": {
+    "lat": -20.1433836,
+    "lng": -40.2528561,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:04.147Z"
+  },
+  "061154": {
+    "lat": -20.1531276,
+    "lng": -40.2494918,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:06.114Z"
+  },
+  "061156": {
+    "lat": -19.8389123,
+    "lng": -40.2690173,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:09.627Z"
+  },
+  "061157": {
+    "lat": -20.3467046,
+    "lng": -40.3495194,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:14.157Z"
+  },
+  "061158": {
+    "lat": -18.4041833,
+    "lng": -40.2273298,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:19.591Z"
+  },
+  "061159": {
+    "lat": -19.3921925,
+    "lng": -40.0473961,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:25.028Z"
+  },
+  "061163": {
+    "lat": -20.5076294,
+    "lng": -40.3784219,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:26.893Z"
+  },
+  "061164": {
+    "lat": -19.2652615,
+    "lng": -40.3368876,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:32.650Z"
+  },
+  "061170": {
+    "lat": -19.5323407,
+    "lng": -40.1778596,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:37.849Z"
+  },
+  "061172": {
+    "lat": -18.4206817,
+    "lng": -40.2134716,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:39.811Z"
+  },
+  "061173": {
+    "lat": -20.7950059,
+    "lng": -40.6039642,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:41.322Z"
+  },
+  "061174": {
+    "lat": -19.3485512,
+    "lng": -40.0523833,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:47.267Z"
+  },
+  "061176": {
+    "lat": -20.239191,
+    "lng": -40.2697817,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:51.901Z"
+  },
+  "061179": {
+    "lat": -20.2989771,
+    "lng": -40.3096564,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:53.322Z"
+  },
+  "061180": {
+    "lat": -19.5340829,
+    "lng": -40.6211277,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:54.783Z"
+  },
+  "061181": {
+    "lat": -20.3619076,
+    "lng": -40.4114801,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:56.155Z"
+  },
+  "061182": {
+    "lat": -20.2258231,
+    "lng": -40.2776009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:12:57.277Z"
+  },
+  "061183": {
+    "lat": -18.3742367,
+    "lng": -40.8260142,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:03.166Z"
+  },
+  "061186": {
+    "lat": -19.2119352,
+    "lng": -39.79027,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:08.540Z"
+  },
+  "061187": {
+    "lat": -18.7188795,
+    "lng": -39.8954494,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:10.404Z"
+  },
+  "061188": {
+    "lat": -18.7287481,
+    "lng": -39.8484417,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:14.125Z"
+  },
+  "061190": {
+    "lat": -20.3823213,
+    "lng": -40.3213106,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:19.351Z"
+  },
+  "061192": {
+    "lat": -18.7125678,
+    "lng": -39.8691228,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:22.828Z"
+  },
+  "061194": {
+    "lat": -20.3628967,
+    "lng": -40.6593737,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:35.892Z"
+  },
+  "061195": {
+    "lat": -20.7765731,
+    "lng": -41.6831106,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:37.861Z"
+  },
+  "061197": {
+    "lat": -19.5172931,
+    "lng": -41.0192309,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:39.719Z"
+  },
+  "061198": {
+    "lat": -20.4447634,
+    "lng": -40.3426188,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:41.576Z"
+  },
+  "061199": {
+    "lat": -19.187967,
+    "lng": -40.1005643,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:43.004Z"
+  },
+  "061200": {
+    "lat": -20.27938,
+    "lng": -40.3336681,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:44.498Z"
+  },
+  "061201": {
+    "lat": -18.9060123,
+    "lng": -40.076364,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:49.451Z"
+  },
+  "061202": {
+    "lat": -20.1484314,
+    "lng": -40.2583905,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:13:54.689Z"
+  },
+  "061204": {
+    "lat": -18.7244387,
+    "lng": -39.8778819,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:00.484Z"
+  },
+  "061207": {
+    "lat": -18.51712,
+    "lng": -40.3512652,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:04.411Z"
+  },
+  "061210": {
+    "lat": -18.7266206,
+    "lng": -40.8956357,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:06.375Z"
+  },
+  "061211": {
+    "lat": -20.1294639,
+    "lng": -40.2094199,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:12.654Z"
+  },
+  "061214": {
+    "lat": -20.1222819,
+    "lng": -41.2965513,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:14.127Z"
+  },
+  "061215": {
+    "lat": -19.3921925,
+    "lng": -40.0473961,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:19.489Z"
+  },
+  "061218": {
+    "lat": -20.4424813,
+    "lng": -40.3552466,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:23.165Z"
+  },
+  "061223": {
+    "lat": -19.8239701,
+    "lng": -40.3714322,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:28.145Z"
+  },
+  "061225": {
+    "lat": -18.7282257,
+    "lng": -39.8150185,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:30.100Z"
+  },
+  "061226": {
+    "lat": -20.3378741,
+    "lng": -40.3148061,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:31.960Z"
+  },
+  "061227": {
+    "lat": -19.7192062,
+    "lng": -40.6117858,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:33.819Z"
+  },
+  "061230": {
+    "lat": -20.1866423,
+    "lng": -40.2583566,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:35.782Z"
+  },
+  "061231": {
+    "lat": -20.101538,
+    "lng": -40.3411704,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:41.202Z"
+  },
+  "061233": {
+    "lat": -19.9320222,
+    "lng": -40.3987319,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:42.716Z"
+  },
+  "061235": {
+    "lat": -20.2174982,
+    "lng": -40.2483826,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:44.574Z"
+  },
+  "061236": {
+    "lat": -20.2013232,
+    "lng": -40.2717138,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:46.537Z"
+  },
+  "061237": {
+    "lat": -18.4212652,
+    "lng": -39.9362106,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:51.817Z"
+  },
+  "061240": {
+    "lat": -19.2529083,
+    "lng": -40.4623101,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:53.786Z"
+  },
+  "061244": {
+    "lat": -19.0000187,
+    "lng": -40.3871386,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:55.659Z"
+  },
+  "061246": {
+    "lat": -20.3718624,
+    "lng": -40.3430533,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:14:57.514Z"
+  },
+  "061247": {
+    "lat": -20.2179351,
+    "lng": -40.2265624,
+    "source": "bairro_mapa",
+    "geocodedAt": "2026-06-10T02:15:04.900Z"
+  },
+  "061251": {
+    "lat": -20.1088326,
+    "lng": -40.324836,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:08.828Z"
+  },
+  "061255": {
+    "lat": -19.5232102,
+    "lng": -40.6650277,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:10.691Z"
+  },
+  "061261": {
+    "lat": -20.7614594,
+    "lng": -41.5330257,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:17.790Z"
+  },
+  "061265": {
+    "lat": -20.5061243,
+    "lng": -40.3610969,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:19.237Z"
+  },
+  "061269": {
+    "lat": -19.5434574,
+    "lng": -40.6691946,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:25.079Z"
+  },
+  "061275": {
+    "lat": -21.1993742,
+    "lng": -40.9326152,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:30.901Z"
+  },
+  "061276": {
+    "lat": -20.4440025,
+    "lng": -40.3592249,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:32.306Z"
+  },
+  "061277": {
+    "lat": -20.1479975,
+    "lng": -40.1966469,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:34.359Z"
+  },
+  "061278": {
+    "lat": -20.1115468,
+    "lng": -40.1816097,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:39.347Z"
+  },
+  "061281": {
+    "lat": -20.2729255,
+    "lng": -40.3172296,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:41.414Z"
+  },
+  "061286": {
+    "lat": -20.3104089,
+    "lng": -40.3036958,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:45.342Z"
+  },
+  "061287": {
+    "lat": -20.6163512,
+    "lng": -41.8079375,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:50.268Z"
+  },
+  "061289": {
+    "lat": -20.0969087,
+    "lng": -40.6754066,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:55.332Z"
+  },
+  "061290": {
+    "lat": -20.2305419,
+    "lng": -40.2864073,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:15:59.133Z"
+  },
+  "061291": {
+    "lat": -19.9605806,
+    "lng": -40.1616891,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:01.297Z"
+  },
+  "061292": {
+    "lat": -18.3066987,
+    "lng": -39.9412894,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:03.152Z"
+  },
+  "061295": {
+    "lat": -20.3672604,
+    "lng": -40.3741413,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:07.165Z"
+  },
+  "061297": {
+    "lat": -20.904956,
+    "lng": -40.8049128,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:12.065Z"
+  },
+  "061299": {
+    "lat": -20.3410061,
+    "lng": -40.3030457,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:14.123Z"
+  },
+  "061300": {
+    "lat": -20.1898068,
+    "lng": -40.4909853,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:20.206Z"
+  },
+  "061302": {
+    "lat": -21.020248,
+    "lng": -40.8115312,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:25.420Z"
+  },
+  "061304": {
+    "lat": -19.7752843,
+    "lng": -40.864251,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:31.283Z"
+  },
+  "061306": {
+    "lat": -19.1868477,
+    "lng": -40.1127106,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:33.136Z"
+  },
+  "061313": {
+    "lat": -20.2692829,
+    "lng": -40.439622,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:34.995Z"
+  },
+  "061314": {
+    "lat": -18.6906528,
+    "lng": -40.4016567,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:39.106Z"
+  },
+  "061318": {
+    "lat": -19.3355566,
+    "lng": -40.0595888,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:45.270Z"
+  },
+  "061320": {
+    "lat": -19.6255005,
+    "lng": -40.8780525,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:50.592Z"
+  },
+  "061321": {
+    "lat": -20.6439329,
+    "lng": -41.2085608,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:52.446Z"
+  },
+  "061322": {
+    "lat": -20.3938889,
+    "lng": -40.3389649,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:16:57.817Z"
+  },
+  "061328": {
+    "lat": -20.28768,
+    "lng": -40.786953,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:03.684Z"
+  },
+  "061334": {
+    "lat": -19.9802097,
+    "lng": -41.2831563,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:15.180Z"
+  },
+  "061336": {
+    "lat": -20.232649,
+    "lng": -40.2785674,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:19.690Z"
+  },
+  "061337": {
+    "lat": -19.8987316,
+    "lng": -41.0555695,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:21.095Z"
+  },
+  "061339": {
+    "lat": -20.4710274,
+    "lng": -40.827904,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:27.165Z"
+  },
+  "061342": {
+    "lat": -19.8240494,
+    "lng": -40.260154,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:29.033Z"
+  },
+  "061344": {
+    "lat": -20.2980926,
+    "lng": -40.3915661,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:40.344Z"
+  },
+  "061350": {
+    "lat": -20.2952015,
+    "lng": -40.4585534,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:45.757Z"
+  },
+  "061352": {
+    "lat": -19.9452533,
+    "lng": -40.2547533,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:50.941Z"
+  },
+  "061353": {
+    "lat": -20.7702921,
+    "lng": -41.0698391,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:17:57.517Z"
+  },
+  "061357": {
+    "lat": -20.3729849,
+    "lng": -40.3735849,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:04.108Z"
+  },
+  "061358": {
+    "lat": -20.408988,
+    "lng": -41.0833134,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:09.897Z"
+  },
+  "061367": {
+    "lat": -18.1248564,
+    "lng": -40.3683029,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:11.855Z"
+  },
+  "061370": {
+    "lat": -20.1949384,
+    "lng": -40.2225932,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:17.220Z"
+  },
+  "061371": {
+    "lat": -20.0471145,
+    "lng": -40.1964462,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:21.138Z"
+  },
+  "061375": {
+    "lat": -20.3134941,
+    "lng": -40.3369851,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:34.423Z"
+  },
+  "061376": {
+    "lat": -20.6731719,
+    "lng": -41.0107618,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:39.298Z"
+  },
+  "061377": {
+    "lat": -20.1360283,
+    "lng": -40.2366331,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:40.896Z"
+  },
+  "061386": {
+    "lat": -17.9576083,
+    "lng": -40.5298013,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:52.989Z"
+  },
+  "061389": {
+    "lat": -20.1981549,
+    "lng": -40.2760456,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:18:56.808Z"
+  },
+  "061390": {
+    "lat": -20.298286,
+    "lng": -40.2946647,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:03.976Z"
+  },
+  "061391": {
+    "lat": -20.5335151,
+    "lng": -40.3806463,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:05.942Z"
+  },
+  "061398": {
+    "lat": -20.3557218,
+    "lng": -41.2445924,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:07.798Z"
+  },
+  "061399": {
+    "lat": -21.0663952,
+    "lng": -41.3583739,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:11.620Z"
+  },
+  "061401": {
+    "lat": -19.4895736,
+    "lng": -40.0258508,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:16.878Z"
+  },
+  "061409": {
+    "lat": -18.6669204,
+    "lng": -40.7981811,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:42.517Z"
+  },
+  "061410": {
+    "lat": -20.3544416,
+    "lng": -40.2967293,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:44.477Z"
+  },
+  "061412": {
+    "lat": -20.7914528,
+    "lng": -41.3820702,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:19:50.455Z"
+  },
+  "061423": {
+    "lat": -20.0987035,
+    "lng": -40.3433591,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:02.384Z"
+  },
+  "061425": {
+    "lat": -19.370555,
+    "lng": -40.0630447,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:04.341Z"
+  },
+  "061427": {
+    "lat": -20.5969757,
+    "lng": -40.4517778,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:11.126Z"
+  },
+  "061428": {
+    "lat": -19.3573648,
+    "lng": -40.1847302,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:16.834Z"
+  },
+  "061429": {
+    "lat": -19.7626465,
+    "lng": -40.3908137,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:18.341Z"
+  },
+  "061432": {
+    "lat": -18.41889,
+    "lng": -40.2207769,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:23.989Z"
+  },
+  "061434": {
+    "lat": -18.621667,
+    "lng": -40.973993,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:28.331Z"
+  },
+  "061435": {
+    "lat": -20.3459601,
+    "lng": -40.426476,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:29.757Z"
+  },
+  "061440": {
+    "lat": -20.3573938,
+    "lng": -40.3482726,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:34.698Z"
+  },
+  "061441": {
+    "lat": -20.3703265,
+    "lng": -40.3831061,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:36.866Z"
+  },
+  "061447": {
+    "lat": -18.7690921,
+    "lng": -40.8985307,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:45.949Z"
+  },
+  "061448": {
+    "lat": -20.8586981,
+    "lng": -41.5761747,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:51.632Z"
+  },
+  "061451": {
+    "lat": -18.9327807,
+    "lng": -39.972904,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:56.952Z"
+  },
+  "061453": {
+    "lat": -20.2006889,
+    "lng": -40.2629822,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:20:58.360Z"
+  },
+  "061457": {
+    "lat": -20.1875913,
+    "lng": -40.260194,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:07.788Z"
+  },
+  "061458": {
+    "lat": -18.7182252,
+    "lng": -39.866203,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:11.705Z"
+  },
+  "061459": {
+    "lat": -20.8198847,
+    "lng": -40.6235255,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:15.048Z"
+  },
+  "061461": {
+    "lat": -18.6787689,
+    "lng": -40.4153385,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:23.004Z"
+  },
+  "061462": {
+    "lat": -20.2476543,
+    "lng": -40.2683719,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:27.421Z"
+  },
+  "061463": {
+    "lat": -20.3585674,
+    "lng": -40.3847052,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:32.148Z"
+  },
+  "061464": {
+    "lat": -20.1562697,
+    "lng": -40.9412912,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:37.925Z"
+  },
+  "061465": {
+    "lat": -21.1992367,
+    "lng": -40.9915888,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:43.069Z"
+  },
+  "061472": {
+    "lat": -20.8396506,
+    "lng": -40.7454666,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:55.117Z"
+  },
+  "061473": {
+    "lat": -20.229095,
+    "lng": -41.5114009,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:21:57.099Z"
+  },
+  "061476": {
+    "lat": -19.4881895,
+    "lng": -40.6703182,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:02.213Z"
+  },
+  "061477": {
+    "lat": -20.1401949,
+    "lng": -40.1969348,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:04.177Z"
+  },
+  "061479": {
+    "lat": -20.0933086,
+    "lng": -40.5245967,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:09.061Z"
+  },
+  "061480": {
+    "lat": -19.475002,
+    "lng": -40.465369,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:13.561Z"
+  },
+  "061485": {
+    "lat": -21.0356666,
+    "lng": -41.179971,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:19.350Z"
+  },
+  "061495": {
+    "lat": -18.2172715,
+    "lng": -40.0353716,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:23.059Z"
+  },
+  "061497": {
+    "lat": -20.3338266,
+    "lng": -40.3571698,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:26.993Z"
+  },
+  "061498": {
+    "lat": -21.0759709,
+    "lng": -41.4935246,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:30.805Z"
+  },
+  "061505": {
+    "lat": -20.5160974,
+    "lng": -40.9867905,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:32.208Z"
+  },
+  "061508": {
+    "lat": -20.1387374,
+    "lng": -40.2159133,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:35.444Z"
+  },
+  "061510": {
+    "lat": -20.1136911,
+    "lng": -40.2804407,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:38.729Z"
+  },
+  "061511": {
+    "lat": -20.2048759,
+    "lng": -40.2253881,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:40.697Z"
+  },
+  "061512": {
+    "lat": -19.9034207,
+    "lng": -40.2332897,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:44.523Z"
+  },
+  "061513": {
+    "lat": -20.3194118,
+    "lng": -41.2230938,
+    "source": "nominatim_endereco",
+    "geocodedAt": "2026-06-10T02:22:49.428Z"
+  },
+  "060030": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.815Z"
+  },
+  "060059": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060118": {
+    "lat": -20.7935003,
+    "lng": -40.8108852,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060187": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060283": {
+    "lat": -18.757571846153844,
+    "lng": -40.892306161538464,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060338": {
+    "lat": -20.3427029,
+    "lng": -41.5360386,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060398": {
+    "lat": -21.0105534,
+    "lng": -40.8351239,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060416": {
+    "lat": -20.6718755,
+    "lng": -40.4984617,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060456": {
+    "lat": -20.8057672,
+    "lng": -40.6454564,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060510": {
+    "lat": -20.6022098,
+    "lng": -41.2032124,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060522": {
+    "lat": -18.757571846153844,
+    "lng": -40.892306161538464,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060570": {
+    "lat": -19.7570307,
+    "lng": -40.3856633,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060696": {
+    "lat": -19.1918129,
+    "lng": -40.1037067,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060827": {
+    "lat": -20.6907113,
+    "lng": -41.846385,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.818Z"
+  },
+  "060850": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "060896": {
+    "lat": -18.5841421,
+    "lng": -39.7371844,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "060915": {
+    "lat": -20.3200917,
+    "lng": -40.3376682,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "060963": {
+    "lat": -19.4117824,
+    "lng": -40.5442916,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "060972": {
+    "lat": -20.369805882,
+    "lng": -40.317388552000004,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "060993": {
+    "lat": -19.5346732,
+    "lng": -40.6287836,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061092": {
+    "lat": -20.3200917,
+    "lng": -40.3376682,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061097": {
+    "lat": -18.7146049,
+    "lng": -39.8539499,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061101": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061193": {
+    "lat": -20.263202,
+    "lng": -40.416549,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061333": {
+    "lat": -18.5841421,
+    "lng": -39.7371844,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061343": {
+    "lat": -18.7146049,
+    "lng": -39.8539499,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061372": {
+    "lat": -19.8309496,
+    "lng": -40.3686594,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061384": {
+    "lat": -19.3796775,
+    "lng": -40.0610087,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061403": {
+    "lat": -20.7935003,
+    "lng": -40.8108852,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061404": {
+    "lat": -18.7146049,
+    "lng": -39.8539499,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061406": {
+    "lat": -18.7146049,
+    "lng": -39.8539499,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061421": {
+    "lat": -18.7146049,
+    "lng": -39.8539499,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061446": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061454": {
+    "lat": -18.9058375,
+    "lng": -40.0710964,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061460": {
+    "lat": -20.025296,
+    "lng": -40.743931,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "061471": {
+    "lat": -20.346479,
+    "lng": -41.6392581,
+    "source": "centroide_cidade",
+    "geocodedAt": "2026-06-10T02:23:33.819Z"
+  },
+  "060591": {
+    "lat": -20.3144934,
+    "lng": -41.7334906,
+    "source": "nominatim_municipio",
+    "geocodedAt": "2026-06-10T02:23:59.370Z"
+  },
+  "061017": {
+    "lat": -20.7751939,
+    "lng": -41.8039474,
+    "source": "nominatim_municipio",
+    "geocodedAt": "2026-06-10T02:24:01.323Z"
+  },
+  "061041": {
+    "lat": -18.4278866,
+    "lng": -41.1226248,
+    "source": "nominatim_municipio",
+    "geocodedAt": "2026-06-10T02:24:03.273Z"
+  }
+}

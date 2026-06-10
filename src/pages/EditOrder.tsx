@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { MapPin, AlertTriangle, ArrowLeft } from 'lucide-react'
 import { useTechnicians, useOrders, updateOrder } from '../hooks/useData'
 import { searchChurchLocations } from '../data/church-parser'
-import { getBairroCoordinates } from '../data/es-locations'
+import { resolveChurchCoordinates } from '../data/maranata-churches'
 import { detectConflicts } from '../data/conflict-detector'
 import { DuplicateOrderError } from '../firebase/repository'
 import { buildPatch, hasPatchChanges } from '../utils/patch-diff'
@@ -83,7 +83,7 @@ export function EditOrder() {
 
   const newCoords = useMemo(() => {
     if (!alertIdentification?.bairro || !alertIdentification?.cidade) return undefined
-    return getBairroCoordinates(alertIdentification.cidade, alertIdentification.bairro)
+    return resolveChurchCoordinates(alertIdentification)
   }, [alertIdentification])
 
   const alerts = useMemo<ConflictAlert[]>(() => {
@@ -109,6 +109,10 @@ export function EditOrder() {
       bairro: candidate.bairro,
       cidade: candidate.cidade,
       bairroHistorico: candidate.bairroHistorico,
+      codigoMaranata: candidate.codigoMaranata,
+      nomeOficialMaranata: candidate.nomeOficialMaranata,
+      lat: candidate.lat,
+      lng: candidate.lng,
       confidence: candidate.confidence,
       matchedFrom: candidate.matchedFrom,
       matchType: candidate.matchType,
@@ -123,10 +127,7 @@ export function EditOrder() {
 
     try {
       const tech = technicians?.find((t) => t.id === technicianId)
-      const coords =
-        identification?.bairro && identification?.cidade
-          ? getBairroCoordinates(identification.cidade, identification.bairro)
-          : undefined
+      const coords = identification ? resolveChurchCoordinates(identification) : undefined
 
       const next: Order = {
         ...baseline,

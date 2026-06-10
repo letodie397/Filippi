@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { Church, MapPin, User, AlertTriangle } from 'lucide-react'
 import { useTechnicians, useOrders, addOrder } from '../hooks/useData'
 import { searchChurchLocations } from '../data/church-parser'
-import { getLocationStats, getCoordinatesCount, getBairroCoordinates } from '../data/es-locations'
+import { getLocationStats, getCoordinatesCount } from '../data/es-locations'
+import { resolveChurchCoordinates } from '../data/maranata-churches'
 import { APP_VERSION } from '../config/version'
 import { PROXIMITY_RADIUS_KM } from '../data/geo-utils'
 import { detectConflicts } from '../data/conflict-detector'
@@ -63,7 +64,7 @@ export function NewOrder() {
 
   const newCoords = useMemo(() => {
     if (!alertIdentification?.bairro || !alertIdentification?.cidade) return undefined
-    return getBairroCoordinates(alertIdentification.cidade, alertIdentification.bairro)
+    return resolveChurchCoordinates(alertIdentification)
   }, [alertIdentification])
 
   const alerts = useMemo<ConflictAlert[]>(() => {
@@ -89,6 +90,10 @@ export function NewOrder() {
       bairro: candidate.bairro,
       cidade: candidate.cidade,
       bairroHistorico: candidate.bairroHistorico,
+      codigoMaranata: candidate.codigoMaranata,
+      nomeOficialMaranata: candidate.nomeOficialMaranata,
+      lat: candidate.lat,
+      lng: candidate.lng,
       confidence: candidate.confidence,
       matchedFrom: candidate.matchedFrom,
       matchType: candidate.matchType,
@@ -119,10 +124,7 @@ export function NewOrder() {
     setSaveError(null)
     try {
       const tech = technicians?.find((t) => t.id === technicianId)
-      const coords =
-        identification?.bairro && identification?.cidade
-          ? getBairroCoordinates(identification.cidade, identification.bairro)
-          : undefined
+      const coords = identification ? resolveChurchCoordinates(identification) : undefined
 
       await addOrder({
         numeroPedido: numeroPedido.trim(),
@@ -245,6 +247,14 @@ export function NewOrder() {
                   </p>
                 </div>
               </div>
+              {identification.matchType === 'maranata' && identification.nomeOficialMaranata && (
+                <p className="text-xs text-emerald-800 bg-emerald-50 border border-emerald-100 rounded-lg px-2 py-1.5 mt-3">
+                  Cadastro oficial ICM: <strong>{identification.nomeOficialMaranata}</strong>
+                  {identification.codigoMaranata && (
+                    <span className="text-emerald-600"> ({identification.codigoMaranata})</span>
+                  )}
+                </p>
+              )}
               {identification.bairroHistorico &&
                 identification.bairroHistorico !== identification.bairro && (
                   <p className="text-xs text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-2 py-1.5 mt-3">

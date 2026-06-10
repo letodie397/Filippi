@@ -1,0 +1,21 @@
+[
+  { "cidade": "Vila Velha", "maranata": "ILHA DOS AIRES", "bairro": "Ilha dos Ayres" },
+  { "cidade": "Vila Velha", "maranata": "PARQUE DAS GAIVOTAS", "bairro": "Praia das Gaivotas" },
+  { "cidade": "Vila Velha", "maranata": "NORMILIA", "bairro": "Normília da Cunha" },
+  { "cidade": "Serra", "maranata": "NOVA CARAPINA 1", "bairro": "Nova Carapina I" },
+  { "cidade": "Serra", "maranata": "NOVA CARAPINA 2", "bairro": "Nova Carapina II" },
+  { "cidade": "Serra", "maranata": "SERRA DOURADA 1", "bairro": "Serra Dourada I" },
+  { "cidade": "Serra", "maranata": "SERRA DOURADA 2", "bairro": "Serra Dourada II" },
+  { "cidade": "Serra", "maranata": "SERRA DOURADA 3", "bairro": "Serra Dourada III" },
+  { "cidade": "Cariacica", "maranata": "NOVA ROSA DA PENHA II", "bairro": "Nova Rosa da Penha" },
+  { "cidade": "Viana", "maranata": "INDUSTRIAL", "bairro": "Parque Industrial" },
+  { "cidade": "Vitória", "maranata": "SANTO ANTÔNIO", "bairro": "Santo Antônio" },
+  { "cidade": "Vitória", "maranata": "SANTO ANTONIO", "bairro": "Santo Antônio" },
+  { "cidade": "Vitória", "maranata": "ILHA DO PRÍNCIPE", "bairro": "Ilha do Príncipe" },
+  { "cidade": "Vitória", "maranata": "ILHA DO PRINCIPE", "bairro": "Ilha do Príncipe" },
+  { "cidade": "Guarapari", "maranata": "PRAIA DO SOL", "bairro": "Praia do Sol" },
+  { "cidade": "Cariacica", "maranata": "CENTRO", "bairro": "Centro de Cariacica" },
+  { "cidade": "Vila Velha", "maranata": "CENTRO", "bairro": "Centro de Vila Velha" },
+  { "cidade": "Vitória", "maranata": "CENTRO", "bairro": "Centro" },
+  { "cidade": "Serra", "maranata": "CENTRO", "bairro": "Centro da Serra" }
+]

@@ -59,13 +59,20 @@ export interface ConflictAlert {
   severity: 'warning' | 'info' | 'error'
 }
 
-export type MatchType = 'exato' | 'prefixo' | 'palavra' | 'parcial' | 'historico'
+export type MatchType = 'exato' | 'prefixo' | 'palavra' | 'parcial' | 'historico' | 'maranata'
 
 export interface ChurchIdentification {
   bairro?: string
   cidade?: string
   /** Nome antigo/extinto quando a localização foi resolvida via bairro histórico */
   bairroHistorico?: string
+  /** Código oficial ICM (ex.: 060473) */
+  codigoMaranata?: string
+  /** Nome oficial no cadastro Maranata */
+  nomeOficialMaranata?: string
+  /** GPS do endereço oficial ICM (quando geocodificado) */
+  lat?: number
+  lng?: number
   confidence: 'alta' | 'media' | 'baixa'
   matchedFrom: string
   matchType?: MatchType

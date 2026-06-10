@@ -6,5 +6,101 @@
     "bairroAtual": "Ulisses Guimarães",
     "extintoEm": 1994,
     "nota": "Bairro extinto; área incorporada a Ulisses Guimarães. Igrejas costumam manter o nome antigo."
+  },
+  {
+    "historico": "Nossa Senhora Aparecida",
+    "aliases": ["N. Sra. Aparecida", "Nossa Sra Aparecida"],
+    "cidade": "Vitória",
+    "bairroAtual": "Bela Vista",
+    "nota": "Sub-bairro não oficial (PMV); igrejas usam o nome popular."
+  },
+  {
+    "historico": "Alto Caratoíra",
+    "aliases": ["Volta de Caratoíra", "Volta Caratoira"],
+    "cidade": "Vitória",
+    "bairroAtual": "Caratoíra",
+    "nota": "Sub-bairro não oficial de Caratoíra."
+  },
+  {
+    "historico": "Morro do Pinto",
+    "cidade": "Vitória",
+    "bairroAtual": "Santo Antônio",
+    "nota": "Sub-bairro não oficial de Santo Antônio."
+  },
+  {
+    "historico": "Alto Consolação",
+    "cidade": "Vitória",
+    "bairroAtual": "Consolação",
+    "nota": "Sub-bairro não oficial de Consolação."
+  },
+  {
+    "historico": "Constantino",
+    "aliases": ["Morro da Floresta", "Jaburu"],
+    "cidade": "Vitória",
+    "bairroAtual": "Gurigica",
+    "nota": "Sub-bairros não oficiais de Gurigica."
+  },
+  {
+    "historico": "Eucalipto",
+    "aliases": ["Alto Bonfim"],
+    "cidade": "Vitória",
+    "bairroAtual": "Bonfim",
+    "nota": "Sub-bairros não oficiais de Bonfim."
+  },
+  {
+    "historico": "Engenharia",
+    "aliases": ["Alto Itararé", "Estrela"],
+    "cidade": "Vitória",
+    "bairroAtual": "Itararé",
+    "nota": "Sub-bairros não oficiais de Itararé (Estrela = Alto Itararé)."
+  },
+  {
+    "historico": "Alto Tabuazeiro",
+    "aliases": ["Morro do Macaco"],
+    "cidade": "Vitória",
+    "bairroAtual": "Tabuazeiro",
+    "nota": "Sub-bairro não oficial de Tabuazeiro."
+  },
+  {
+    "historico": "Alto de Santa Helena",
+    "aliases": ["Morro da Garrafa"],
+    "cidade": "Vitória",
+    "bairroAtual": "Santa Helena",
+    "nota": "Sub-bairro não oficial de Santa Helena."
+  },
+  {
+    "historico": "Atlântica Ville",
+    "aliases": ["Atlantica Ville"],
+    "cidade": "Vitória",
+    "bairroAtual": "Jardim Camburí",
+    "nota": "Condomínio/loteamento popular em Jardim Camburí."
+  },
+  {
+    "historico": "Chapada",
+    "cidade": "Vitória",
+    "bairroAtual": "do Quadro",
+    "nota": "Sub-bairro não oficial (Morro do Quadro); no cadastro IBGE como 'do Quadro'."
+  },
+  {
+    "historico": "Miramar",
+    "cidade": "Vitória",
+    "bairroAtual": "Comdusa",
+    "extintoEm": 1976,
+    "nota": "Bairro removido para a Rodoviária; famílias realocadas em Comdusa."
+  },
+  {
+    "historico": "Grande São Pedro",
+    "aliases": ["Grande Sao Pedro"],
+    "cidade": "Vitória",
+    "bairroAtual": "São Pedro",
+    "nota": "Nome regional (RA VII) usado por igrejas e comunidades."
+  },
+  {
+    "historico": "Itapocu",
+    "aliases": ["Itapoçu", "Distrito de Itapocu"],
+    "cidade": "Serra",
+    "bairroAtual": "Calogi",
+    "extintoEm": 1943,
+    "nota": "Antigo distrito da Serra; área hoje em Calogi."
   }
 ]

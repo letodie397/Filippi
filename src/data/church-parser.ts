@@ -1,5 +1,6 @@
 import { BAIRROS_ES, CIDADES_ES } from './es-locations'
 import { findHistoricalBairro } from './historical-bairros'
+import { searchMaranataChurches, type MaranataSearchHit } from './maranata-churches'
 import type {
   ChurchIdentification,
   ChurchIdentificationCandidate,
@@ -225,9 +226,81 @@ function dedupeCandidates(candidates: RawCandidate[]): RawCandidate[] {
 }
 
 function toConfidence(score: number, matchType: MatchType): 'alta' | 'media' | 'baixa' {
-  if (matchType === 'historico' || matchType === 'exato' || score >= 90) return 'alta'
+  if (matchType === 'maranata' || matchType === 'historico' || matchType === 'exato' || score >= 90) {
+    return 'alta'
+  }
   if (matchType === 'prefixo' || matchType === 'palavra' || score >= 60) return 'media'
   return 'baixa'
+}
+
+function maranataHitsToCandidates(hits: MaranataSearchHit[]): ChurchIdentificationCandidate[] {
+  const byLocation = new Map<string, ChurchIdentificationCandidate>()
+
+  for (const hit of hits) {
+    const { church } = hit
+    const key = `${normalize(church.bairro)}|${normalize(church.cidade)}`
+    const cityBonus = CITY_PRIORITY[church.cidade] ?? 0
+    const candidate: ChurchIdentificationCandidate = {
+      bairro: church.bairro,
+      cidade: church.cidade,
+      bairroHistorico: church.bairroHistorico,
+      codigoMaranata: church.codigo,
+      nomeOficialMaranata: church.nome,
+      lat: church.lat,
+      lng: church.lng,
+      confidence: 'alta',
+      matchedFrom: hit.matchedFrom === church.codigo ? `${church.codigo} — ${church.nome}` : church.nome,
+      matchType: 'maranata',
+      score: hit.score + cityBonus,
+    }
+
+    const existing = byLocation.get(key)
+    if (!existing || candidate.score > existing.score) {
+      byLocation.set(key, candidate)
+    }
+  }
+
+  return Array.from(byLocation.values()).sort((a, b) => b.score - a.score)
+}
+
+function maranataCandidates(query: string, rawQuery: string, cidadeHint?: string): ChurchIdentificationCandidate[] {
+  const hits = [
+    ...searchMaranataChurches(rawQuery, cidadeHint),
+    ...searchMaranataChurches(query, cidadeHint),
+  ]
+
+  const seen = new Set<string>()
+  const uniqueHits = hits.filter((h) => {
+    const key = h.church.codigo
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+
+  return maranataHitsToCandidates(uniqueHits)
+}
+
+/** Maranata ganha prioridade só quando a fonte oficial é confiável para o texto digitado */
+function shouldPreferMaranata(
+  maranata: ChurchIdentificationCandidate[],
+  rawQuery: string,
+  cidadeHint?: string
+): boolean {
+  if (maranata.length === 0) return false
+
+  if (/\b0[56]\d{4}\b/.test(rawQuery) || /^\s*\d{5,6}\s*$/.test(rawQuery.trim())) {
+    return true
+  }
+
+  if (cidadeHint) {
+    return maranata.some((m) => normalize(m.cidade) === normalize(cidadeHint))
+  }
+
+  const cities = new Set(maranata.map((m) => normalize(m.cidade)))
+  if (cities.size !== 1) return false
+
+  const city = maranata[0].cidade
+  return (CITY_PRIORITY[city] ?? 0) >= 40
 }
 
 function historicalCandidate(
@@ -270,6 +343,7 @@ export function searchChurchLocations(nomeIgreja: string): ChurchSearchResult {
 
   const cidadeHint = findCityInText(cleaned) ?? findCityInText(nomeIgreja)
 
+  const maranata = maranataCandidates(query, nomeIgreja, cidadeHint)
   const historical = historicalCandidate(cleaned, cidadeHint) ?? historicalCandidate(query, cidadeHint)
 
   function collectMatches(filterByCity?: string) {
@@ -294,15 +368,36 @@ export function searchChurchLocations(nomeIgreja: string): ChurchSearchResult {
     .slice(0, MAX_SUGGESTIONS)
     .map(candidateToIdentification)
 
-  if (historical) {
-    suggestions = [
-      historical,
-      ...suggestions.filter(
+  const preferMaranata = shouldPreferMaranata(maranata, nomeIgreja, cidadeHint)
+
+  const appendUnique = (
+    base: ChurchIdentificationCandidate[],
+    extra: ChurchIdentificationCandidate[]
+  ) => [
+    ...base,
+    ...extra.filter(
+      (e) =>
+        !base.some(
+          (b) =>
+            normalize(b.bairro) === normalize(e.bairro) &&
+            normalize(b.cidade) === normalize(e.cidade)
+        )
+    ),
+  ]
+
+  if (preferMaranata && maranata.length > 0) {
+    suggestions = appendUnique(maranata, suggestions).slice(0, MAX_SUGGESTIONS)
+  } else if (historical) {
+    suggestions = appendUnique(
+      [historical, ...suggestions.filter(
         (s) =>
           normalize(s.bairro) !== normalize(historical.bairro) ||
           normalize(s.cidade) !== normalize(historical.cidade)
-      ),
-    ].slice(0, MAX_SUGGESTIONS)
+      )],
+      maranata
+    ).slice(0, MAX_SUGGESTIONS)
+  } else if (maranata.length > 0) {
+    suggestions = appendUnique(suggestions, maranata).slice(0, MAX_SUGGESTIONS)
   }
 
   const best = suggestions[0]
@@ -311,6 +406,7 @@ export function searchChurchLocations(nomeIgreja: string): ChurchSearchResult {
   const needsSelection =
     suggestions.length > 1 &&
     best?.matchType !== 'exato' &&
+    best?.matchType !== 'maranata' &&
     (!best || (second && best.score - second.score < SELECTION_SCORE_GAP))
 
   return {

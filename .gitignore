@@ -14,6 +14,7 @@ dist-ssr
 
 # Relatórios gerados (npm run compare:cepbrasil)
 data/cepbrasil-comparison.json
+data/maranata-comparison.json
 
 # Editor directories and files
 .vscode/*

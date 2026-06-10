@@ -8,6 +8,7 @@ const matchTypeLabel = {
   palavra: 'Primeira palavra',
   parcial: 'Correspondência parcial',
   historico: 'Bairro histórico',
+  maranata: 'Cadastro oficial ICM',
 }
 
 interface LocationSuggestionsProps {
@@ -78,6 +79,14 @@ export function LocationSuggestions({
                     )}
                   </div>
                   <p className="text-sm text-gray-500 mt-0.5">{suggestion.cidade} — ES</p>
+                  {suggestion.matchType === 'maranata' && suggestion.nomeOficialMaranata && (
+                    <p className="text-xs text-emerald-800 bg-emerald-50 border border-emerald-100 rounded-lg px-2 py-1 mt-1.5">
+                      ICM oficial: <strong>{suggestion.nomeOficialMaranata}</strong>
+                      {suggestion.codigoMaranata && (
+                        <span className="text-emerald-600"> ({suggestion.codigoMaranata})</span>
+                      )}
+                    </p>
+                  )}
                   {suggestion.bairroHistorico && suggestion.bairroHistorico !== suggestion.bairro && (
                     <p className="text-xs text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-2 py-1 mt-1.5">
                       Nome antigo da igreja: <strong>{suggestion.bairroHistorico}</strong> → hoje{' '}
