@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Plus, Trash2, Save, ImagePlus, X, Package, Loader2 } from 'lucide-react'
 import { uploadImage, deleteImage } from '../../utils/upload-image'
 import type { MaterialItem } from '../../types'
@@ -93,6 +93,11 @@ function ImageUpload({
 export function MaterialTab({ orderId, materiais: initialMateriais, saving, onSave }: MaterialTabProps) {
   const [items, setItems] = useState<MaterialItem[]>(initialMateriais)
   const [dirty, setDirty] = useState(false)
+
+  // Sincroniza quando os dados chegam do Firebase pela primeira vez
+  useEffect(() => {
+    if (!dirty) setItems(initialMateriais)
+  }, [initialMateriais]) // eslint-disable-line react-hooks/exhaustive-deps
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const [uploading, setUploading] = useState<Set<UploadingKey>>(new Set())
   const [uploadError, setUploadError] = useState<string | null>(null)

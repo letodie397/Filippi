@@ -1,4 +1,5 @@
 import { jsPDF } from 'jspdf'
+import { addImageAsync } from './pdf-image'
 import { CHECKLIST_ITENS, type OrderChecklist, type Order, type ChecklistKey } from '../types'
 
 const RED = '#c0392b'
@@ -66,25 +67,6 @@ function sectionTitle(doc: jsPDF, text: string, y: number) {
   return y + 12
 }
 
-function addImage(doc: jsPDF, dataUrl: string, x: number, y: number, maxW: number, maxH: number): number {
-  try {
-    const img = new Image()
-    img.src = dataUrl
-    const nW = img.naturalWidth || 200
-    const nH = img.naturalHeight || 200
-    let w = maxW
-    let h = (nH / nW) * w
-    if (h > maxH) {
-      h = maxH
-      w = (nW / nH) * h
-    }
-    doc.addImage(dataUrl, 'JPEG', x, y, w, h)
-    return h
-  } catch {
-    return 0
-  }
-}
-
 export async function generateChecklistPDF(order: Order, checklist: OrderChecklist): Promise<void> {
   const doc = new jsPDF({ unit: 'mm', format: 'a4' })
   const w = pageWidth(doc)
@@ -127,7 +109,7 @@ export async function generateChecklistPDF(order: Order, checklist: OrderCheckli
     doc.setTextColor(DARK)
     doc.text('Assinatura:', marginLeft, y)
     y += 4
-    const sigH = addImage(doc, resp.assinatura, marginLeft, y, contentW * 0.5, 25)
+    const sigH = await addImageAsync(doc, resp.assinatura, marginLeft, y, contentW * 0.5, 25)
     y += sigH + 6
   } else {
     y += 4

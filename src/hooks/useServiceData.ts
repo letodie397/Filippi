@@ -1,13 +1,15 @@
 import { useState, useEffect, useCallback } from 'react'
-import { getServiceData, saveServiceData } from '../firebase/repository'
-import type { OrderServiceData } from '../types'
+import { getServiceData, patchServiceField } from '../firebase/repository'
+import type { OrderServiceData, OrderChecklist, MaterialItem, RelatorioEntry } from '../types'
 
 interface UseServiceDataResult {
   data: OrderServiceData | null
   loading: boolean
   saving: boolean
   error: string | null
-  save: (data: OrderServiceData) => Promise<void>
+  saveChecklist: (checklist: OrderChecklist) => Promise<void>
+  saveMateriais: (materiais: MaterialItem[]) => Promise<void>
+  saveRelatorios: (relatorios: RelatorioEntry[]) => Promise<void>
   reload: () => void
 }
 
@@ -38,26 +40,41 @@ export function useServiceData(orderId: string | undefined): UseServiceDataResul
     }
   }, [orderId, tick])
 
-  const save = useCallback(
-    async (newData: OrderServiceData) => {
-      if (!orderId) return
-      setSaving(true)
-      setError(null)
-      try {
-        await saveServiceData(orderId, newData)
-        setData(newData)
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : String(err)
-        setError(msg)
-        throw err
-      } finally {
-        setSaving(false)
-      }
-    },
-    [orderId]
+  async function patchField<K extends keyof OrderServiceData>(
+    field: K,
+    value: OrderServiceData[K]
+  ) {
+    if (!orderId) return
+    setSaving(true)
+    setError(null)
+    try {
+      await patchServiceField(orderId, field as 'checklist' | 'materiais' | 'relatorios', value)
+      setData((prev) => ({ ...(prev ?? {}), [field]: value }))
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err)
+      setError(msg)
+      throw err
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const saveChecklist = useCallback(
+    (checklist: OrderChecklist) => patchField('checklist', checklist),
+    [orderId] // eslint-disable-line react-hooks/exhaustive-deps
+  )
+
+  const saveMateriais = useCallback(
+    (materiais: MaterialItem[]) => patchField('materiais', materiais),
+    [orderId] // eslint-disable-line react-hooks/exhaustive-deps
+  )
+
+  const saveRelatorios = useCallback(
+    (relatorios: RelatorioEntry[]) => patchField('relatorios', relatorios),
+    [orderId] // eslint-disable-line react-hooks/exhaustive-deps
   )
 
   const reload = useCallback(() => setTick((t) => t + 1), [])
 
-  return { data, loading, saving, error, save, reload }
+  return { data, loading, saving, error, saveChecklist, saveMateriais, saveRelatorios, reload }
 }

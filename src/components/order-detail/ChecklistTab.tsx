@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Save, FileDown, CheckCircle2 } from 'lucide-react'
 import { SignaturePad } from './SignaturePad'
 import { generateChecklistPDF } from '../../utils/pdf-checklist'
+import { saveSignature, getSignature } from '../../firebase/repository'
 import {
   CHECKLIST_ITENS,
   type OrderChecklist,
@@ -30,7 +31,24 @@ interface ChecklistTabProps {
 
 export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabProps) {
   const [form, setForm] = useState<OrderChecklist>(() => checklist ?? defaultChecklist())
+  const [assinatura, setAssinatura] = useState('')
   const [dirty, setDirty] = useState(false)
+  const [sigDirty, setSigDirty] = useState(false)
+
+  // Sincroniza quando os dados chegam do Firebase
+  useEffect(() => {
+    if (!dirty && checklist) {
+      setForm({ ...checklist, responsavel: { ...checklist.responsavel, assinatura: '' } })
+    }
+  }, [checklist]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Carrega assinatura do nó separado (não polui serviceData)
+  useEffect(() => {
+    if (!order.id) return
+    getSignature(order.id).then((sig) => {
+      if (sig) setAssinatura(sig)
+    })
+  }, [order.id])
 
   function updateResponsavel(field: keyof OrderChecklist['responsavel'], value: string) {
     setForm((prev) => ({
@@ -53,16 +71,28 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
   }
 
   async function handleSave() {
-    const updated: OrderChecklist = {
+    const checklistToSave: OrderChecklist = {
       ...form,
+      responsavel: { ...form.responsavel, assinatura: '' },
       atualizadoEm: new Date().toISOString(),
     }
-    await onSave(updated)
+
+    const promises: Promise<void>[] = [onSave(checklistToSave)]
+    if (sigDirty) {
+      promises.push(saveSignature(order.id, assinatura))
+    }
+
+    await Promise.all(promises)
     setDirty(false)
+    setSigDirty(false)
   }
 
   async function handleGeneratePDF() {
-    await generateChecklistPDF(order, form)
+    const checklistWithSig: OrderChecklist = {
+      ...form,
+      responsavel: { ...form.responsavel, assinatura },
+    }
+    await generateChecklistPDF(order, checklistWithSig)
   }
 
   const totalItens = form.itens.length
@@ -71,6 +101,7 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
   const naoCount = form.itens.filter((i) => i.resposta === 'nao').length
   const naCount = form.itens.filter((i) => i.resposta === 'na').length
   const allDone = respondidos === totalItens
+  const hasChanges = dirty || sigDirty
 
   return (
     <div className="space-y-6">
@@ -144,8 +175,11 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
             Assinatura digital
           </label>
           <SignaturePad
-            value={form.responsavel.assinatura}
-            onChange={(val) => updateResponsavel('assinatura', val)}
+            value={assinatura}
+            onChange={(val) => {
+              setAssinatura(val)
+              setSigDirty(true)
+            }}
           />
         </div>
       </div>
@@ -203,11 +237,11 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
         <button
           type="button"
           onClick={handleSave}
-          disabled={saving || !dirty}
+          disabled={saving || !hasChanges}
           className="flex items-center justify-center gap-2 px-5 py-2.5 bg-icm-red-600 text-white rounded-xl text-sm font-semibold hover:bg-icm-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           <Save size={16} />
-          {saving ? 'Salvando...' : dirty ? 'Salvar Checklist' : 'Salvo'}
+          {saving ? 'Salvando...' : hasChanges ? 'Salvar Checklist' : 'Salvo'}
         </button>
         <button
           type="button"

@@ -1,4 +1,5 @@
 import { jsPDF } from 'jspdf'
+import { addImageAsync } from './pdf-image'
 import type { Order, RelatorioEntry, MaterialItem } from '../types'
 
 const RED = '#c0392b'
@@ -32,7 +33,6 @@ function headerSection(doc: jsPDF, order: Order) {
   doc.setFontSize(9)
   doc.setFont('helvetica', 'normal')
   doc.text(`Pedido #${order.numeroPedido}  ·  ${order.nomeIgreja}`, w / 2, 21, { align: 'center' })
-
   doc.setTextColor(DARK)
   doc.setFontSize(8.5)
   const infoY = 35
@@ -60,33 +60,6 @@ function sectionTitle(doc: jsPDF, text: string, y: number) {
   return y + 12
 }
 
-function addImage(
-  doc: jsPDF,
-  dataUrl: string,
-  x: number,
-  y: number,
-  maxW: number,
-  maxH: number
-): number {
-  try {
-    const img = new Image()
-    img.src = dataUrl
-    const nW = img.naturalWidth || 200
-    const nH = img.naturalHeight || 200
-    let w = maxW
-    let h = (nH / nW) * w
-    if (h > maxH) {
-      h = maxH
-      w = (nW / nH) * h
-    }
-    const fmt = dataUrl.startsWith('data:image/png') ? 'PNG' : 'JPEG'
-    doc.addImage(dataUrl, fmt, x, y, w, h)
-    return h
-  } catch {
-    return 0
-  }
-}
-
 export async function generateRelatorioPDF(
   order: Order,
   relatorios: RelatorioEntry[],
@@ -106,14 +79,13 @@ export async function generateRelatorioPDF(
   if (materiais.length > 0) {
     y = sectionTitle(doc, '1. Materiais Substituídos', y)
 
-    materiais.forEach((mat, idx) => {
+    for (const [idx, mat] of materiais.entries()) {
       y = ensureSpace(doc, y, 12)
 
       doc.setFontSize(9)
       doc.setFont('helvetica', 'bold')
       doc.setTextColor(DARK)
       doc.text(`${idx + 1}. ${mat.nome}`, marginLeft, y)
-
       doc.setFont('helvetica', 'normal')
       doc.setTextColor(GRAY)
       doc.text(`Qtd: ${mat.quantidade}`, marginLeft + 80, y)
@@ -127,23 +99,23 @@ export async function generateRelatorioPDF(
         y += lines.length * 5 + 2
       }
 
-      // Images side by side
       if (mat.imagemAntigo || mat.imagemNovo) {
-        y = ensureSpace(doc, y, 38)
+        y = ensureSpace(doc, y, 40)
         const imgW = (contentW - 10) / 2
         let imgH = 0
+
         if (mat.imagemAntigo) {
           doc.setFontSize(7)
           doc.setTextColor(GRAY)
           doc.text('ITEM ANTIGO', marginLeft + 4, y)
-          const h = addImage(doc, mat.imagemAntigo, marginLeft + 4, y + 3, imgW, 32)
+          const h = await addImageAsync(doc, mat.imagemAntigo, marginLeft + 4, y + 3, imgW, 32)
           imgH = Math.max(imgH, h + 3)
         }
         if (mat.imagemNovo) {
           doc.setFontSize(7)
           doc.setTextColor(GRAY)
           doc.text('ITEM NOVO', marginLeft + 4 + imgW + 6, y)
-          const h = addImage(doc, mat.imagemNovo, marginLeft + 4 + imgW + 6, y + 3, imgW, 32)
+          const h = await addImageAsync(doc, mat.imagemNovo, marginLeft + 4 + imgW + 6, y + 3, imgW, 32)
           imgH = Math.max(imgH, h + 3)
         }
         y += imgH + 4
@@ -153,7 +125,7 @@ export async function generateRelatorioPDF(
       doc.setLineWidth(0.3)
       doc.line(marginLeft, y, marginRight, y)
       y += 5
-    })
+    }
   }
 
   // ── Relatórios ────────────────────────────────────────────────
@@ -162,7 +134,7 @@ export async function generateRelatorioPDF(
     y = ensureSpace(doc, y, 20)
     y = sectionTitle(doc, `${sectionNum}. Relatórios de Serviço`, y)
 
-    relatorios.forEach((entry, idx) => {
+    for (const [idx, entry] of relatorios.entries()) {
       y = ensureSpace(doc, y, 16)
 
       doc.setFontSize(9)
@@ -180,26 +152,23 @@ export async function generateRelatorioPDF(
         doc.setFont('helvetica', 'normal')
         doc.setTextColor(DARK)
         const lines = doc.splitTextToSize(entry.texto, contentW - 4)
-        for (let i = 0; i < lines.length; i++) {
+        for (const line of lines) {
           y = ensureSpace(doc, y, 6)
-          doc.text(lines[i], marginLeft + 2, y)
+          doc.text(line, marginLeft + 2, y)
           y += 5
         }
         y += 2
       }
 
-      // Images grid (2 per row)
       if (entry.imagens.length > 0) {
         const imgW = (contentW - 8) / 2
         const imgH = 45
         let col = 0
 
         for (const img of entry.imagens) {
-          if (col === 0) {
-            y = ensureSpace(doc, y, imgH + 4)
-          }
+          if (col === 0) y = ensureSpace(doc, y, imgH + 4)
           const x = marginLeft + col * (imgW + 6)
-          addImage(doc, img, x, y, imgW, imgH)
+          await addImageAsync(doc, img, x, y, imgW, imgH)
           col++
           if (col >= 2) {
             col = 0
@@ -213,7 +182,7 @@ export async function generateRelatorioPDF(
       doc.setLineWidth(0.3)
       doc.line(marginLeft, y, marginRight, y)
       y += 6
-    })
+    }
   }
 
   // ── Footer ────────────────────────────────────────────────────

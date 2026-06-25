@@ -91,8 +91,6 @@ export async function upsertTechnician(technician: Technician): Promise<void> {
 }
 
 export async function patchTechnician(id: string, data: Partial<Technician>): Promise<void> {
-  const snap = await get(technicianRef(id))
-  if (!snap.exists()) throw new Error('Prestador não encontrado')
   await mergePatchRecord(technicianRef(id), data as Record<string, unknown>)
 }
 
@@ -145,11 +143,12 @@ export async function upsertOrder(order: Order): Promise<void> {
   )
 }
 
-export async function patchOrder(id: string, data: Partial<Order>): Promise<void> {
-  const snap = await get(orderRef(id))
-  if (!snap.exists()) throw new Error('Pedido não encontrado')
-
-  const current = snap.val() as Order
+export async function patchOrder(id: string, data: Partial<Order>, currentNumeroPedido?: string): Promise<void> {
+  // Se numeroPedido mudou, precisa re-indexar; usa o valor atual passado pelo caller (já em memória)
+  // evitando um get extra ao Firebase
+  const current = currentNumeroPedido
+    ? { numeroPedido: currentNumeroPedido }
+    : (await get(orderRef(id))).val() as Order
 
   if (data.numeroPedido && normalizePedidoKey(data.numeroPedido) !== normalizePedidoKey(current.numeroPedido)) {
     const newIndexRef = orderIndexRef(data.numeroPedido)
@@ -180,15 +179,30 @@ export async function getServiceData(orderId: string): Promise<OrderServiceData 
   return snap.val() as OrderServiceData
 }
 
-export async function saveServiceData(orderId: string, data: OrderServiceData): Promise<void> {
-  await set(
-    ref(database, paths.serviceData(orderId)),
-    stripUndefined({ ...data, atualizadoEm: new Date().toISOString() })
-  )
+/** Grava apenas um campo específico do serviceData — evita reescrever o nó inteiro */
+export async function patchServiceField(
+  orderId: string,
+  field: 'checklist' | 'materiais' | 'relatorios',
+  value: unknown
+): Promise<void> {
+  await update(ref(database, paths.serviceData(orderId)), {
+    [field]: value ?? null,
+    atualizadoEm: new Date().toISOString(),
+  })
 }
 
 export async function removeServiceData(orderId: string): Promise<void> {
   await remove(ref(database, paths.serviceData(orderId)))
+}
+
+/** Salva a assinatura digital em nó separado (base64 não polui serviceData) */
+export async function saveSignature(orderId: string, dataUrl: string): Promise<void> {
+  await set(ref(database, paths.signature(orderId)), dataUrl || null)
+}
+
+export async function getSignature(orderId: string): Promise<string> {
+  const snap = await get(ref(database, paths.signature(orderId)))
+  return snap.val() ?? ''
 }
 
 export async function migrateLocalData(

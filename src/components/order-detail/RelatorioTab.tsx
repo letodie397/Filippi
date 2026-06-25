@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Plus, Trash2, Save, ImagePlus, X, FileDown, FileText, Loader2 } from 'lucide-react'
 import { uploadImage, deleteImage } from '../../utils/upload-image'
 import { generateRelatorioPDF } from '../../utils/pdf-relatorio'
@@ -24,6 +24,11 @@ function newEntry(): RelatorioEntry {
 export function RelatorioTab({ order, relatorios: initialRelatorios, materiais, saving, onSave }: RelatorioTabProps) {
   const [entries, setEntries] = useState<RelatorioEntry[]>(initialRelatorios)
   const [dirty, setDirty] = useState(false)
+
+  // Sincroniza quando os dados chegam do Firebase pela primeira vez
+  useEffect(() => {
+    if (!dirty) setEntries(initialRelatorios)
+  }, [initialRelatorios]) // eslint-disable-line react-hooks/exhaustive-deps
   const [uploadingEntries, setUploadingEntries] = useState<Set<string>>(new Set())
   const [uploadError, setUploadError] = useState<string | null>(null)
 

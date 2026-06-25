@@ -7,7 +7,6 @@ import { StatusBadge } from '../components/ui/Badge'
 import { ChecklistTab } from '../components/order-detail/ChecklistTab'
 import { MaterialTab } from '../components/order-detail/MaterialTab'
 import { RelatorioTab } from '../components/order-detail/RelatorioTab'
-import type { OrderChecklist, MaterialItem, RelatorioEntry, OrderServiceData } from '../types'
 
 type TabId = 'checklist' | 'material' | 'relatorio'
 
@@ -20,7 +19,8 @@ const TABS: { id: TabId; label: string; icon: React.ReactNode }[] = [
 export function OrderDetail() {
   const { id } = useParams<{ id: string }>()
   const orders = useOrders()
-  const { data: serviceData, loading, saving, error, save } = useServiceData(id)
+  const { data: serviceData, loading, saving, error, saveChecklist, saveMateriais, saveRelatorios } =
+    useServiceData(id)
   const [activeTab, setActiveTab] = useState<TabId>('checklist')
 
   const order = orders?.find((o) => o.id === id)
@@ -46,30 +46,6 @@ export function OrderDetail() {
         </div>
       </div>
     )
-  }
-
-  async function handleSaveChecklist(checklist: OrderChecklist) {
-    const updated: OrderServiceData = {
-      ...(serviceData ?? {}),
-      checklist,
-    }
-    await save(updated)
-  }
-
-  async function handleSaveMateriais(materiais: MaterialItem[]) {
-    const updated: OrderServiceData = {
-      ...(serviceData ?? {}),
-      materiais,
-    }
-    await save(updated)
-  }
-
-  async function handleSaveRelatorios(relatorios: RelatorioEntry[]) {
-    const updated: OrderServiceData = {
-      ...(serviceData ?? {}),
-      relatorios,
-    }
-    await save(updated)
   }
 
   return (
@@ -133,7 +109,6 @@ export function OrderDetail() {
 
       {/* Tabs */}
       <div className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
-        {/* Tab bar */}
         <div className="flex border-b border-gray-100">
           {TABS.map((tab) => (
             <button
@@ -152,7 +127,6 @@ export function OrderDetail() {
           ))}
         </div>
 
-        {/* Tab content */}
         <div className="p-5">
           {loading ? (
             <div className="flex items-center justify-center py-16">
@@ -165,7 +139,7 @@ export function OrderDetail() {
                   order={order}
                   checklist={serviceData?.checklist}
                   saving={saving}
-                  onSave={handleSaveChecklist}
+                  onSave={saveChecklist}
                 />
               )}
               {activeTab === 'material' && (
@@ -173,7 +147,7 @@ export function OrderDetail() {
                   orderId={order.id}
                   materiais={serviceData?.materiais ?? []}
                   saving={saving}
-                  onSave={handleSaveMateriais}
+                  onSave={saveMateriais}
                 />
               )}
               {activeTab === 'relatorio' && (
@@ -182,7 +156,7 @@ export function OrderDetail() {
                   relatorios={serviceData?.relatorios ?? []}
                   materiais={serviceData?.materiais ?? []}
                   saving={saving}
-                  onSave={handleSaveRelatorios}
+                  onSave={saveRelatorios}
                 />
               )}
             </>
