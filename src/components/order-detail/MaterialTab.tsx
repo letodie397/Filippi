@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import { Plus, Trash2, Save, ImagePlus, X, Package } from 'lucide-react'
+import { Plus, Trash2, Save, ImagePlus, X, Package, Loader2 } from 'lucide-react'
+import { uploadImage, deleteImage } from '../../utils/upload-image'
 import type { MaterialItem } from '../../types'
 
 interface MaterialTabProps {
+  orderId: string
   materiais: MaterialItem[]
   saving: boolean
   onSave: (materiais: MaterialItem[]) => Promise<void>
@@ -19,26 +21,21 @@ function newItem(): MaterialItem {
   }
 }
 
+type UploadingKey = `${string}-antigo` | `${string}-novo`
+
 function ImageUpload({
   label,
   value,
-  onChange,
+  uploading,
+  onFile,
+  onRemove,
 }: {
   label: string
   value: string | null
-  onChange: (v: string | null) => void
+  uploading: boolean
+  onFile: (file: File) => void
+  onRemove: () => void
 }) {
-  function handleFile(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0]
-    if (!file) return
-    const reader = new FileReader()
-    reader.onload = (ev) => {
-      onChange((ev.target?.result as string) ?? null)
-    }
-    reader.readAsDataURL(file)
-    e.target.value = ''
-  }
-
   return (
     <div className="space-y-1">
       <span className="block text-xs font-medium text-gray-600">{label}</span>
@@ -48,30 +45,57 @@ function ImageUpload({
             src={value}
             alt={label}
             className="w-full h-28 object-cover rounded-xl border border-gray-200"
+            loading="lazy"
           />
           <button
             type="button"
-            onClick={() => onChange(null)}
+            onClick={onRemove}
             className="absolute top-1.5 right-1.5 bg-white/80 hover:bg-red-50 text-gray-600 hover:text-red-600 rounded-full p-1 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
           >
             <X size={14} />
           </button>
         </div>
       ) : (
-        <label className="flex flex-col items-center justify-center h-28 w-full border-2 border-dashed border-gray-300 rounded-xl cursor-pointer hover:border-icm-red-400 hover:bg-red-50/30 transition-colors">
-          <ImagePlus size={22} className="text-gray-400 mb-1" />
-          <span className="text-xs text-gray-500">Clique para adicionar</span>
-          <input type="file" accept="image/*" className="hidden" onChange={handleFile} />
+        <label className={`flex flex-col items-center justify-center h-28 w-full border-2 border-dashed rounded-xl transition-colors ${
+          uploading
+            ? 'border-icm-red-300 bg-red-50/40 cursor-wait'
+            : 'border-gray-300 cursor-pointer hover:border-icm-red-400 hover:bg-red-50/30'
+        }`}>
+          {uploading ? (
+            <>
+              <Loader2 size={20} className="text-icm-red-500 animate-spin mb-1" />
+              <span className="text-xs text-icm-red-500">Enviando...</span>
+            </>
+          ) : (
+            <>
+              <ImagePlus size={22} className="text-gray-400 mb-1" />
+              <span className="text-xs text-gray-500">Clique para adicionar</span>
+            </>
+          )}
+          {!uploading && (
+            <input
+              type="file"
+              accept="image/*"
+              className="hidden"
+              onChange={(e) => {
+                const f = e.target.files?.[0]
+                if (f) onFile(f)
+                e.target.value = ''
+              }}
+            />
+          )}
         </label>
       )}
     </div>
   )
 }
 
-export function MaterialTab({ materiais: initialMateriais, saving, onSave }: MaterialTabProps) {
+export function MaterialTab({ orderId, materiais: initialMateriais, saving, onSave }: MaterialTabProps) {
   const [items, setItems] = useState<MaterialItem[]>(initialMateriais)
   const [dirty, setDirty] = useState(false)
   const [expandedId, setExpandedId] = useState<string | null>(null)
+  const [uploading, setUploading] = useState<Set<UploadingKey>>(new Set())
+  const [uploadError, setUploadError] = useState<string | null>(null)
 
   function addItem() {
     const item = newItem()
@@ -80,8 +104,13 @@ export function MaterialTab({ materiais: initialMateriais, saving, onSave }: Mat
     setDirty(true)
   }
 
-  function removeItem(id: string) {
+  async function removeItem(id: string) {
     if (!confirm('Deseja remover este item?')) return
+    const item = items.find((i) => i.id === id)
+    if (item) {
+      if (item.imagemAntigo) deleteImage(item.imagemAntigo).catch(console.warn)
+      if (item.imagemNovo) deleteImage(item.imagemNovo).catch(console.warn)
+    }
     setItems((prev) => prev.filter((i) => i.id !== id))
     setDirty(true)
   }
@@ -91,6 +120,36 @@ export function MaterialTab({ materiais: initialMateriais, saving, onSave }: Mat
       prev.map((item) => (item.id === id ? { ...item, [field]: value } : item))
     )
     setDirty(true)
+  }
+
+  async function handleImageUpload(
+    itemId: string,
+    field: 'imagemAntigo' | 'imagemNovo',
+    file: File
+  ) {
+    const key: UploadingKey = `${itemId}-${field === 'imagemAntigo' ? 'antigo' : 'novo'}`
+    setUploading((prev) => new Set(prev).add(key))
+    setUploadError(null)
+    try {
+      const context = field === 'imagemAntigo' ? 'material-antigo' : 'material-novo'
+      const url = await uploadImage(file, orderId, context)
+      updateItem(itemId, field, url)
+    } catch (err) {
+      setUploadError(err instanceof Error ? err.message : 'Erro ao enviar imagem')
+    } finally {
+      setUploading((prev) => {
+        const next = new Set(prev)
+        next.delete(key)
+        return next
+      })
+    }
+  }
+
+  async function handleImageRemove(itemId: string, field: 'imagemAntigo' | 'imagemNovo') {
+    const item = items.find((i) => i.id === itemId)
+    const url = item?.[field]
+    if (url) deleteImage(url).catch(console.warn)
+    updateItem(itemId, field, null)
   }
 
   async function handleSave() {
@@ -115,6 +174,15 @@ export function MaterialTab({ materiais: initialMateriais, saving, onSave }: Mat
         </button>
       </div>
 
+      {uploadError && (
+        <div className="bg-red-50 border border-red-200 text-red-700 rounded-xl px-4 py-2.5 text-xs flex items-center justify-between">
+          <span>{uploadError}</span>
+          <button onClick={() => setUploadError(null)} className="ml-2 text-red-400 hover:text-red-600">
+            <X size={14} />
+          </button>
+        </div>
+      )}
+
       {items.length === 0 ? (
         <div className="bg-white border border-gray-100 rounded-2xl p-10 text-center">
           <Package className="mx-auto text-gray-300 mb-3" size={40} />
@@ -125,6 +193,8 @@ export function MaterialTab({ materiais: initialMateriais, saving, onSave }: Mat
         <div className="space-y-3">
           {items.map((item, idx) => {
             const isExpanded = expandedId === item.id
+            const upAntigo = uploading.has(`${item.id}-antigo`)
+            const upNovo = uploading.has(`${item.id}-novo`)
             return (
               <div
                 key={item.id}
@@ -198,12 +268,16 @@ export function MaterialTab({ materiais: initialMateriais, saving, onSave }: Mat
                       <ImageUpload
                         label="Foto do item ANTIGO"
                         value={item.imagemAntigo}
-                        onChange={(v) => updateItem(item.id, 'imagemAntigo', v)}
+                        uploading={upAntigo}
+                        onFile={(f) => handleImageUpload(item.id, 'imagemAntigo', f)}
+                        onRemove={() => handleImageRemove(item.id, 'imagemAntigo')}
                       />
                       <ImageUpload
                         label="Foto do item NOVO"
                         value={item.imagemNovo}
-                        onChange={(v) => updateItem(item.id, 'imagemNovo', v)}
+                        uploading={upNovo}
+                        onFile={(f) => handleImageUpload(item.id, 'imagemNovo', f)}
+                        onRemove={() => handleImageRemove(item.id, 'imagemNovo')}
                       />
                     </div>
 
@@ -230,11 +304,20 @@ export function MaterialTab({ materiais: initialMateriais, saving, onSave }: Mat
       <button
         type="button"
         onClick={handleSave}
-        disabled={saving || !dirty}
+        disabled={saving || !dirty || uploading.size > 0}
         className="flex items-center justify-center gap-2 px-5 py-2.5 bg-icm-red-600 text-white rounded-xl text-sm font-semibold hover:bg-icm-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
       >
-        <Save size={16} />
-        {saving ? 'Salvando...' : dirty ? 'Salvar Materiais' : 'Salvo'}
+        {uploading.size > 0 ? (
+          <>
+            <Loader2 size={16} className="animate-spin" />
+            Aguardando uploads...
+          </>
+        ) : (
+          <>
+            <Save size={16} />
+            {saving ? 'Salvando...' : dirty ? 'Salvar Materiais' : 'Salvo'}
+          </>
+        )}
       </button>
     </div>
   )
