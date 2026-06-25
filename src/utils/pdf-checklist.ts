@@ -1,11 +1,12 @@
 import { jsPDF } from 'jspdf'
-import { CHECKLIST_STEPS, type OrderChecklist, type Order } from '../types'
+import { CHECKLIST_ITENS, type OrderChecklist, type Order, type ChecklistKey } from '../types'
 
 const RED = '#c0392b'
 const DARK = '#1e293b'
 const GRAY = '#64748b'
 const GREEN = '#16a34a'
 const RED_RESP = '#dc2626'
+const GRAY_NA = '#94a3b8'
 
 function pageWidth(doc: jsPDF) {
   return doc.internal.pageSize.getWidth()
@@ -141,43 +142,43 @@ export async function generateChecklistPDF(order: Order, checklist: OrderCheckli
   y += 6
 
   // ── Checklist ─────────────────────────────────────────────────
-  y = sectionTitle(doc, '2. Checklist de Verificação', y)
+  y = sectionTitle(doc, '2. Itens do Checklist', y)
 
-  CHECKLIST_STEPS.forEach((step) => {
-    if (y > pageHeight(doc) - 30) {
+  CHECKLIST_ITENS.forEach((item, idx) => {
+    if (y > pageHeight(doc) - 18) {
       doc.addPage()
       y = 20
     }
 
-    doc.setFontSize(9)
-    doc.setFont('helvetica', 'bold')
+    const resposta = checklist.itens.find((i) => i.key === item.key as ChecklistKey)?.resposta ?? null
+    const badgeText = resposta === 'sim' ? 'SIM' : resposta === 'nao' ? 'NÃO' : resposta === 'na' ? 'N/A' : 'N/R'
+    const badgeColor = resposta === 'sim' ? GREEN : resposta === 'nao' ? RED_RESP : GRAY_NA
+
+    doc.setFont('helvetica', 'normal')
     doc.setTextColor(DARK)
-    doc.text(step.titulo, marginLeft, y)
-    y += 7
+    doc.setFontSize(8)
 
-    step.itens.forEach((item) => {
-      const resposta = checklist.itens.find((i) => i.key === item.key)?.resposta ?? null
-      const label = item.label
-      const badgeText = resposta === 'sim' ? 'SIM' : resposta === 'nao' ? 'NÃO' : 'N/R'
-      const badgeColor = resposta === 'sim' ? GREEN : resposta === 'nao' ? RED_RESP : '#94a3b8'
+    const numText = `${idx + 1}.`
+    const lineText = `${item.label}`
+    const lines = doc.splitTextToSize(lineText, contentW - 30)
 
-      doc.setFont('helvetica', 'normal')
-      doc.setTextColor(DARK)
-      doc.setFontSize(8.5)
-      doc.text(`• ${label}`, marginLeft + 3, y)
-
-      // Badge
-      const badgeX = marginRight - 18
-      doc.setFillColor(badgeColor)
-      doc.roundedRect(badgeX, y - 4.5, 16, 6, 1.5, 1.5, 'F')
-      doc.setTextColor('#ffffff')
-      doc.setFontSize(7)
-      doc.setFont('helvetica', 'bold')
-      doc.text(badgeText, badgeX + 8, y - 0.5, { align: 'center' })
-
-      y += 6.5
+    doc.setFont('helvetica', 'bold')
+    doc.text(numText, marginLeft + 2, y)
+    doc.setFont('helvetica', 'normal')
+    lines.forEach((line: string, li: number) => {
+      doc.text(line, marginLeft + 9, y + li * 5)
     })
-    y += 3
+
+    const badgeX = marginRight - 18
+    const badgeY = y - 4
+    doc.setFillColor(badgeColor)
+    doc.roundedRect(badgeX, badgeY, 16, 6, 1.5, 1.5, 'F')
+    doc.setTextColor('#ffffff')
+    doc.setFontSize(6.5)
+    doc.setFont('helvetica', 'bold')
+    doc.text(badgeText, badgeX + 8, badgeY + 4, { align: 'center' })
+
+    y += lines.length * 5 + 3
   })
 
   // ── Footer ────────────────────────────────────────────────────

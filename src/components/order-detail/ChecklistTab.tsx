@@ -1,9 +1,9 @@
-import { useState, useCallback } from 'react'
-import { Save, FileDown, CheckCircle2, Circle, AlertCircle } from 'lucide-react'
+import { useState } from 'react'
+import { Save, FileDown, CheckCircle2 } from 'lucide-react'
 import { SignaturePad } from './SignaturePad'
 import { generateChecklistPDF } from '../../utils/pdf-checklist'
 import {
-  CHECKLIST_STEPS,
+  CHECKLIST_ITENS,
   type OrderChecklist,
   type ChecklistItemData,
   type ChecklistKey,
@@ -11,9 +11,10 @@ import {
 } from '../../types'
 
 function defaultChecklist(): OrderChecklist {
-  const itens: ChecklistItemData[] = CHECKLIST_STEPS.flatMap((step) =>
-    step.itens.map((item) => ({ key: item.key as ChecklistKey, resposta: null }))
-  )
+  const itens: ChecklistItemData[] = CHECKLIST_ITENS.map((item) => ({
+    key: item.key as ChecklistKey,
+    resposta: null,
+  }))
   return {
     responsavel: { nome: '', telefone: '', cpf: '', assinatura: '' },
     itens,
@@ -39,7 +40,7 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
     setDirty(true)
   }
 
-  function setResposta(key: ChecklistKey, resposta: 'sim' | 'nao') {
+  function setResposta(key: ChecklistKey, resposta: 'sim' | 'nao' | 'na') {
     setForm((prev) => ({
       ...prev,
       itens: prev.itens.map((item) => (item.key === key ? { ...item, resposta } : item)),
@@ -47,7 +48,7 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
     setDirty(true)
   }
 
-  function getResp(key: ChecklistKey): 'sim' | 'nao' | null {
+  function getResp(key: ChecklistKey): 'sim' | 'nao' | 'na' | null {
     return form.itens.find((i) => i.key === key)?.resposta ?? null
   }
 
@@ -67,29 +68,23 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
   const totalItens = form.itens.length
   const respondidos = form.itens.filter((i) => i.resposta !== null).length
   const simCount = form.itens.filter((i) => i.resposta === 'sim').length
+  const naoCount = form.itens.filter((i) => i.resposta === 'nao').length
+  const naCount = form.itens.filter((i) => i.resposta === 'na').length
   const allDone = respondidos === totalItens
-
-  const stepProgress = useCallback(
-    (stepIdx: number) => {
-      const step = CHECKLIST_STEPS[stepIdx]
-      const keys = step.itens.map((i) => i.key as ChecklistKey)
-      const total = keys.length
-      const done = keys.filter((k) => getResp(k) !== null).length
-      const allSim = keys.every((k) => getResp(k) === 'sim')
-      return { total, done, allSim, complete: done === total }
-    },
-    [form.itens] // eslint-disable-line react-hooks/exhaustive-deps
-  )
 
   return (
     <div className="space-y-6">
-      {/* Progress bar */}
+      {/* Progress */}
       <div className="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm">
         <div className="flex items-center justify-between mb-2">
           <span className="text-sm font-medium text-gray-700">
-            Progresso: {respondidos}/{totalItens} respondidos
+            Progresso: {respondidos}/{totalItens}
           </span>
-          <span className="text-sm text-gray-500">{simCount} SIM</span>
+          <div className="flex gap-3 text-xs text-gray-500">
+            <span className="text-emerald-600 font-semibold">{simCount} SIM</span>
+            <span className="text-red-500 font-semibold">{naoCount} NÃO</span>
+            <span className="text-gray-400 font-semibold">{naCount} N/A</span>
+          </div>
         </div>
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
           <div
@@ -108,11 +103,11 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
       {/* Responsável */}
       <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm space-y-4">
         <h3 className="text-sm font-semibold text-gray-800 uppercase tracking-wide">
-          Dados do Responsável
+          Informações do Responsável
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1">Nome completo</label>
+            <label className="block text-xs font-medium text-gray-600 mb-1">Nome / Aprovado por</label>
             <input
               type="text"
               value={form.responsavel.nome}
@@ -155,77 +150,53 @@ export function ChecklistTab({ order, checklist, saving, onSave }: ChecklistTabP
         </div>
       </div>
 
-      {/* Steps */}
-      {CHECKLIST_STEPS.map((step, stepIdx) => {
-        const progress = stepProgress(stepIdx)
-        return (
-          <div key={step.passo} className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
-            {/* Step header */}
-            <div
-              className={`px-5 py-3.5 flex items-center justify-between border-b ${
-                progress.complete && progress.allSim
-                  ? 'bg-emerald-50 border-emerald-100'
-                  : progress.complete
-                  ? 'bg-amber-50 border-amber-100'
-                  : 'bg-gray-50 border-gray-100'
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                {progress.complete && progress.allSim ? (
-                  <CheckCircle2 size={17} className="text-emerald-600" />
-                ) : progress.complete ? (
-                  <AlertCircle size={17} className="text-amber-500" />
-                ) : (
-                  <Circle size={17} className="text-gray-400" />
-                )}
-                <span className="font-semibold text-sm text-gray-800">{step.titulo}</span>
-              </div>
-              <span className="text-xs text-gray-500">
-                {progress.done}/{progress.total}
-              </span>
-            </div>
-
-            {/* Items */}
-            <div className="divide-y divide-gray-50">
-              {step.itens.map((item) => {
-                const resp = getResp(item.key as ChecklistKey)
-                return (
-                  <div
-                    key={item.key}
-                    className="px-5 py-3.5 flex items-center justify-between"
-                  >
-                    <span className="text-sm font-medium text-gray-700">{item.label}</span>
-                    <div className="flex gap-2">
-                      <button
-                        type="button"
-                        onClick={() => setResposta(item.key as ChecklistKey, 'sim')}
-                        className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                          resp === 'sim'
+      {/* Checklist items */}
+      <div className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+        <div className="px-5 py-3.5 bg-gray-50 border-b border-gray-100">
+          <h3 className="text-sm font-semibold text-gray-800">Itens do Checklist</h3>
+          <p className="text-xs text-gray-500 mt-0.5">Responda SIM, NÃO ou N/A para cada item</p>
+        </div>
+        <div className="divide-y divide-gray-50">
+          {CHECKLIST_ITENS.map((item, idx) => {
+            const resp = getResp(item.key as ChecklistKey)
+            return (
+              <div
+                key={item.key}
+                className={`px-5 py-3.5 flex items-start sm:items-center justify-between gap-4 ${
+                  resp === 'nao' ? 'bg-red-50/40' : resp === 'sim' ? 'bg-emerald-50/30' : ''
+                }`}
+              >
+                <div className="flex items-start gap-3 flex-1 min-w-0">
+                  <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full bg-gray-100 text-gray-500 text-xs font-bold flex items-center justify-center">
+                    {idx + 1}
+                  </span>
+                  <span className="text-sm text-gray-700 leading-snug">{item.label}</span>
+                </div>
+                <div className="flex gap-1.5 shrink-0">
+                  {(['sim', 'nao', 'na'] as const).map((opt) => (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => setResposta(item.key as ChecklistKey, opt)}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                        resp === opt
+                          ? opt === 'sim'
                             ? 'bg-emerald-600 text-white shadow-sm'
-                            : 'bg-gray-100 text-gray-500 hover:bg-emerald-50 hover:text-emerald-700'
-                        }`}
-                      >
-                        SIM
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setResposta(item.key as ChecklistKey, 'nao')}
-                        className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                          resp === 'nao'
+                            : opt === 'nao'
                             ? 'bg-red-600 text-white shadow-sm'
-                            : 'bg-gray-100 text-gray-500 hover:bg-red-50 hover:text-red-700'
-                        }`}
-                      >
-                        NÃO
-                      </button>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        )
-      })}
+                            : 'bg-gray-500 text-white shadow-sm'
+                          : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                      }`}
+                    >
+                      {opt === 'sim' ? 'SIM' : opt === 'nao' ? 'NÃO' : 'N/A'}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
 
       {/* Actions */}
       <div className="flex flex-col sm:flex-row gap-3">

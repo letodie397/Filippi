@@ -94,48 +94,31 @@ export interface ChurchSearchResult {
 
 // ── Service Data (Checklist / Material / Relatório) ──────────────────────────
 
-export const CHECKLIST_STEPS = [
-  {
-    passo: 1,
-    titulo: '1º passo — Vistoria',
-    itens: [
-      { key: 'vistoria_equipamento', label: 'EQUIPAMENTO VISTORIADO' },
-      { key: 'vistoria_local', label: 'LOCAL VERIFICADO' },
-      { key: 'vistoria_materiais', label: 'MATERIAIS CONFERIDOS' },
-    ],
-  },
-  {
-    passo: 2,
-    titulo: '2º passo — Execução',
-    itens: [
-      { key: 'exec_servico', label: 'SERVIÇO EXECUTADO' },
-      { key: 'exec_teste', label: 'EQUIPAMENTO TESTADO' },
-      { key: 'exec_limpeza', label: 'LOCAL ENTREGUE LIMPO' },
-    ],
-  },
-  {
-    passo: 3,
-    titulo: '3º passo — Finalização',
-    itens: [
-      { key: 'fin_cliente', label: 'CLIENTE CIENTE E SATISFEITO' },
-      { key: 'fin_relatorio', label: 'RELATÓRIO PREENCHIDO' },
-      { key: 'fin_fotos', label: 'FOTOS REGISTRADAS' },
-      { key: 'fin_materiais', label: 'MATERIAIS DOCUMENTADOS' },
-    ],
-  },
+export const CHECKLIST_ITENS = [
+  { key: 'item_0',  label: 'TODAS AS CAIXAS DO TEMPLO ESTÃO FUNCIONANDO PERFEITAMENTE?' },
+  { key: 'item_1',  label: 'OS DIÂMETROS DOS CABOS DE LIGAÇÃO DAS CAIXAS ESTÃO DENTRO DAS NORMAS?' },
+  { key: 'item_2',  label: 'TODOS OS RETORNOS ESTÃO FUNCIONANDO PERFEITAMENTE?' },
+  { key: 'item_3',  label: 'OS CABOS DO RETORNO SÃO PP?' },
+  { key: 'item_4',  label: 'AS CAIXAS DO TEMPLO ESTÃO ALINHADAS?' },
+  { key: 'item_5',  label: 'TODOS OS CANAIS DA MESA FORAM TESTADOS?' },
+  { key: 'item_6',  label: 'TODOS AS LIGAÇÕES DOS CANAIS DOS AMPLIFICADORES ESTÃO CORRETAS?' },
+  { key: 'item_7',  label: 'O MICROFONE DO PÚLPITO ESTÁ FUNCIONANDO?' },
+  { key: 'item_8',  label: 'TODOS OS CABOS FORAM TESTADOS E ESTÃO APTOS A UTILIZAR?' },
+  { key: 'item_9',  label: 'OS CABOS ESTÃO ORGANIZADOS?' },
+  { key: 'item_10', label: 'OS EQUIPAMENTOS ESTÃO EM BOAS CONDIÇÕES OU CONSERVADO?' },
+  { key: 'item_11', label: 'OS MICROFONES ESPECÍFICOS (CORDAS, METAIS, GRUPO, ETC.) ESTÃO FUNCIONANDO?' },
+  { key: 'item_12', label: 'O SISTEMA DE SATÉLITE ESTÁ FUNCIONANDO CORRETAMENTE?' },
+  { key: 'item_13', label: 'O PROCESSADOR ESTÁ ALINHADO COM O LOCAL?' },
+  { key: 'item_14', label: 'TODAS AS VIAS DA MEDUSA ESTÃO FUNCIONANDO?' },
+  { key: 'item_15', label: 'A IGREJA POSSUI SISTEMA DE ATERRAMENTO PARA O SOM?' },
+  { key: 'item_16', label: 'A IGREJA POSSUI UM DISJUNTOR EXCLUSIVO PARA O SOM?' },
+  { key: 'item_17', label: 'A IGREJA POSSUI EQUIPAMENTOS EXCEDENTES?' },
 ] as const
 
 export type ChecklistKey =
-  | 'vistoria_equipamento'
-  | 'vistoria_local'
-  | 'vistoria_materiais'
-  | 'exec_servico'
-  | 'exec_teste'
-  | 'exec_limpeza'
-  | 'fin_cliente'
-  | 'fin_relatorio'
-  | 'fin_fotos'
-  | 'fin_materiais'
+  | 'item_0' | 'item_1' | 'item_2' | 'item_3' | 'item_4' | 'item_5'
+  | 'item_6' | 'item_7' | 'item_8' | 'item_9' | 'item_10' | 'item_11'
+  | 'item_12' | 'item_13' | 'item_14' | 'item_15' | 'item_16' | 'item_17'
 
 export interface ChecklistResponsavel {
   nome: string
@@ -146,7 +129,7 @@ export interface ChecklistResponsavel {
 
 export interface ChecklistItemData {
   key: ChecklistKey
-  resposta: 'sim' | 'nao' | null
+  resposta: 'sim' | 'nao' | 'na' | null
 }
 
 export interface OrderChecklist {
