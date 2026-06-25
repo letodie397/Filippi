@@ -91,3 +91,89 @@ export interface ChurchSearchResult {
   suggestions: ChurchIdentificationCandidate[]
   needsSelection: boolean
 }
+
+// ── Service Data (Checklist / Material / Relatório) ──────────────────────────
+
+export const CHECKLIST_STEPS = [
+  {
+    passo: 1,
+    titulo: '1º passo — Vistoria',
+    itens: [
+      { key: 'vistoria_equipamento', label: 'EQUIPAMENTO VISTORIADO' },
+      { key: 'vistoria_local', label: 'LOCAL VERIFICADO' },
+      { key: 'vistoria_materiais', label: 'MATERIAIS CONFERIDOS' },
+    ],
+  },
+  {
+    passo: 2,
+    titulo: '2º passo — Execução',
+    itens: [
+      { key: 'exec_servico', label: 'SERVIÇO EXECUTADO' },
+      { key: 'exec_teste', label: 'EQUIPAMENTO TESTADO' },
+      { key: 'exec_limpeza', label: 'LOCAL ENTREGUE LIMPO' },
+    ],
+  },
+  {
+    passo: 3,
+    titulo: '3º passo — Finalização',
+    itens: [
+      { key: 'fin_cliente', label: 'CLIENTE CIENTE E SATISFEITO' },
+      { key: 'fin_relatorio', label: 'RELATÓRIO PREENCHIDO' },
+      { key: 'fin_fotos', label: 'FOTOS REGISTRADAS' },
+      { key: 'fin_materiais', label: 'MATERIAIS DOCUMENTADOS' },
+    ],
+  },
+] as const
+
+export type ChecklistKey =
+  | 'vistoria_equipamento'
+  | 'vistoria_local'
+  | 'vistoria_materiais'
+  | 'exec_servico'
+  | 'exec_teste'
+  | 'exec_limpeza'
+  | 'fin_cliente'
+  | 'fin_relatorio'
+  | 'fin_fotos'
+  | 'fin_materiais'
+
+export interface ChecklistResponsavel {
+  nome: string
+  telefone: string
+  cpf: string
+  assinatura: string
+}
+
+export interface ChecklistItemData {
+  key: ChecklistKey
+  resposta: 'sim' | 'nao' | null
+}
+
+export interface OrderChecklist {
+  responsavel: ChecklistResponsavel
+  itens: ChecklistItemData[]
+  atualizadoEm?: string
+}
+
+export interface MaterialItem {
+  id: string
+  nome: string
+  quantidade: number
+  imagemAntigo: string | null
+  imagemNovo: string | null
+  justificativa: string
+}
+
+export interface RelatorioEntry {
+  id: string
+  texto: string
+  imagens: string[]
+  criadoEm: string
+}
+
+export interface OrderServiceData {
+  checklist?: OrderChecklist
+  materiais?: MaterialItem[]
+  relatorios?: RelatorioEntry[]
+  atualizadoEm?: string
+}

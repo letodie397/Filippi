@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Plus, Search, MapPin, Trash2, Filter, Pencil } from 'lucide-react'
+import { Plus, Search, MapPin, Trash2, Filter, Pencil, ClipboardList } from 'lucide-react'
 import { useOrders, deleteOrder, updateOrder } from '../hooks/useData'
 import { Button } from '../components/ui/Button'
 import { StatusBadge } from '../components/ui/Badge'
@@ -175,6 +175,13 @@ export function Orders() {
                     </td>
                     <td className="px-4 lg:px-5 py-3.5">
                       <div className="flex items-center gap-1">
+                        <Link
+                          to={`/pedidos/${order.id}`}
+                          className="p-2 text-gray-400 hover:text-icm-red-700 hover:bg-red-50 rounded-lg"
+                          title="Checklist / Material / Relatório"
+                        >
+                          <ClipboardList size={16} />
+                        </Link>
                         <Link
                           to={`/pedidos/${order.id}/editar`}
                           className="p-2 text-gray-400 hover:text-icm-red-700 hover:bg-red-50 rounded-lg"

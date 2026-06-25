@@ -4,6 +4,7 @@ export const paths = {
   technicians: `${ROOT}/technicians`,
   orders: `${ROOT}/orders`,
   orderIndex: (numero: string) => `${ROOT}/indexes/pedidos/${normalizePedidoKey(numero)}`,
+  serviceData: (orderId: string) => `${ROOT}/serviceData/${orderId}`,
   meta: `${ROOT}/meta`,
 } as const
 

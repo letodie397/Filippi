@@ -39,6 +39,7 @@
     "brazilian-geographic-data": "^2.0.0",
     "dexie": "^4.4.3",
     "firebase": "^12.14.0",
+    "jspdf": "^4.2.1",
     "lucide-react": "^1.17.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",

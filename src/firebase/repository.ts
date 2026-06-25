@@ -3,7 +3,7 @@ import { database } from './config'
 import { paths, normalizePedidoKey } from './paths'
 import { getClientId } from './client'
 import { stripUndefined } from './sanitize'
-import type { Technician, Order, ServiceArea } from '../types'
+import type { Technician, Order, ServiceArea, OrderServiceData } from '../types'
 
 export class DuplicateOrderError extends Error {
   constructor(numero: string) {
@@ -172,6 +172,23 @@ export async function removeOrder(id: string): Promise<void> {
   const order = snap.val() as Order
   await remove(orderRef(id))
   await remove(orderIndexRef(order.numeroPedido))
+}
+
+export async function getServiceData(orderId: string): Promise<OrderServiceData | null> {
+  const snap = await get(ref(database, paths.serviceData(orderId)))
+  if (!snap.exists()) return null
+  return snap.val() as OrderServiceData
+}
+
+export async function saveServiceData(orderId: string, data: OrderServiceData): Promise<void> {
+  await set(
+    ref(database, paths.serviceData(orderId)),
+    stripUndefined({ ...data, atualizadoEm: new Date().toISOString() })
+  )
+}
+
+export async function removeServiceData(orderId: string): Promise<void> {
+  await remove(ref(database, paths.serviceData(orderId)))
 }
 
 export async function migrateLocalData(
